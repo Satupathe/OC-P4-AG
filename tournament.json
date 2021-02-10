@@ -1,9 +1,67 @@
 {
-    "name": "1",
-    "place": "2",
-    "start_date": "3",
-    "number_of_round": 4,
-    "players": 8,
-    "time": "300",
-    "comments": "eefzze"
+    "Name": "Expert",
+    "Adress": "Chassieu",
+    "Date": "Janvier",
+    "number of round": 8,
+    "Time": "350",
+    "Nb Players": 8,
+    "comments": "Dictionnaire temporaire",
+    "players": {
+        "1": {
+            "nom": "Dupont",
+            "prenom": "Alexandre",
+            "anniversaire": "1972",
+            "genre": "M",
+            "rank": "1"
+        },
+        "2": {
+            "nom": "Durand",
+            "prenom": "Aurelie",
+            "anniversaire": "1990",
+            "genre": "F",
+            "rank": "4"
+        },
+        "3": {
+            "nom": "Dupuis",
+            "prenom": "Monique",
+            "anniversaire": "1965",
+            "genre": "F",
+            "rank": "6"
+        },
+        "4": {
+            "nom": "Bepas",
+            "prenom": "Marion",
+            "anniversaire": "1987",
+            "genre": "F",
+            "rank": "7"
+        },
+        "5": {
+            "nom": "Menant",
+            "prenom": "laureen",
+            "anniversaire": "1994",
+            "genre": "F",
+            "rank": "3"
+        },
+        "6": {
+            "nom": "Liotard",
+            "prenom": "David",
+            "anniversaire": "1974",
+            "genre": "X",
+            "rank": "2"
+        },
+        "7": {
+            "nom": "Roux",
+            "prenom": "Cedric",
+            "anniversaire": "1979",
+            "genre": "M",
+            "rank": "5"
+        },
+        "8": {
+            "nom": "Gagnieu",
+            "prenom": "Arnaud",
+            "anniversaire": "1991",
+            "genre": "M",
+            "rank": "8"
+        }
+    }
 }
