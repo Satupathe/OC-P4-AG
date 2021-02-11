@@ -3,43 +3,41 @@ Used to store player informations.
 Keep informations available for the User
 """
 
+from collections import OrderedDict
+from operator import getitem
+
+
 class Player:
-	def __init__(self, name, first_name, birthdate, gender, ranking):
-		self.name = name
-		self.first_name = first_name
-		self.birth_date = birth_date
-		self.gender = gender
-		self.ranking = ranking
-
-
-		def player_dict(self):
-        self.player = {}
-        self.player['Name'] = self.name
-        self.player['First name'] = self.place
-        self.player['Birthdate'] = self.start_date
-        self.player['Gender'] = self.number_of_round
-        self.player['Ranking'] = self.players
-
-        return self.player
+    def __init__(self, name, first_name, birthdate, gender, ranking, pairing_nb=None, score=0):
+        self.name = name
+        self.first_name = first_name
+        self.birth_date = birthdate
+        self.gender = gender
+        self.ranking = ranking
+        self.pairing_nb = pairing_nb
+        self.score = score
 
     
+class Players: 
 
-    def save(self):
-        dictionnary = self.player
-        with open ('players.json', 'a', encoding='utf8') as play:
-            json.dump(dictionnary, play, ensure_ascii=False, indent = 4)
+    def dict_construction(self, joueur_1, joueur_2, joueur_3, joueur_4, joueur_5, joueur_6, joueur_7, joueur_8):
+        players_dict = {}
+        players_dict[1] = joueur_1
+        players_dict[2] = joueur_2
+        players_dict[3] = joueur_3
+        players_dict[4] = joueur_4
+        players_dict[5] = joueur_5
+        players_dict[6] = joueur_6
+        players_dict[7] = joueur_7
+        players_dict[8] = joueur_8
+
+        return players_dict
 
 
-def main():
-    player1 = Player('Gagnieu', 
-                      'Arnaud',
-                      '11 Novembre 1991',
-                      'M',
-                      3
-                      )
+    def sorting(self, players_dict):
 
-    dict_essai = player1.player_dict()
-    player1.save()
-    
-
-main = main()
+        sorted_players = OrderedDict(sorted(players_dict.items(),
+                      key=lambda x: getitem(x[1], "Player's rank:"))
+                     ) 
+        print(sorted_players)
+        return sorted_players  

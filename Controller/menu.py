@@ -1,6 +1,6 @@
 """ Main file to launch every part of the MVC pattern"""
 
-from Model import tournament
+from Model import tournamentmodel
 from View import view
 
 
@@ -12,30 +12,40 @@ class TournamentController:
         tour_infos = one_tournament_infos.ask_tournament()
         print(tour_infos)"""
 
-        tournoi_bypass = {'Name': 'Expert', 'Adress': 'Chassieu', 'Date': 'Janvier', 'number of round' : 8, 'Time': '350', 'Nb Players': 8, 'comments': 'Dictionnaire temporaire'}
-        # Doit normalement aller dans view.py
+        tournoi_bypass = {"Tournament's name:": 'Expert',
+                          "Tournament's adress:": 'Chassieu',
+                          "Tournament's Date:": 'Janvier',
+                          "Total number of rounds:": 4,
+                          "Time control:": '300',
+                          "Number of player:": 8,
+                          "Comments:": 'Dictionnaire temporaire'
+                          }
+
+        
         print(tournoi_bypass)
+        """return tour_infos"""
         return tournoi_bypass
 
 class PlayersController:
 
-    def players_infos(self):
+    def players_infos(self, i):
 
-        """players = view.PlayersView(8) 
-        players_infos = print(players.ask_players())"""
+        """players = view.PlayersView() 
+        players_infos = players.ask_players(i)"""
         
         joueurs_bypass = {}
-        joueurs_bypass['1'] = {'nom': 'Dupont', 'prenom': 'Alexandre', 'anniversaire': '1972', 'genre': 'M', 'rank': '1'}
-        joueurs_bypass['2'] = {'nom': 'Durand', 'prenom': 'Aurelie', 'anniversaire': '1990', 'genre': 'F', 'rank': '4'}
-        joueurs_bypass['3'] = {'nom': 'Dupuis', 'prenom': 'Monique', 'anniversaire': '1965', 'genre': 'F', 'rank': '6'}
-        joueurs_bypass['4'] = {'nom': 'Bepas', 'prenom': 'Marion', 'anniversaire': '1987', 'genre': 'F', 'rank': '7'}
-        joueurs_bypass['5'] = {'nom': 'Menant', 'prenom': 'laureen', 'anniversaire': '1994', 'genre': 'F', 'rank': '3'}
-        joueurs_bypass['6'] = {'nom': 'Liotard', 'prenom': 'David', 'anniversaire': '1974', 'genre': 'X', 'rank': '2'}
-        joueurs_bypass['7'] = {'nom': 'Roux', 'prenom': 'Cedric', 'anniversaire': '1979', 'genre': 'M', 'rank': '5'}
-        joueurs_bypass['8'] = {'nom': 'Gagnieu', 'prenom': 'Arnaud', 'anniversaire': '1991', 'genre': 'M', 'rank': '8'}
-        # Doit normalement aller dans view.py
+        joueurs_bypass['1'] = {"Player's family name:": 'Dupont', "Player's first name:": 'Alexandre', "Player's birthdate:": '1972', "Player's gender:": 'M', "Player's rank:": 1, "Pairing number": '', 'Score': 0}
+        joueurs_bypass['2'] = {"Player's family name:": 'Durand', "Player's first name:": 'Aurelie', "Player's birthdate:": '1990', "Player's gender:": 'F', "Player's rank:": 4, "Pairing number": '', 'Score': 0}
+        joueurs_bypass['3'] = {"Player's family name:": 'Dupuis', "Player's first name:": 'Monique', "Player's birthdate:": '1965', "Player's gender:": 'F', "Player's rank:": 6, "Pairing number": '', 'Score': 0}
+        joueurs_bypass['4'] = {"Player's family name:": 'Bepas', "Player's first name:": 'Marion', "Player's birthdate:": '1987', "Player's gender:": 'F', "Player's rank:": 7, "Pairing number": '', 'Score': 0}
+        joueurs_bypass['5'] = {"Player's family name:": 'Menant', "Player's first name:": 'laureen', "Player's birthdate:": '1994', "Player's gender:": 'F', "Player's rank:": 3, "Pairing number": '', 'Score': 0}
+        joueurs_bypass['6'] = {"Player's family name:": 'Liotard', "Player's first name:": 'David', "Player's birthdate:": '1974', "Player's gender:": 'X', "Player's rank:": 2, "Pairing number": '', 'Score': 0}
+        joueurs_bypass['7'] = {"Player's family name:": 'Roux', "Player's first name:": 'Cedric', "Player's birthdate:": '1979', "Player's gender:": 'M', "Player's rank:": 5, "Pairing number": '', 'Score': 0}
+        joueurs_bypass['8'] = {"Player's family name:": 'Gagnieu', "Player's first name:": 'Arnaud', "Player's birthdate:": '1991', "Player's gender:": 'M', "Player's rank:": 8, "Pairing number": '', 'Score': 0}
+       
 
-        """print(players_infos)"""
+        """print(players_infos)
+        return players_infos"""
 
         print(joueurs_bypass)
         return joueurs_bypass

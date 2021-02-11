@@ -7,13 +7,13 @@ class TournamentView:
 
         tour_infos = {}
 
-        questions = ["Tournament's name:   ",
-                     "Tournament's adress:   ",
-                     "Tournament's Date:   ",
-                     "Total number of rounds:   ",
-                     "Time control:   ",
-                     "Number of player:   ",
-                     "comments:   "
+        questions = ["Tournament's name:",
+                     "Tournament's adress:",
+                     "Tournament's Date:",
+                     "Total number of rounds:",
+                     "Time control:",
+                     "Number of player:",
+                     "Comments:"
                     ] 
 
         for i in questions:
@@ -45,36 +45,42 @@ class TournamentView:
             else:
                 tour_infos[i] = input(i)
 
+        
         return tour_infos
 
 class PlayersView:
 
-    def ask_players(self):
+    def ask_players(self, i):
 
-        players_infos = {}
+        """players_infos = {}"""
 
-        questions = ["Player's family name:   ",
-                     "Player's first name:   ",
-                     "Player's birthdate:   ",
-                     "Player's gender:   ",
-                     "Player's rank:   "
+        questions = ["Player's family name:",
+                     "Player's first name:",
+                     "Player's birthdate:",
+                     "Player's gender:",
+                     "Player's rank:"
                     ]
 
-        for i in range(8): #changé pour 8 fixe de base
-            One_player = {}
-            print('Please enter informations of player number ' + str(i+1) + ':   ')
+        """for i in range(8): #changé pour 8 fixe de base"""
+        one_player = {}
+        print('Please enter informations of player number ' + str(i) + ':')
 
-            for j in questions:
-                if j is not questions[4]:
-                    One_player[j] = input(j)
+        for j in questions:
+            if j is not questions[4]:
+                one_player[j] = input(j)
 
-                else:
-                    try:
-                        One_player[questions[4]] = int(input(j))
+            else:
+                try:
+                    one_player[questions[4]] = int(input(j))
 
-                    except ValueError:
-                        print('Please enter an integer')
-                   
-            players_infos[i+1] = One_player
+                except ValueError:
+                    print('Please enter an integer')
+               
+        one_player['Pairing number'] = ''
+        one_player['Score'] = 0       
 
-        return players_infos
+        """players_infos[i+1] = one_player"""
+
+
+        """return players_infos"""
+        return one_player
