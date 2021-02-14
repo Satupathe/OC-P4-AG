@@ -50,9 +50,9 @@ class TournamentView:
 
 class PlayersView:
 
-    def ask_players(self, i):
+    def ask_players(self):
 
-        """players_infos = {}"""
+        players_infos = []
 
         questions = ["Player's family name:",
                      "Player's first name:",
@@ -61,26 +61,32 @@ class PlayersView:
                      "Player's rank:"
                     ]
 
-        """for i in range(8): #changé pour 8 fixe de base"""
-        one_player = {}
-        print('Please enter informations of player number ' + str(i) + ':')
+        for i in range(8): #changé pour 8 fixe de base
+            one_player = {}
+            print('Please enter informations of player number ' + str(i) + ':')
 
-        for j in questions:
-            if j is not questions[4]:
-                one_player[j] = input(j)
+            for j in questions:
+                if j is not questions[4]:
+                    one_player[j] = input(j)
 
-            else:
-                try:
-                    one_player[questions[4]] = int(input(j))
+                else:
+                    try:
+                        one_player[questions[4]] = int(input(j))
 
-                except ValueError:
-                    print('Please enter an integer')
-               
-        one_player['Pairing number'] = ''
-        one_player['Score'] = 0       
+                    except ValueError:
+                        print('Please enter an integer')
+                   
+            one_player["Pairing number"] = ''
+            one_player["Score"] = 0       
 
-        """players_infos[i+1] = one_player"""
+            players_infos.append(one_player)
 
 
-        """return players_infos"""
-        return one_player
+        return players_infos
+        
+
+class RoundView:
+
+    def first_round(self, match_list):
+        print("Matchs du premier round: ")
+        print(match_list)
