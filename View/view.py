@@ -4,7 +4,7 @@ from Controller import menu
 class TournamentView:
                      
     def ask_tournament(self):
-
+        """Appelle les input du tournoi et renvoi un dictionnaire"""
         tour_infos = {}
 
         questions = ["Tournament's name:",
@@ -46,12 +46,12 @@ class TournamentView:
                 tour_infos[i] = input(i)
 
         
-        return tour_infos
+        return tour_infos # renvoi le dictionnaire du tournoi
 
 class PlayersView:
 
     def ask_players(self):
-
+        """Appelle les input pour chaque joueur et renvoi une liste de dictionnaires"""
         players_infos = []
 
         questions = ["Player's family name:",
@@ -61,8 +61,8 @@ class PlayersView:
                      "Player's rank:"
                     ]
 
-        for i in range(8): #changé pour 8 fixe de base
-            one_player = {}
+        for i in range(8):
+            one_player = {} #Dictionnaire pour 1 joueur
             print('Please enter informations of player number ' + str(i) + ':')
 
             for j in questions:
@@ -82,7 +82,7 @@ class PlayersView:
             players_infos.append(one_player)
 
 
-        return players_infos
+        return players_infos # renvoie la liste des dictionnaires
         
 
 class RoundView:

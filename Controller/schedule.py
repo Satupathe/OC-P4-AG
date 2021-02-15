@@ -16,9 +16,9 @@ class Schedule:
         players = menu.PlayersController() #créé l'objet players issu du controller menu
          
         sorted_players = players.sorting_rank(players.players_infos())
-        print(sorted_players)
+        #Remet la liste des joueurs dnas le bon ordre en fonction des ranks (Controller menu)
 
-        tournament_save = tournamentmodel.TournamentModel()
+        tournament_save = tournamentmodel.TournamentModel() # sauvegarde dans json
         total_tournament = tournament_save.add_tournament_and_players(tournament_dict, sorted_players)
         """tournament_save.json_save(total_tournament)"""
         
@@ -33,6 +33,8 @@ class Schedule:
         player_7 = player.Player(sorted_players[6])
         player_8 = player.Player(sorted_players[7])
 
+        print('essai player 2 ' + str(player_2))
+
         match_players_list = [player_1.match_player(),
                               player_2.match_player(),
                               player_3.match_player(),
@@ -42,6 +44,8 @@ class Schedule:
                               player_7.match_player(),
                               player_8.match_player()
                              ]
+
+        print('match list:', match_players_list)
 
         one_round = roundscontroller.RoundController()
         first_round = one_round.round_creation(match_players_list)
@@ -57,5 +61,4 @@ class Schedule:
         #Ajouter les résultats(scores) obtenus aux tuples des matchs 
         #Ajouter les tuples des matchs au round
         #reclasser les joueurs en fonctions des points obtenus dans la liste 
-        #proposer les nouveaux matchs
-        #faire attention à ne pas opposer des joueurs ayant déjà joués ensemble.
+        

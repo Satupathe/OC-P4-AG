@@ -9,19 +9,20 @@ from operator import itemgetter
 class TournamentController:
 
     def tournament_infos(self):
-
+        """Appelle le module view et les input du tournoi"""
+        
         """one_tournament_infos = view.TournamentView()
         tour_infos = one_tournament_infos.ask_tournament()
         print(tour_infos)"""
 
         tournament_dict = {"Tournament's name:": 'Expert',
-                          "Tournament's adress:": 'Chassieu',
-                          "Tournament's Date:": 'Janvier',
-                          "Total number of rounds:": 4,
-                          "Time control:": '300',
-                          "Number of player:": 8,
-                          "Comments:": 'Dictionnaire temporaire'
-                          }
+                           "Tournament's adress:": 'Chassieu',
+                           "Tournament's Date:": 'Janvier',
+                           "Total number of rounds:": 4,
+                           "Time control:": '300',
+                           "Number of player:": 8,
+                           "Comments:": 'Dictionnaire temporaire'
+                          } #tournoi factice comme raccourci
 
         
         
@@ -31,6 +32,8 @@ class TournamentController:
 class PlayersController:
 
     def players_infos(self):
+        """Appelle le module view et les input joueurs"""
+
 
         """players = view.PlayersView() 
         players_infos = players.ask_players()"""
@@ -43,7 +46,7 @@ class PlayersController:
                         {"Player's family name:": 'Liotard', "Player's first name:": 'David', "Player's birthdate:": '1974', "Player's gender:": 'X', "Player's rank:": 2, "Pairing number": '', "Score": 0},
                         {"Player's family name:": 'Roux', "Player's first name:": 'Cedric', "Player's birthdate:": '1979', "Player's gender:": 'M', "Player's rank:": 5, "Pairing number": '', "Score": 0},
                         {"Player's family name:": 'Gagnieu', "Player's first name:": 'Arnaud', "Player's birthdate:": '1991', "Player's gender:": 'M', "Player's rank:": 8, "Pairing number": '', "Score": 0}
-                       ]
+                       ]#liste des joueurs factice comme raccourci
 
         """print(players_infos)
         return players_infos"""
@@ -51,7 +54,8 @@ class PlayersController:
         return players_list
 
     def sorting_rank(self, players_list):
-    
+        """remet la liste des joueur dans l'ordre des ranks"""
+
         sorted_players = sorted(players_list, key=itemgetter("Player's rank:")) 
 
         return sorted_players  

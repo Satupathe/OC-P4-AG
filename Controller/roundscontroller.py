@@ -12,6 +12,7 @@ class RoundController:
 		match_4 = match.Match(match_players_list[3], match_players_list[7])
 
 		match_list = [match_1, match_2, match_3, match_4]
+		print(match_list)
 		return match_list
 
 	def send_round_1(self, first_round):

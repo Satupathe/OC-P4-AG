@@ -12,28 +12,17 @@ import json
 
 
 class TournamentModel:
-    """docstring"""
+    """Permet d'ajouter les données tournoi et joueurs et de sauvegarder en json"""
       
     def add_tournament_and_players(self, tournament_dict, sorted_players):
+        """combine les infos tournoi et joueurs ensemble"""
         total_tournament = tournament_dict
         total_tournament['players'] = sorted_players
 
         return total_tournament
 
-
-    """def __init__(self, name, adress, date, number_of_round, time, number_of_players, players = None, comments = None):
-        self.name = name
-        self.adress = adress
-        self.date = date
-        self.number_of_round = number_of_round
-        self.time = time
-        self.number_of_players = number_of_players
-        self.comments = None"""
-
-    
-
-
     def json_save(self, dictionnary):
+        """sauvegarde les infos tournoi et joueur dnas le json"""
         with open ('tournament.json', 'a', encoding='utf8') as tour:
             json.dump(dictionnary, tour, ensure_ascii=False, indent = 4)
 

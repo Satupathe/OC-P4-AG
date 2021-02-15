@@ -5,6 +5,7 @@ from Controller import schedule
 
 
 def main ():
+	"""Appelle le controller schedule"""
 	tournament = schedule.Schedule()
 	tournament.objects()
 
