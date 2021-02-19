@@ -63,7 +63,7 @@ class PlayersView:
 
         for i in range(8):
             one_player = {} #Dictionnaire pour 1 joueur
-            print('Please enter informations of player number ' + str(i) + ':')
+            print('Please enter informations of player number ' + str(i+1) + ':')
 
             for j in questions:
                 if j is not questions[4]:
@@ -87,6 +87,15 @@ class PlayersView:
 
 class RoundView:
 
-    def first_round(self, match_list):
-        print("Matchs du premier round: ")
-        print(match_list)
+    def __init__(self, i):
+        print("Matchs du round " + i + " : ")
+
+    def __str__(self):
+        return "member of Test" #laisser dans view ou dans RoundController ??
+
+    def ask_results(self, player):
+            print(player)
+            #rappeler le nom du joueur
+            #faire un input pour demander le résultat    
+
+

@@ -2,23 +2,40 @@
 Used to store Round informations.
 Keep informations available for the User
 """
+from Model import match
 
 class Round:
-	"""def __init__(self, match_list, start_date, end_date, start_hour, end_hour):
-		self.match_list = match_list
-		self.start_date = start_date
-		self.end_date = end_date
-		self.start_hour = start_hour
-		self.end_hour = end_hour"""
+	"""match_list, start_date, end_date, start_hour, end_hour"""
 
-	def round_1(self):
+	def __init__(self):
 		pass
+		
+	def round_selection(self):
+		
 
-	def round_2(self):
-		pass
+	def match_creation(self):
+		one_match = match.Match()
+		
+	
+	def pairing_first_round(selfn round_players):
+		
+		#contient la liste des matchs
+		self.first_round_matches = []
+		
+		match_1 = match.Match(round_players[0], round_players[4])
+        match_2 = match.Match(round_players[1], round_players[5])
+        match_3 = match.Match(round_players[2], round_players[6])
+        match_4 = match.Match(round_players[3], round_players[7])
+        self.pairing_first_round.append(match_1.match_opponents())
+        self.pairing_first_round.append(match_2.match_opponents())
+        self.pairing_first_round.append(match_3.match_opponents())
+        self.pairing_first_round.append(match_4.match_opponents())
+        
+		#les résultats de chaque match
+		#la liste de chaque match (quel joueur contre quel joueur)
+		#enregistrer des instances de match
+		return self.first_round_matches
 
-	def round_3(self):
-		pass
-
-	def round_4(self):
+	def pairing_other_round(self):
+		other_round_matches = []
 		pass

@@ -6,39 +6,40 @@ from View import view
 from operator import itemgetter
 
 
-class TournamentController:
+class TournamentInput:
 
     def tournament_infos(self):
         """Appelle le module view et les input du tournoi"""
         
-        """one_tournament_infos = view.TournamentView()
-        tour_infos = one_tournament_infos.ask_tournament()
-        print(tour_infos)"""
+        """self.one_tournament_infos = view.TournamentView()
+        self.one_tournament_infos.ask_tournament()
+        print(self.one_tournament_infos)"""
 
-        tournament_dict = {"Tournament's name:": 'Expert',
+        self.tournament_dict = {"Tournament's name:": 'Expert',
                            "Tournament's adress:": 'Chassieu',
                            "Tournament's Date:": 'Janvier',
                            "Total number of rounds:": 4,
                            "Time control:": '300',
                            "Number of player:": 8,
+                           "players:" ''
                            "Comments:": 'Dictionnaire temporaire'
                           } #tournoi factice comme raccourci
 
         
         
-        """return tour_infos"""
-        return tournament_dict
+        """return self.one_tournament_infos"""
+        return self.tournament_dict
 
-class PlayersController:
+class PlayersInput:
 
     def players_infos(self):
         """Appelle le module view et les input joueurs"""
 
 
-        """players = view.PlayersView() 
-        players_infos = players.ask_players()"""
+        """self.players_infos = view.PlayersView() 
+        self.players_infos.ask_players()"""
         
-        players_list = [{"Player's family name:": 'Dupont', "Player's first name:": 'Alexandre', "Player's birthdate:": '1972', "Player's gender:": 'M', "Player's rank:": 1, "Pairing number": '', "Score": 0},
+        self.players_infos = [{"Player's family name:": 'Dupont', "Player's first name:": 'Alexandre', "Player's birthdate:": '1972', "Player's gender:": 'M', "Player's rank:": 1, "Pairing number": '', "Score": 0},
                         {"Player's family name:": 'Durand', "Player's first name:": 'Aurelie', "Player's birthdate:": '1990', "Player's gender:": 'F', "Player's rank:": 4, "Pairing number": '', "Score": 0},
                         {"Player's family name:": 'Dupuis', "Player's first name:": 'Monique', "Player's birthdate:": '1965', "Player's gender:": 'F', "Player's rank:": 6, "Pairing number": '', "Score": 0},
                         {"Player's family name:": 'Bepas', "Player's first name:": 'Marion', "Player's birthdate:": '1987', "Player's gender:": 'F', "Player's rank:": 7, "Pairing number": '', "Score": 0},
@@ -48,14 +49,14 @@ class PlayersController:
                         {"Player's family name:": 'Gagnieu', "Player's first name:": 'Arnaud', "Player's birthdate:": '1991', "Player's gender:": 'M', "Player's rank:": 8, "Pairing number": '', "Score": 0}
                        ]#liste des joueurs factice comme raccourci
 
-        """print(players_infos)
-        return players_infos"""
+        """print(self.players_infos)
+        return self.players_infos"""
 
-        return players_list
+        return self.players_infos
 
-    def sorting_rank(self, players_list):
+    def sorted_rank(self):
         """remet la liste des joueur dans l'ordre des ranks"""
 
-        sorted_players = sorted(players_list, key=itemgetter("Player's rank:")) 
+        self.sorted_players = sorted(self.players_infos, key=itemgetter("Player's rank:")) 
 
-        return sorted_players  
+        return self.sorted_players  
