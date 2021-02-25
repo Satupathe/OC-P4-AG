@@ -8,134 +8,115 @@ from View import view
 class ApplicationController:
 
     def call_controller(self):
-        self.tournament = tournamentmodel.TournamentModel()
-        self.tournament_infos = TournamentController()
-        self.tournament_infos.call_tournament()
-        self.players_infos = TournamentController()
-        self.players_infos.call_players()
-        json_save = JsonSave(self.tournament_infos, self.players_infos)
-        json_save.group_tournament_and_players()
-        json_save.save_in_json()
-        round_players = TournamentController()
-        round_players.round_players_object()
-        
-
-class JsonSave:
-
-    def __init__(self, tournament, players):
-        self.tournament = tournament
-        self.players = players
-
-        
-    def group_tournament_and_players(self):
-        self.tournament.add_tournament_and_players(self.tournament, self.players)
-    
-    def save_in_json(self):
-        self.tournament.json_save()        
+        tournament = TournamentController()
+        tournament.call_tournament()
+        tournament.call_players()
+        tournament.group_tournament_and_players()
+        tournament.json_save()
+        tournament.round_players()
+        tournament.round_selection()
 
 
 class TournamentController:
 
     def __init__(self): 
-        self.tournament_dict = menu.TournamentInput()
-        self.players_list = menu.PlayersInput()
+        self.tournament_input = menu.TournamentInput()
+        self.players_input = menu.PlayersInput()
 
-    def call_tournament(self):# inputs du tournoi
-        self.tournament_dict.tournament_infos()
-        print(self.tournament_dict)
+    def call_tournament(self):# inputs du tournoi OK
+        self.tournament_dict = self.tournament_input.tournament_infos()
         return self.tournament_dict
 
-    def call_players(self): # inputs des joueurs
-        self.players_list.players_infos() 
-        self.players_list.sorted_rank() 
-        print(self.players_list)
-        return(self.players_list)     
+    def call_players(self): # inputs des joueurs OK
+        self.players_input.players_infos() 
+        self.players_list = self.players_input.sorted_rank() 
+        return(self.players_list)
 
-    def round_players_object(self): #liste d'instances de joueur
+    def group_tournament_and_players(self): # OK
+        tournament_infos = tournamentmodel.TournamentModel()
+        self.total_tournament = tournament_infos.add_tournament_and_players(self.tournament_dict, self.players_list)
+        return self.total_tournament
+
+    def json_save(self): # OK
+        save = tournamentmodel.TournamentModel()
+        save.json_save(self.total_tournament)
+
+    def round_players(self): #liste des joueur
         self.round_players = [] 
         for i in range(8):
-            player_i = player.Player(self.players_list[i])
-            round_players.append(player_i.match_player())
+            one_player = player.Player(self.players_list[i], i)
+            player_i = one_player.match_player()
+            self.round_players.append(player_i)
         return self.round_players
 
     def round_selection(self):
-        self.played_matchs_list = tournamentmodel.TournamentModel()
-        self.played_matchs_list.get_matchs_list
-        
-        for i in range(4): #faire des modifications
-            one_round = RoundController(self.round_players)
-            if len(self.played_matchs_list) == 0:
-                one_round.first_round(self.round_players)
-
+        match_played = tournamentmodel.TournamentModel()
+        played_matchs_list = match_played.get_match_list()
+        players_and_score = [] # possibilité de l'ajouter à la boucle else
+        #chercher le nom du joueur en fonction de l'id dans le json
+        for i in range(4):
+            one_round = RoundController()
+            if len(played_matchs_list) == 0:
+                matches_round_1 = one_round.first_round(self.round_players)
+                match_played.add_to_match_list(matches_round_1)
+                for i in range(4):
+                    players_and_score.append(matches_round_1[i][0])
+                    players_and_score.append(matches_round_1[i][1])
+                print("players and score: " + players_and_score)
+                match_played.json_score_player(players_and_score)
+                #ajouter l'adversaire pour chaque joueur 
+                #enregistrer dans le json
             else:
-                one_round.other_round()
-                # modifier la ligne suivante
-                one_round.round_creation(self.round_players, self.played_matchs_list)# IMPORTANT!!
-                # Envoyer les informations à la view
-
+                players_and_score.sort(key=lambda x: x[1], reverse=True)
+                print("players and score: " + players_and_score)
+                one_round.other_round(players_and_score)                    
 
     #boucle for (à placer) (range(4)) pour appeler les 4 rounds
-#--> on arrive sur round controller
-#--> on choisit la bonne fonction
+#--> on arrive sur round controller OK
+#--> on choisit la bonne fonction OK
+#--> on propose un match
 #--> on vérifie le pairing
+#--> si match déjà joué, on propose le joueur suivant
+
 
 class RoundController:
+            
 
-    def __init__(self, round_players):
-        one_round = tournamentmodel.TournamentModel()
-        self.played_matchs_list = TournamentModel()
-        self.played_matchs_list.get_matchs_list()
-        
     def first_round(self, round_players):
         # sélectionne les instances de joueurs en fonction du rank initial
         
         first_round = rounds.Round()              
         self.match_list = first_round.pairing_first_round(round_players)
-        
-        #demander pour score des matchs à l'utilisateur
-        for i in range(self.match_list):
-            view_first_round = view.RoundView(i)
-            view_first_round.ask_results(self.match_list[i][0])
-            match_tupple = ()
-            #récupérer les résultats du premier joueur
+
+        self.j = 1
+        for i in range(4):
+            view_first_round = view.RoundView(i, self.j, self.match_list[i])
+        self.j += 1
+        for i in range(4):
+            score_player_1 = view_first_round.ask_results(self.match_list[i][0])
+            score_player_2 = view_first_round.ask_results(self.match_list[i][1])
+            self.match_list[i][0][1] += float(score_player_1)
+            self.match_list[i][1][1] += float(score_player_2)          
+            print(score_player_1)
+            print(score_player_2)
+        return self.match_list
+            #enregistrer les adversaires dans chaque joueur
             #garder ce résultat
             #récupérer les infos du 
     
         #appelle la fonction pairing du model qui utilise la liste des pairing
     
-    def other_round(self):
+    def other_round(self, players_and_score):
         #Permet de créer les autres rounds en fonction des matchs déjà effectués
-            other_round = rounds.Round()
-            other_round.pairing_other_round()
-        pass        
-
-
         
-    def __repr__(self):
+        other_round = rounds.Round()
+        other_round.pairing_other_round(players_and_score)
         pass
-        #surcharger le fonction print(voir dicord et surcharge)
 
     def send_round_1(self):
-
-        view_round_1 = view.RoundView()
-        view_round_1.first_round(self.match_list)
+        pass
 
 
-    
-
-#pairing en fonction des rank et en vérifiant que les joueurs n'ont pas déjà joué ensemble
-#fonction du model qui va appeler les instances de match et de joueur
-#propose un match et vérifie les paring déjà effectués
-
-roundlist = tournamentmodel.TournamentModel()
-roundlist.played_matchs_list()
-
-
-
-#lors d'une reprise récupérer le round en cours dans le json.
-#informations trouvable dans la liste des pairing.  
-
-        #initialiser un round
         #donner un identifiant de match à chaque joueur
         #initialiser un match
         #initialier l'ensemble des matchs

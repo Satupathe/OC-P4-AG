@@ -9,7 +9,7 @@ class Match:
 		self.player_2 = player_2
 
 	def match_opponents(self):
-		match = [player1, player_2]
+		match = (self.player_1, self.player_2)
 		return match
 
 
