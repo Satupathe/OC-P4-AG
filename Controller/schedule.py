@@ -1,6 +1,6 @@
 """ Controller for creation and use of objects"""
 
-from Controller import menu, roundscontroller
+from Controller import menu
 from Model import tournamentmodel, player, rounds
 from View import view
 
@@ -57,18 +57,20 @@ class TournamentController:
         for i in range(4):
             one_round = RoundController()
             if len(played_matchs_list) == 0:
-                matches_round_1 = one_round.first_round(self.round_players)
-                match_played.add_to_match_list(matches_round_1)
+                matchs_round_1 = one_round.first_round(self.round_players)
+                match_played.add_to_match_list(matchs_round_1)
                 for i in range(4):
-                    players_and_score.append(matches_round_1[i][0])
-                    players_and_score.append(matches_round_1[i][1])
-                print("players and score: " + players_and_score)
-                match_played.json_score_player(players_and_score)
+                    players_and_score.append(matchs_round_1[i][0])
+                    players_and_score.append(matchs_round_1[i][1])
+                #print("la liste des joueurs fin tour 1", players_and_score)
+                match_played.json_score_opponent_player(players_and_score, matchs_round_1)
                 #ajouter l'adversaire pour chaque joueur 
                 #enregistrer dans le json
             else:
-                players_and_score.sort(key=lambda x: x[1], reverse=True)
-                print("players and score: " + players_and_score)
+                previous_round = match_played.get_previous_round_list()
+                #players_and_score.sort(key=lambda x: x[1], reverse=True)
+                #print("players and score la suite: " + str(players_and_score))
+                
                 one_round.other_round(players_and_score)                    
 
     #boucle for (à placer) (range(4)) pour appeler les 4 rounds
@@ -89,16 +91,14 @@ class RoundController:
         self.match_list = first_round.pairing_first_round(round_players)
 
         self.j = 1
-        for i in range(4):
-            view_first_round = view.RoundView(i, self.j, self.match_list[i])
-        self.j += 1
+        """for i in range(4):
+            view_first_round = view.RoundView(i, self.j, self.match_list[i])"""
+        """self.j += 1"""
         for i in range(4):
             score_player_1 = view_first_round.ask_results(self.match_list[i][0])
             score_player_2 = view_first_round.ask_results(self.match_list[i][1])
-            self.match_list[i][0][1] += float(score_player_1)
-            self.match_list[i][1][1] += float(score_player_2)          
-            print(score_player_1)
-            print(score_player_2)
+            self.match_list[i][0][2] += float(score_player_1)
+            self.match_list[i][1][2] += float(score_player_2)          
         return self.match_list
             #enregistrer les adversaires dans chaque joueur
             #garder ce résultat

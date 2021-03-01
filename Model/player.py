@@ -21,7 +21,7 @@ class Player:
     
     def match_player(self):
         """Permet de garder les infos importantes d'un joueur pour un match"""
-        match_player = [self.name +' '+self.first_name+' ID = '+str(self.ID), float(self.score)]
+        match_player = [self.name +' '+self.first_name+' ID = ', self.ID, float(self.score)]
         return match_player #référence player est son ID (changer dans view ID = nom)
         
         #une liste pour chaque joueur issu de self.pairing

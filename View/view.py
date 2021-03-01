@@ -98,24 +98,21 @@ class RoundView:
     def ask_results(self, player):
         ask_result = input("Resultat: "+player[0]+" : ")
         
-        if ask_result == "victory" or ask_result =="defeat" or ask_result =="draw":
+        if ask_result == "v" or ask_result =="def" or ask_result =="d":
 
-            if ask_result == "victory":
+            if ask_result == "v":
                 self.score = 1.0
 
-            elif ask_result == "defeat":
+            elif ask_result == "def":
                 self.score = 0.0
 
-            elif ask_result == "draw":
+            elif ask_result == "d":
                 self.score = 0.5   
-                print(self.score)
 
         else:
             print("Merci d'entrer: victory, defeat ou draw")
             self.ask_results(player)
 
-        print(self.score)
-        print(type(self.score))
         return self.score
         
 
