@@ -77,8 +77,9 @@ class PlayersView:
                         print('Please enter an integer')
                         #appel recursif faire uen fonction qui accepte le try except et dans le except rappeler la fonction
                    
-            one_player["Pairing number"] = ''
-            one_player["Score"] = 0       
+            one_player["Pairing number"] = i
+            one_player["Score"] = 0
+            one_player["Opponents"] = []    
 
             players_infos.append(one_player)
 
@@ -107,13 +108,13 @@ class RoundView:
                 self.score = 0.0
 
             elif ask_result == "d":
-                self.score = 0.5   
+                self.score = 0.5   #attention récursivité n'annule pas la fonction précédente
 
         else:
             print("Merci d'entrer: victory, defeat ou draw")
             self.ask_results(player)
 
-        return self.score
+        return self.score # mettre en dehors de la récursivité.
         
 
         """if ask_results == "victory":

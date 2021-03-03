@@ -41,7 +41,7 @@ class TournamentController:
         save = tournamentmodel.TournamentModel()
         save.json_save(self.total_tournament)
 
-    def round_players(self): #liste des joueur
+    def round_players(self): #liste des joueur  OK
         self.round_players = [] 
         for i in range(8):
             one_player = player.Player(self.players_list[i], i)
@@ -90,10 +90,10 @@ class RoundController:
         first_round = rounds.Round()              
         self.match_list = first_round.pairing_first_round(round_players)
 
-        self.j = 1
-        """for i in range(4):
-            view_first_round = view.RoundView(i, self.j, self.match_list[i])"""
-        """self.j += 1"""
+        j = 1
+        for i in range(4):
+            view_first_round = view.RoundView(i, j, self.match_list[i])
+        j += 1
         for i in range(4):
             score_player_1 = view_first_round.ask_results(self.match_list[i][0])
             score_player_2 = view_first_round.ask_results(self.match_list[i][1])

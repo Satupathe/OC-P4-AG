@@ -8,7 +8,7 @@ Keep informations available for the User
 """
 
 from View import view
-from Model import rounds
+from Model import rounds, match
 import json
 from tinydb import TinyDB, Query, where 
 from tinydb.operations import delete
@@ -72,15 +72,14 @@ class TournamentModel:
 
         self.sorted_opponent = sorted(opponents_ids.items(), reverse=False)
 
-        Players = Query()
         j = 0
         for i in sorted_players:
-            self.players[j]["Score"] = i[2]
+            self.players[j]["Score"] += i[2]
             j += 1
         
         k = 0
         for i in self.sorted_opponent:
-            self.players[k]["Opponents"] = i[1]
+            self.players[k]["Opponents"].append(i[1])
             k += 1
 
         dict_player = {"players": self.players}
@@ -89,43 +88,107 @@ class TournamentModel:
 
     def get_previous_round_list(self):
         jtournament = TinyDB('jtournament.json',ensure_ascii=False, encoding='utf8', indent=4)
-        tournament_table = self.jtournament.table('tournaments')
+        tournament_table = jtournament.table('tournaments')
         #récupérer les scores du round précédent
-        last = len(self.tournament_table)
-        sorted_players = sorted(self.players, key=itemgetter("Score"))
-        print(sorted_players)
-
-        already_took_opponent = []
-        next_opponent = None  #mettre dans la boucle pour ajouter à un match directement
-
-        for player in sorted_players: #prendre les 4 premier joueurs
-            opponent_possibilities = [5, 2]
-            pairing_number = int(player["Pairing number"]) # id du joueur 
-                for i in sorted_players: #comparaison avec l'ensemble des joueurs
-                    for j in i["Opponent"]: # comparaison avec la liste des ancien adversaires
-                        provisional_number = None
-                        if j == pairing_number:
-                            provisional_number = None
-                        else:
-                            provisional_number = i["pairing_number"]
-                    if provisional_number == None:
-                        pass
-                    else:
-                        opponent_possibilities.append(provisional_number)
-            
-            next_opponent = opponent_possibilities[0]
-            already_took_opponent.append(pairing_number)
-            already_took_opponent.append(next_opponent)
+        last = len(tournament_table)
+        players = tournament_table.get(doc_id=last)["players"]
         
-        for i in already_took_opponent:
+        sorted_players = sorted(players, key=itemgetter("Score"), reverse=True)
+        print('')
+        print(sorted_players)
+        print("checkpoint 1")
+        print('')
+
+        already_took_opponent = [0]
+          
+        matchs_list = []
+        matchs = []
+        for player in sorted_players:
+            print(player)
+            opponent_possibilities = []# rangés en focntion des scores
+            pairing_number = int(player["Pairing number"]) # id du joueur ici 1
+            next_opponent = None
+            print("pairing_number:", pairing_number)
             
-            if i == next_opponent:
-                j = 1
-                next_opponent = opponent_possibilities[j]
-                j += 1
-                #Comparer avec la liste des joueurs pris ce round
-                #si déjà pris prendre la possibilité de joueur suivante
-                #Comparer cette nouvelle possibilité avec la liste des joueurs pris
+            AD = None
+            
+            for i in already_took_opponent:
+                if pairing_number == i:
+                    AD =  None
+                    print("AD if:", AD)
+                    break
+                else:
+                    AD = pairing_number
+                    print("AD else:", AD)
+            print("checkpoint 2")
+            
+            if AD is not None:
+                print("je selectionne les anciens adversaires 1")
+                already_took_opponent.append(pairing_number)    
+
+                for opponent in sorted_players: #comparaison avec l'ensemble des joueurs
+                    provisional_number = None
+                    for j in opponent["Opponents"]: # comparaison avec la liste des ancien adversaires
+                        
+                        if j == pairing_number:
+                            provisional_number = None # des choses qui ne vont pas!!
+                            break
+                        else:
+                            provisional_number = opponent["Pairing number"]
+                    
+                    if provisional_number is not None:
+                        opponent_possibilities.append(provisional_number)
+                    else:
+                        pass
+                
+                for i in opponent_possibilities:
+                    provisional_opponent = None
+                    
+                    for j in already_took_opponent:
+                       
+                        if j == i:
+                            provisional_opponent = None
+                            print("possibilities break")
+                            break
+
+                        else:
+                            provisional_opponent = i
+                    print("provisional_opponent:", provisional_opponent)
+
+                if provisional_opponent is not None:
+                    next_opponent = provisional_opponent
+                    already_took_opponent.append(provisional_opponent)
+                else:
+                    pass
+            else:
+                pass
+        
+            print("checkpoint 3")
+            print("already_took_opponent", already_took_opponent)
+            print("opponent_possibilities", opponent_possibilities)
+            print('')
+
+        for i in range(0, 8, 2):
+            j = i+1
+            playerinfos_i = tournament_table.get(doc_id=last)["players"].Query().Pairing_number == matchs[i]
+                                                    #get(query().Pairing_number == matchs[i] in (doc_id=last))
+            playerinfos_j = tournament_table.get(doc_id=last)["players"].Query().Pairing_number == matchs[j]
+                                                    #get(query().Pairing_number == matchs[i+1] in (doc_id=last)) 
+            player_1 = player.Player(playerinfos_i)
+            player_2 = player.Player(playerinfos_j)
+
+            matchplayer1 = player_1.match_player
+            matchplayer2 = player_2.match_player
+            
+            one_match = match.Match(matchplayer1, matchplayer2)
+            match = one_match.match_opponents
+            matchs_list.append(match)
+
+        print(matchs_list)
+        return matchs_list
+                #Comparer avec la liste des joueurs pris ce round   OK
+                #si déjà pris prendre la possibilité de joueur suivante   OK
+                #Comparer cette nouvelle possibilité avec la liste des joueurs pris   OK
                 #etc...
                 #si free ajouter ces joueurs à une instance de match [([j1,s1], [j2,s2])]
                 #renvoyer la liste des matchs vers le controller
@@ -149,9 +212,4 @@ class TournamentModel:
 
 """ 
 créer un tournoi
-dans le tournoi créer un premier round
-
-
-#pairing en fonction des rank et en vérifiant que les joueurs n'ont pas déjà joué ensemble
-#fonction du model qui va appeler les instances de match et de joueur
-#propose un match et vérifie les paring déjà effectués"""
+dans le tournoi créer un premier round"""
