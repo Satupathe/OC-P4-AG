@@ -6,7 +6,7 @@ Keep informations available for the User
 
 class Player:
  
-    def __init__(self, one_player_infos, i):
+    def __init__(self, one_player_infos):
         self.name = one_player_infos["Player's family name:"]
         self.first_name = one_player_infos["Player's first name:"]
         self.birth = one_player_infos["Player's birthdate:"]
@@ -15,13 +15,14 @@ class Player:
         self.pairing_nb = one_player_infos["Pairing number"]
         self.score = one_player_infos["Score"]
         self.opponents = one_player_infos["Opponents"]
-        self.ID = i+1 
+         
         #attention au doublon de score avec match player
 
     
     def match_player(self):
         """Permet de garder les infos importantes d'un joueur pour un match"""
-        match_player = [self.name +' '+self.first_name+','+'Pairing number = ', self.ID, float(self.score)]
+        match_player = [self.name +' '+self.first_name+','+'Pairing number = ',int(self.ranking), int(self.pairing_nb), float(self.score)]
+        
         return match_player #référence player est son ID (changer dans view ID = nom)
         
         #une liste pour chaque joueur issu de self.pairing
