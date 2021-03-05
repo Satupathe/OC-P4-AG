@@ -47,15 +47,15 @@ class TournamentModel:
         """tournament_table = self.jtournament.table('tournaments')"""
         jtournament = TinyDB('jtournament.json',ensure_ascii=False, encoding='utf8', indent=4)
         tournament_table = jtournament.table('tournaments')
-
+        #print("players_and_score:", players_and_score)
         last = len(tournament_table) #Ok
         sorted_players = sorted(players_and_score, key=lambda x: x[1], reverse=False)
-        """print("")
+        print("")
         print("tournamentmodel sorted_players: ", sorted_players, "par rank")
-        print("") """
+        print("")
         self.players = tournament_table.get(doc_id=last)["players"]
-        """print("matchs_round: ", matchs_round)
-        print("")"""
+        print("matchs_round: ", matchs_round)
+        print("")
         
         opponents_ids = {}
 
@@ -71,26 +71,26 @@ class TournamentModel:
             opponents_ids[key1] = id_and_opponent1
             opponents_ids[key2] = id_and_opponent2
        
-        """print("opponents_ids: ", opponents_ids)
-        print("")"""
+        print("opponents_ids: ", opponents_ids)
+        print("")
         self.sorted_opponent = sorted(opponents_ids.items(), reverse=False)
-        """print("self.sorted_opponent: ", self.sorted_opponent) # sorted by rank
-        print("")"""
+        print("self.sorted_opponent: ", self.sorted_opponent) # sorted by rank
+        print("")
 
         j = 0
         for i in sorted_players:
-            self.players[j]["Score"] += i[3]
+            self.players[j]["Score"] = i[3]
             j += 1
         
         k = 0
         for i in self.sorted_opponent:
-            self.players[k]["Opponents"].append(i[1][0])
             self.players[k]["Opponents"].append(i[1][1])
             k += 1
 
         dict_player = {"players": self.players}
         tournament_table.update(dict_player, doc_ids=[last])
 
+    
 
     def get_previous_round_list(self):
         jtournament = TinyDB('jtournament.json',ensure_ascii=False, encoding='utf8', indent=4)
@@ -105,27 +105,49 @@ class TournamentModel:
         print("checkpoint 1")
         print('')
 
+        sorted_list = []
+        score = 4.0
+        while len(sorted_list)< 8: # permet de classer par score et par rank
+            by_score = []
+            for player in sorted_players:
+                if player["Score"] == score:
+                    intermediaire.append(player)
+            by_score.sort(key=itemgetter("Player's rank:"), reverse=False)
+            for item in by_score:
+                sorted_list.append(item)
+            score -= 0.5
+        
+        print(sorted_list)
+        print("checkpoint 1")
+
+        # RECREER LES TABLEAUX DE PLUS ET MOINS FORT COMME DIT PAR RANGA ??
         already_took_opponent = [0]
-          
+        if len(already_took_opponent) == 8 #casser la boucle des mises en match, à placer au bon endroit
         round_matchs_list = []
         
-        for player in sorted_players:
+        for player in sorted_list:
             print(player)
-            opponent_possibilities = []# rangés en focntion des scores
-            pairing_number = int(player["Pairing number"]) #ici 6
-            next_opponent = None
+            pairing_number = int(player["Pairing number"])
             print("pairing_number:", pairing_number)
+            next_opponent = None
             
-            AD = None
+        if pairing_number in already_took_opponent:
+            pass
+        else:
             
-            for i in already_took_opponent:
-                if pairing_number is i:
-                    AD =  None
-                    print("AD if:", AD)
-                    break
-                else:
-                    AD = pairing_number
-            #print(AD)
+            for i in sorted_list:
+                if len(already_took_opponent) == 8 #casser la boucle des mises en match, à placer au bon endroit ??
+                    pass
+                else: # faire le pairing
+                    if pairing number in i["Opponents"]:# attention par là aux for imbriqués (utiliser score = 0 score += 1...)
+                        pass
+                    else:
+                        #garder le match up
+            # metre le 1 avec le 2 (sorted_list[i])
+            #comparer le pairing number du 1 avec les opponents du 2
+
+
+            
             print("checkpoint 2")
             print("already_took_opponent early", already_took_opponent)
             
@@ -151,38 +173,39 @@ class TournamentModel:
                         opponent_possibilities.append(int(provisional_number))
                     else:
                         pass
-                #print("opponent_possibilities medium 1", opponent_possibilities)
+                print("opponent_possibilities medium 1", opponent_possibilities)
 
                 opponent_supression = []
                 s = set(already_took_opponent)
                 for i in opponent_possibilities:
                     if i not in s:
                         opponent_supression.append(i)
-                        #print("add possibility")
-                        break                            
+                        print("opponent_supression:", opponent_supression)                             
                     
                     else:
                         #print("took = possibility")
                         pass
-
+            else:
+                pass
                 #print("opponent_supression: ", opponent_supression)
                 #print("opponent_possibilities intermediaire", opponent_possibilities)
+                
+                print("opponent_supression:", opponent_supression)
                 next_opponent = opponent_supression[0]
                 already_took_opponent.append(int(next_opponent))
                 match = (pairing_number, next_opponent)
                 print(match)
                 round_matchs_list.append(match)
 
+    
+          
 
-            else:
-                pass
-        
-            print("checkpoint 3")
+        print("checkpoint 3")
             
-            #print("opponent_possibilities", opponent_possibilities)
-            #print("next opponent", next_opponent)
-            #print("already_took_opponent late", already_took_opponent)
-            print('')
+        #print("opponent_possibilities", opponent_possibilities)
+        #print("next opponent", next_opponent)
+        #print("already_took_opponent late", already_took_opponent)
+        print('')
         print("round_matchs_list: ", round_matchs_list)
 
         ids_list = []
@@ -204,27 +227,7 @@ class TournamentModel:
 
 
         print("results: ", results)
-        return results             
-
-        #Comparer avec la liste des joueurs pris ce round   OK
-        #si déjà pris prendre la possibilité de joueur suivante   OK
-        #Comparer cette nouvelle possibilité avec la liste des joueurs pris   OK
-        #etc...
-        #si free ajouter ces joueurs à une instance de match [([j1,s1], [j2,s2])]
-        #renvoyer la liste des matchs vers le controller
-        #demander les résultats
-        #les enregistrer
-        #HOP un nouveau round!!
-        #sortir les résultats de tous les rounds.
-
-
-
-    
-        """print(self.played_matchs_list)"""      
-
-    """def matchs_creations(self):
-        for i in range(4):
-            self.one_round.match_creation() # mettre dans tController ou roundsmodel?
+        return results  
 
 #doit appeler plusieurs round
 
@@ -237,21 +240,3 @@ dans le tournoi créer un premier round"""
          
            
 #if provisional_opponent is not 0:
-
-
-
-"""AD = None
-
-for i in already_took_opponent:
-if pairing_number == i:
-    AD =  None
-    print("AD if:", AD)
-    break
-else:
-    AD = pairing_number
-    print("AD else:", AD)"""
-
-#faire une liste avant de prendre le prmeier conservé ?"
-#si provisional_opponent = i Le code va forcement garder le dernier.
-#si None retirer l'opponent possibility de la liste ? 
-#opponent_possibilility.remove[0] ?

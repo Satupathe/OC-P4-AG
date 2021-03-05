@@ -77,7 +77,7 @@ class PlayersView:
                         print('Please enter an integer')
                         #appel recursif faire uen fonction qui accepte le try except et dans le except rappeler la fonction
                    
-            one_player["Pairing number"] = i
+            one_player["Pairing number"] = int(i)
             one_player["Score"] = 0
             one_player["Opponents"] = []    
 
@@ -93,7 +93,6 @@ class RoundView:
         print("Round "+str(j)+" Match "+str(i+1)+" : ")
         print(match)
         print('')
-        print("")
         self.score = 0
     
     def ask_results(self, player):
@@ -115,36 +114,12 @@ class RoundView:
             self.ask_results(player)
 
         return self.score # mettre en dehors de la récursivité.
-        
+    
+class FinalScore:
 
-        """if ask_results == "victory":
-            score = 1
-
-        elif ask_results == "defeat":
-            score = 0
-
-        elif ask_results == "draw":
-            score = 0.5   
-        
-        else:
-            print("Merci d'entrer le résultat suivant: victory, defeat ou draw")
-            ask_results = input("Resultat: "+player[0]+" : ")
-            if ask_results == "victory":
-                score = 1
-
-            elif ask_results == "defeat":
-                score = 0
-
-            elif ask_results == "draw":
-                score = 0.5       
-
-        return score
-        
-
-
-            #rappeler le nom du joueur
-            #faire un input pour demander le résultat    
-
-#ATTENTION !!!!
-# pour l'affichage des informations partir de la sauvegarde du json.
-#ça sera peut être plus simple que d'utiliser la mémoire ram."""
+    def print_results(self, final_score_list):
+        print("Tournament results:")
+        place = 1
+        for i in final_score_list:
+            print("Place "+str(place)+" : ", i)
+            place += 1

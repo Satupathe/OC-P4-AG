@@ -3,6 +3,7 @@
 from Controller import menu
 from Model import tournamentmodel, player, rounds
 from View import view
+from operator import itemgetter
 
 
 class ApplicationController:
@@ -15,6 +16,7 @@ class ApplicationController:
         tournament.json_save()
         tournament.round_players()
         tournament.round_selection()
+        tournament.call_final_score()
 
 
 class TournamentController:
@@ -51,107 +53,93 @@ class TournamentController:
         return self.round_players
 
     def round_selection(self):
-        match_played = tournamentmodel.TournamentModel()
-        played_matchs_list = match_played.get_match_list()
-        players_and_score = [] # possibilité de l'ajouter à la boucle else
-        #chercher le nom du joueur en fonction de l'id dans le json
-        for i in range(4):
+        self.match_played = tournamentmodel.TournamentModel()
+        played_matchs_list = self.match_played.get_match_list()
+        players_and_score = []
+        for r in range(4):
             one_round = RoundController()
-            j = 1
+            round_nb = r + 1            
+            
             if len(played_matchs_list) == 0:
-                matchs_round_1 = one_round.first_round(self.round_players, j)
-                match_played.add_to_match_list(matchs_round_1)
+                matchs_round_1 = one_round.first_round(self.round_players, round_nb)
+                self.match_played.add_to_match_list(matchs_round_1)
+
                 for k in range(4):
-                    players_and_score.append(matchs_round_1[i][0])
-                    players_and_score.append(matchs_round_1[i][1])
-                #print("la liste des joueurs fin tour 1", players_and_score)
-                match_played.json_score_opponent_player(players_and_score, matchs_round_1)
-                j += 1
-                #ajouter l'adversaire pour chaque joueur 
-                #enregistrer dans le json
+                    players_and_score.append(matchs_round_1[k][0])
+                    players_and_score.append(matchs_round_1[k][1])
+                self.match_played.json_score_opponent_player(players_and_score, matchs_round_1)
+
             else:
-                actual_round = match_played.get_previous_round_list()
+                actual_round = self.match_played.get_previous_round_list()
                 round_player_list = []
+                matchs_other_round = []
+
                 for i in range (8):
                     one_player = player.Player(actual_round[i])
                     round_player = one_player.match_player()
                     round_player_list.append(round_player)
-                print(round_player_list)
-                matchs_other_round = []
-                for j in range (0,8,2):
-                    match = (round_player_list[int(i/2)],round_player_list[int(i/2+1)])
-                    matchs_other_round.append(match)
-                print("match matchs_other_round: ", matchs_other_round)
-                score_other_round = one_round.other_round(round_player_list, j)
-                #print("players and score la suite: " + str(players_and_score))
-                   
-                match_played.add_to_match_list(score_other_round)
-                players_and_score = []
-                print ("players and score: ", players_and_score)
-                for k in range (4):
-                    players_and_score.append(matchs_round_1[i][0])
-                    players_and_score.append(matchs_round_1[i][1]) 
-                print("la liste des joueurs fin tour ", players_and_score)         
-                j += 1
-                match_played.json_score_opponent_player(players_and_score, matchs_other_round)
 
+
+                for j in range (1, 8, 2):
+                    j1 = round_player_list[j-1]
+                    j2 = round_player_list[j]
+                    match = (j1, j2)
+                    matchs_other_round.append(match)
+                
+                score_other_round = one_round.other_round(round_player_list, round_nb)
+                self.match_played.add_to_match_list(score_other_round)
+                self.players_and_score_other_round = []
+                print ("players and score: ", self.players_and_score_other_round)
+                for k in range (4):
+                    self.players_and_score_other_round.append(score_other_round[k][0])
+                    self.players_and_score_other_round.append(score_other_round[k][1]) 
+                print("la liste des joueurs fin tour ", self.players_and_score_other_round)         
+
+                
+                self.match_played.json_score_opponent_player(self.players_and_score_other_round, score_other_round)
+
+    def call_final_score(self):
+        final_score_list = sorted(self.players_and_score_other_round, key=lambda x: x[3], reverse=True)
+        print("final_score_list:", final_score_list)
+        podium = view.FinalScore()
+        podium.print_results(final_score_list)
 
 class RoundController:
             
 
-    def first_round(self, round_players, j):
-        # sélectionne les instances de joueurs en fonction du rank initial
+    def first_round(self, round_players, round_nb):
         
         first_round = rounds.Round()              
         match_list = first_round.pairing_first_round(round_players)
 
-        nb_round = j
         for i in range(4):
-            view_first_round = view.RoundView(i, nb_round, match_list[i])
+            view_first_round = view.RoundView(i, round_nb, match_list[i])
 
         for i in range(4):
             score_player_1 = view_first_round.ask_results(match_list[i][0])
             score_player_2 = view_first_round.ask_results(match_list[i][1])
             match_list[i][0][3] += float(score_player_1)
             match_list[i][1][3] += float(score_player_2)          
-        #print("self.match list: ", self.match_list)
+
         return match_list
-            #enregistrer les adversaires dans chaque joueur
-            #garder ce résultat
-            #récupérer les infos du 
+ 
     
         #appelle la fonction pairing du model qui utilise la liste des pairing
     
-    def other_round(self, round_player, j):
+    def other_round(self, round_player, round_nb):
         #Permet de créer les autres rounds en fonction des matchs déjà effectués
         
         other_round = rounds.Round()
         match_list = other_round.pairing_other_round(round_player) 
-        print("match list:", match_list)
-        # faire en premier un chemin vers round puis vers le json et le calcul ici.
         
-        nb_round = j
         for i in range(4):
-            view_other_round = view.RoundView(i, nb_round, match_list[i])
+            view_other_round = view.RoundView(i, round_nb, match_list[i])
 
         for i in range(4):
             score_player_1 = view_other_round.ask_results(match_list[i][0])
             score_player_2 = view_other_round.ask_results(match_list[i][1])
             match_list[i][0][3] += float(score_player_1)
             match_list[i][1][3] += float(score_player_2)          
-        #print("self.match list: ", self.match_list)
+
         return match_list
         # faire en premier un chemin vers round puis vers le json et le calcul ici.
-    
-
-
-
-        #donner un identifiant de match à chaque joueur
-        #initialiser un match
-        #initialier l'ensemble des matchs
-        #ajouter les match au round
-        #envoyer la liste des matchs du premier round à l'utilisateur
-        #demander les résultats pour chaque match dans l'ordre
-        #Ajouter les résultats(scores) obtenus aux tuples des matchs 
-        #Ajouter les tuples des matchs au round
-        #reclasser les joueurs en fonctions des points obtenus dans la liste """
