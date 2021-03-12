@@ -6,8 +6,8 @@ from Controller import schedule
 
 def main ():
 	"""Appelle le controller schedule"""
-	tournament = schedule.ApplicationController()
-	tournament.call_controller()
+	app = schedule.FrontController()
+	app.start()
 
 if __name__ == '__main__':
     main()

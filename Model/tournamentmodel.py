@@ -11,7 +11,7 @@ from View import view
 from Model import rounds, match
 import json
 from tinydb import TinyDB, Query, where 
-from tinydb.operations import delete
+from tinydb.operations import *
 from operator import itemgetter
 
 
@@ -25,13 +25,13 @@ class TournamentModel:
         self.total_tournament["players"] = players_list
         return self.total_tournament
 
-    def get_match_list(self):
+    def get_match_list(self): # enlever cette fonction ? 
         self.played_matchs_list = []#décomposer par round !!!!!!
         return self.played_matchs_list#prendre dans le json ?
 
 
     def add_to_match_list(self, round_matches):
-        self.played_matchs_list.append(round_matches)
+        self.played_matchs_list.append(round_matches) # enlever ces fonctions ?
 
     def json_save(self, tournament_dict):
         """sauvegarde les infos tournoi et joueur dans le json"""
@@ -41,22 +41,78 @@ class TournamentModel:
         
         return self.tournament_table #laisser en self ????
 
-    def json_score_opponent_player(self, players_and_score, matchs_round):
+    def get_round_number(self, tournament_number):
+        jtournament = TinyDB('jtournament.json',ensure_ascii=False, encoding='utf8', indent=4)
+        tournament_table = jtournament.table('tournaments')
+
+        tournament_id = None
+        if tournament_number == 0:
+            tournament_id = len(tournament_table)
+        
+        else:
+            tournament_id = tournament_number
+
+        round_number = tournament_table.get(doc_id=tournament_id)["Round number"]
+        #print ("Round number else:", round_number)
+
+        return round_number
+
+    def get_length_db(self):
+        jtournament = TinyDB('jtournament.json',ensure_ascii=False, encoding='utf8', indent=4)
+        tournament_table = jtournament.table('tournaments')
+        database_length = len(tournament_table)
+        return database_length
+
+    def get_players(self, tournament_number):
+        jtournament = TinyDB('jtournament.json',ensure_ascii=False, encoding='utf8', indent=4)
+        tournament_table = jtournament.table('tournaments')
+        
+        tournament_id = None
+        if tournament_number == 0:
+            tournament_id = len(tournament_table)
+        
+        else:
+            tournament_id = tournament_number
+        
+        players = tournament_table.get(doc_id=tournament_id)["players"]
+
+        return players
+
+    def json_score_opponent_player(self, players_and_score, matchs_round, tournament_number):
         #télécharger le json en vue de faire des modifications dessus
         """self.jtournament = TinyDB('jtournament.json',ensure_ascii=False, encoding='utf8', indent=4)"""
         """tournament_table = self.jtournament.table('tournaments')"""
         jtournament = TinyDB('jtournament.json',ensure_ascii=False, encoding='utf8', indent=4)
         tournament_table = jtournament.table('tournaments')
         #print("players_and_score:", players_and_score)
-        last = len(tournament_table) #Ok
-        sorted_players = sorted(players_and_score, key=lambda x: x[1], reverse=False)
-        print("")
-        print("tournamentmodel sorted_players: ", sorted_players, "par rank")
-        print("")
-        self.players = tournament_table.get(doc_id=last)["players"]
-        print("matchs_round: ", matchs_round)
-        print("")
         
+        tournament_id = None
+        if tournament_number == 0:
+            tournament_id = len(tournament_table)
+
+        else:
+            tournament_id = tournament_number
+    
+
+        round_number = tournament_table.get(doc_id=tournament_id)["Round number"]
+        #print ("Round number:", round_number)
+        round_number = 1
+        dict_round_number = {"Round number": round_number}
+        #print("dict_round_number:", dict_round_number)
+        tournament_table.update(add("Round number", round_number), doc_ids=[tournament_id])
+        #print( "vérif mid enregistrement round number", tournament_table.get(doc_id=tournament_id)["Round number"])
+        
+        sorted_players = sorted(players_and_score, key=lambda x: x[1], reverse=False)
+        """print("")
+        print("tournamentmodel sorted_players: ", sorted_players, "par rank")
+        print("")"""
+        
+        self.players = tournament_table.get(doc_id=tournament_id)["players"]
+        """print("matchs_round: ", matchs_round, "par match")
+        print("")"""
+        
+
+
         opponents_ids = {}
 
         for i in range(4): 
@@ -71,11 +127,11 @@ class TournamentModel:
             opponents_ids[key1] = id_and_opponent1
             opponents_ids[key2] = id_and_opponent2
        
-        print("opponents_ids: ", opponents_ids)
-        print("")
+        """print("opponents_ids: ", opponents_ids)
+        print("")"""
         self.sorted_opponent = sorted(opponents_ids.items(), reverse=False)
-        print("self.sorted_opponent: ", self.sorted_opponent) # sorted by rank
-        print("")
+        """print("self.sorted_opponent: ", self.sorted_opponent, "by rank")
+        print("")"""
 
         j = 0
         for i in sorted_players:
@@ -88,145 +144,105 @@ class TournamentModel:
             k += 1
 
         dict_player = {"players": self.players}
-        tournament_table.update(dict_player, doc_ids=[last])
+        #print(dict_player)
+        tournament_table.update(dict_player, doc_ids=[tournament_id])
 
-    
+        #print( "vérif fin enregistrement round number", tournament_table.get(doc_id=tournament_id)["Round number"])
 
-    def get_previous_round_list(self):
+    def get_previous_round_list(self, tournament_number): #appeler pairing ?
         jtournament = TinyDB('jtournament.json',ensure_ascii=False, encoding='utf8', indent=4)
         tournament_table = jtournament.table('tournaments')
         #récupérer les scores du round précédent
-        last = len(tournament_table)
-        players = tournament_table.get(doc_id=last)["players"]
+        
+        tournament_id = None
+        if tournament_number == 0:
+            tournament_id = len(tournament_table)
+
+        else:
+            tournament_id = tournament_number
+
+        #print("tournament_id: ", tournament_id)
+
+        players = tournament_table.get(doc_id=tournament_id)["players"]
         
         sorted_players = sorted(players, key=itemgetter("Score"), reverse=True)
-        print('')
+        """print('')
         print("get previous players : sorted_players: ", sorted_players, "sorted by score")
         print("checkpoint 1")
-        print('')
+        print('')"""
 
         sorted_list = []
+        round_matchs_list = []
+        round_match_players = []
         score = 4.0
         while len(sorted_list)< 8: # permet de classer par score et par rank
             by_score = []
             for player in sorted_players:
                 if player["Score"] == score:
-                    intermediaire.append(player)
+                    by_score.append(player)
             by_score.sort(key=itemgetter("Player's rank:"), reverse=False)
             for item in by_score:
                 sorted_list.append(item)
             score -= 0.5
         
-        print(sorted_list)
+        """print("sorted list by score and rank", sorted_list)
         print("checkpoint 1")
+        """
+        already_took_players = [0] 
 
-        # RECREER LES TABLEAUX DE PLUS ET MOINS FORT COMME DIT PAR RANGA ??
-        already_took_opponent = [0]
-        if len(already_took_opponent) == 8 #casser la boucle des mises en match, à placer au bon endroit
-        round_matchs_list = []
         
         for player in sorted_list:
-            print(player)
+            #print("player = ", player)
             pairing_number = int(player["Pairing number"])
-            print("pairing_number:", pairing_number)
+            #print("pairing_number:", pairing_number)
             next_opponent = None
-            
-        if pairing_number in already_took_opponent:
-            pass
-        else:
-            
-            for i in sorted_list:
-                if len(already_took_opponent) == 8 #casser la boucle des mises en match, à placer au bon endroit ??
-                    pass
-                else: # faire le pairing
-                    if pairing number in i["Opponents"]:# attention par là aux for imbriqués (utiliser score = 0 score += 1...)
-                        pass
-                    else:
-                        #garder le match up
-            # metre le 1 avec le 2 (sorted_list[i])
-            #comparer le pairing number du 1 avec les opponents du 2
+            opponent = None
+            if len(already_took_players) != 9:         
 
+                if pairing_number not in already_took_players:
+                    already_took_players.append(pairing_number)
+                    round_match_players.append(pairing_number)
 
-            
-            print("checkpoint 2")
-            print("already_took_opponent early", already_took_opponent)
-            
-            if AD is not None: #le décaler dans la boucle précédente?
-                print("je selectionne les adversaires potentiels 1")
-                already_took_opponent.append(pairing_number)    
-                print("already_took_opponent medium", already_took_opponent)
+                    for other_player in sorted_list:
+                        if int(other_player["Pairing number"]) not in already_took_players:
+                            if pairing_number not in other_player["Opponents"]:
+                                opponent = other_player["Pairing number"]
+                                #print("opponent: ", opponent)
+                                already_took_players.append(int(opponent))
+                                round_match_players.append(int(opponent))
+                                round_matchs_list.append((pairing_number, int(opponent)))
+                                break
 
-                for opponent in sorted_players: #comparaison avec l'ensemble des joueurs
-                    provisional_number = None
-                    for j in opponent["Opponents"]: # comparaison avec la liste des ancien adversaires
-
-                        if j is pairing_number:
-                            provisional_number = None # des choses qui ne vont pas!!
-                            #print("provisional_number if: ", provisional_number)
-                            break
+                            else:
+                                #print("pairing number in other_player opponent")
+                                pass
                         else:
-                            provisional_number = opponent["Pairing number"]
-                            #print("provisional_number else: ", provisional_number)
-
-                    if provisional_number is not None:
-                        #print("already_took_opponent medium 2: ", already_took_opponent)
-                        opponent_possibilities.append(int(provisional_number))
-                    else:
-                        pass
-                print("opponent_possibilities medium 1", opponent_possibilities)
-
-                opponent_supression = []
-                s = set(already_took_opponent)
-                for i in opponent_possibilities:
-                    if i not in s:
-                        opponent_supression.append(i)
-                        print("opponent_supression:", opponent_supression)                             
-                    
-                    else:
-                        #print("took = possibility")
-                        pass
+                            #print("other player pairing number in already_took player")
+                            pass
+                else:
+                    #print("pairing number in already_took_player")
+                    pass
             else:
-                pass
-                #print("opponent_supression: ", opponent_supression)
-                #print("opponent_possibilities intermediaire", opponent_possibilities)
-                
-                print("opponent_supression:", opponent_supression)
-                next_opponent = opponent_supression[0]
-                already_took_opponent.append(int(next_opponent))
-                match = (pairing_number, next_opponent)
-                print(match)
-                round_matchs_list.append(match)
+                #print("longueur already took player == 9")
+                break
 
-    
-          
-
-        print("checkpoint 3")
             
-        #print("opponent_possibilities", opponent_possibilities)
-        #print("next opponent", next_opponent)
-        #print("already_took_opponent late", already_took_opponent)
-        print('')
-        print("round_matchs_list: ", round_matchs_list)
-
-        ids_list = []
-        for i in range (4):
-            Matchs_player_ids = []
-            ids_list.append(round_matchs_list[i][0])
-            ids_list.append(round_matchs_list[i][1])
-        print(ids_list)
-        print(type(ids_list[4]))
+            """print("checkpoint 2")
+            print("already_took_players early", already_took_players)
+            print("round_matchs_list: ", round_matchs_list)
+            print("round_match_players: ",round_match_players)"""
         
         results = []
         for j in range (8):
             for player in sorted_players:
-                if int(player["Pairing number"]) == ids_list[j]:
+                if int(player["Pairing number"]) == round_match_players[j]:
                     results.append(player)
                 else:
                     pass    
         
 
 
-        print("results: ", results)
+        """print("results: ", results)"""
         return results  
 
 #doit appeler plusieurs round

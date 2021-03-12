@@ -10,9 +10,7 @@ class TournamentView:
         questions = ["Tournament's name:",
                      "Tournament's adress:",
                      "Tournament's Date:",
-                     "Total number of rounds:",
                      "Time control:",
-                     "Number of player:",
                      "Comments:"
                     ] 
 
@@ -45,6 +43,7 @@ class TournamentView:
             else:
                 tour_infos[i] = input(i)
 
+        tour_infos["Current round"] = 0 
         
         return tour_infos # renvoi le dictionnaire du tournoi
 
@@ -90,12 +89,13 @@ class PlayersView:
 class RoundView:
 
     def __init__(self, i, j, match):
+        print("")
         print("Round "+str(j)+" Match "+str(i+1)+" : ")
         print(match)
         print('')
         self.score = 0
     
-    def ask_results(self, player):
+    def ask_result(self, player):
         ask_result = input("Resultat: "+player[0]+" : ")
         
         if ask_result == "v" or ask_result =="def" or ask_result =="d":
@@ -110,16 +110,64 @@ class RoundView:
                 self.score = 0.5   #attention récursivité n'annule pas la fonction précédente
 
         else:
-            print("Merci d'entrer: victory, defeat ou draw")
-            self.ask_results(player)
+            print("Merci d'entrer: victory, defeat ou draw dans la console")
+            self.ask_result(player)
 
         return self.score # mettre en dehors de la récursivité.
     
 class FinalScore:
 
     def print_results(self, final_score_list):
+        print("")
         print("Tournament results:")
         place = 1
         for i in final_score_list:
             print("Place "+str(place)+" : ", i)
             place += 1
+
+
+class HomeMenuView:
+    
+    def __call__(self):
+        print ("Menu de selection des options du logiciel")
+        print("")
+        print("Merci d'entrer un des mots suivant: ")
+        print("start:         Permet de commencer un nouveau tournoi")
+        print("continuation:  Permet de reprendre un ancien tournoi")
+        print("show:          Permet d'afficher les informations d'anciens tournois")
+        print("exit:          Permet de quitter le programme et fermer la console de commande")
+        print("")
+        ask_action = input("Action choisie: ")
+
+        return ask_action
+
+class CallTournamentNumber:
+
+    def __call__(self):
+        print("")
+        print("Ecran de selection d'un tournoi a continuer")
+        print("")
+        print("Merci d'enter le numero du tournoi a poursuivre ou 'exit'")
+        print("Vous pouvez le rechercher via la fonction show du menu principal")
+        print("")
+        
+    def ask_number(self):
+        try:
+            ask_action = int(input("Numero du tournoi: "))
+            pass
+
+        except ValueError:
+            print("Merci d'entrer un nombre entier")
+            print("")
+            self.__call__()
+
+        return ask_action
+
+class AskContinue:
+    def ask_start_round(self):
+        print("")
+        input("Entrez 'GO' pour commencer le round: ")
+
+    def ask_end_round(self):
+        print("")
+        input("Entrez END pour finir le round: ")

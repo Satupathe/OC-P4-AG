@@ -5,9 +5,15 @@
             "Tournament's adress:": "Chassieu",
             "Tournament's Date:": "Janvier",
             "Total number of rounds:": 4,
+            "Round_number": 0,
             "Time control:": "300",
             "Number of player:": 8,
-            "players:Comments:": "Dictionnaire temporaire",
+            "Comments:": "Dictionnaire temporaire",
+            "Round 1": null,
+            "Round 2": null,
+            "Round 3": null,
+            "Round 4": null,
+            "Tournament's matches": null,
             "players": [
                 {
                     "Player's family name:": "Dupont",
@@ -16,10 +22,8 @@
                     "Player's gender:": "M",
                     "Player's rank:": 11,
                     "Pairing number": "1",
-                    "Score": 0.0,
-                    "Opponents": [
-                        7
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Liotard",
@@ -28,10 +32,8 @@
                     "Player's gender:": "X",
                     "Player's rank:": 12,
                     "Pairing number": "6",
-                    "Score": 0.5,
-                    "Opponents": [
-                        3
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Menant",
@@ -40,10 +42,8 @@
                     "Player's gender:": "F",
                     "Player's rank:": 13,
                     "Pairing number": "5",
-                    "Score": 0.0,
-                    "Opponents": [
-                        4
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Durand",
@@ -52,10 +52,8 @@
                     "Player's gender:": "F",
                     "Player's rank:": 14,
                     "Pairing number": "2",
-                    "Score": 1.0,
-                    "Opponents": [
-                        8
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Roux",
@@ -64,10 +62,8 @@
                     "Player's gender:": "M",
                     "Player's rank:": 15,
                     "Pairing number": "7",
-                    "Score": 1.0,
-                    "Opponents": [
-                        1
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Dupuis",
@@ -76,10 +72,8 @@
                     "Player's gender:": "F",
                     "Player's rank:": 16,
                     "Pairing number": "3",
-                    "Score": 0.5,
-                    "Opponents": [
-                        6
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Bepas",
@@ -88,10 +82,8 @@
                     "Player's gender:": "F",
                     "Player's rank:": 17,
                     "Pairing number": "4",
-                    "Score": 1.0,
-                    "Opponents": [
-                        5
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Gagnieu",
@@ -100,10 +92,8 @@
                     "Player's gender:": "M",
                     "Player's rank:": 18,
                     "Pairing number": "8",
-                    "Score": 0.0,
-                    "Opponents": [
-                        2
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 }
             ]
         },
@@ -112,9 +102,15 @@
             "Tournament's adress:": "Chassieu",
             "Tournament's Date:": "Janvier",
             "Total number of rounds:": 4,
+            "Round_number": 0,
             "Time control:": "300",
             "Number of player:": 8,
-            "players:Comments:": "Dictionnaire temporaire",
+            "Comments:": "Dictionnaire temporaire",
+            "Round 1": null,
+            "Round 2": null,
+            "Round 3": null,
+            "Round 4": null,
+            "Tournament's matches": null,
             "players": [
                 {
                     "Player's family name:": "Dupont",
@@ -123,10 +119,8 @@
                     "Player's gender:": "M",
                     "Player's rank:": 11,
                     "Pairing number": "1",
-                    "Score": 0.0,
-                    "Opponents": [
-                        7
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Liotard",
@@ -135,10 +129,8 @@
                     "Player's gender:": "X",
                     "Player's rank:": 12,
                     "Pairing number": "6",
-                    "Score": 1.0,
-                    "Opponents": [
-                        3
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Menant",
@@ -147,10 +139,8 @@
                     "Player's gender:": "F",
                     "Player's rank:": 13,
                     "Pairing number": "5",
-                    "Score": 0.5,
-                    "Opponents": [
-                        4
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Durand",
@@ -159,10 +149,8 @@
                     "Player's gender:": "F",
                     "Player's rank:": 14,
                     "Pairing number": "2",
-                    "Score": 0.0,
-                    "Opponents": [
-                        8
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Roux",
@@ -171,10 +159,8 @@
                     "Player's gender:": "M",
                     "Player's rank:": 15,
                     "Pairing number": "7",
-                    "Score": 1.0,
-                    "Opponents": [
-                        1
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Dupuis",
@@ -183,10 +169,8 @@
                     "Player's gender:": "F",
                     "Player's rank:": 16,
                     "Pairing number": "3",
-                    "Score": 0.0,
-                    "Opponents": [
-                        6
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Bepas",
@@ -195,10 +179,8 @@
                     "Player's gender:": "F",
                     "Player's rank:": 17,
                     "Pairing number": "4",
-                    "Score": 0.5,
-                    "Opponents": [
-                        5
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Gagnieu",
@@ -207,10 +189,8 @@
                     "Player's gender:": "M",
                     "Player's rank:": 18,
                     "Pairing number": "8",
-                    "Score": 1.0,
-                    "Opponents": [
-                        2
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 }
             ]
         },
@@ -219,9 +199,15 @@
             "Tournament's adress:": "Chassieu",
             "Tournament's Date:": "Janvier",
             "Total number of rounds:": 4,
+            "Round number": 0,
             "Time control:": "300",
             "Number of player:": 8,
-            "players:Comments:": "Dictionnaire temporaire",
+            "Comments:": "Dictionnaire temporaire",
+            "Round 1": null,
+            "Round 2": null,
+            "Round 3": null,
+            "Round 4": null,
+            "Tournament's matches": null,
             "players": [
                 {
                     "Player's family name:": "Dupont",
@@ -230,10 +216,8 @@
                     "Player's gender:": "M",
                     "Player's rank:": 11,
                     "Pairing number": "1",
-                    "Score": 0.0,
-                    "Opponents": [
-                        7
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Liotard",
@@ -242,10 +226,8 @@
                     "Player's gender:": "X",
                     "Player's rank:": 12,
                     "Pairing number": "6",
-                    "Score": 1.0,
-                    "Opponents": [
-                        3
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Menant",
@@ -254,10 +236,8 @@
                     "Player's gender:": "F",
                     "Player's rank:": 13,
                     "Pairing number": "5",
-                    "Score": 0.5,
-                    "Opponents": [
-                        4
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Durand",
@@ -266,10 +246,8 @@
                     "Player's gender:": "F",
                     "Player's rank:": 14,
                     "Pairing number": "2",
-                    "Score": 0.0,
-                    "Opponents": [
-                        8
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Roux",
@@ -278,10 +256,8 @@
                     "Player's gender:": "M",
                     "Player's rank:": 15,
                     "Pairing number": "7",
-                    "Score": 1.0,
-                    "Opponents": [
-                        1
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Dupuis",
@@ -290,10 +266,8 @@
                     "Player's gender:": "F",
                     "Player's rank:": 16,
                     "Pairing number": "3",
-                    "Score": 0.0,
-                    "Opponents": [
-                        6
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Bepas",
@@ -302,10 +276,8 @@
                     "Player's gender:": "F",
                     "Player's rank:": 17,
                     "Pairing number": "4",
-                    "Score": 0.5,
-                    "Opponents": [
-                        5
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Gagnieu",
@@ -314,10 +286,8 @@
                     "Player's gender:": "M",
                     "Player's rank:": 18,
                     "Pairing number": "8",
-                    "Score": 1.0,
-                    "Opponents": [
-                        2
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 }
             ]
         },
@@ -326,9 +296,15 @@
             "Tournament's adress:": "Chassieu",
             "Tournament's Date:": "Janvier",
             "Total number of rounds:": 4,
+            "Round number": 0,
             "Time control:": "300",
             "Number of player:": 8,
-            "players:Comments:": "Dictionnaire temporaire",
+            "Comments:": "Dictionnaire temporaire",
+            "Round 1": null,
+            "Round 2": null,
+            "Round 3": null,
+            "Round 4": null,
+            "Tournament's matches": null,
             "players": [
                 {
                     "Player's family name:": "Dupont",
@@ -337,11 +313,106 @@
                     "Player's gender:": "M",
                     "Player's rank:": 11,
                     "Pairing number": "1",
-                    "Score": 1.5,
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Liotard",
+                    "Player's first name:": "David",
+                    "Player's birthdate:": "1974",
+                    "Player's gender:": "X",
+                    "Player's rank:": 12,
+                    "Pairing number": "6",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Menant",
+                    "Player's first name:": "laureen",
+                    "Player's birthdate:": "1994",
+                    "Player's gender:": "F",
+                    "Player's rank:": 13,
+                    "Pairing number": "5",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Durand",
+                    "Player's first name:": "Aurelie",
+                    "Player's birthdate:": "1990",
+                    "Player's gender:": "F",
+                    "Player's rank:": 14,
+                    "Pairing number": "2",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Roux",
+                    "Player's first name:": "Cedric",
+                    "Player's birthdate:": "1979",
+                    "Player's gender:": "M",
+                    "Player's rank:": 15,
+                    "Pairing number": "7",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Dupuis",
+                    "Player's first name:": "Monique",
+                    "Player's birthdate:": "1965",
+                    "Player's gender:": "F",
+                    "Player's rank:": 16,
+                    "Pairing number": "3",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Bepas",
+                    "Player's first name:": "Marion",
+                    "Player's birthdate:": "1987",
+                    "Player's gender:": "F",
+                    "Player's rank:": 17,
+                    "Pairing number": "4",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Gagnieu",
+                    "Player's first name:": "Arnaud",
+                    "Player's birthdate:": "1991",
+                    "Player's gender:": "M",
+                    "Player's rank:": 18,
+                    "Pairing number": "8",
+                    "Score": 0,
+                    "Opponents": []
+                }
+            ]
+        },
+        "5": {
+            "Tournament's name:": "essai",
+            "Tournament's adress:": "Chassieu",
+            "Tournament's Date:": "Janvier",
+            "Total number of rounds:": 4,
+            "Round number": 1,
+            "Time control:": "300",
+            "Number of player:": 8,
+            "Comments:": "Dictionnaire temporaire",
+            "Round 1": null,
+            "Round 2": null,
+            "Round 3": null,
+            "Round 4": null,
+            "Tournament's matches": null,
+            "players": [
+                {
+                    "Player's family name:": "Dupont",
+                    "Player's first name:": "Alexandre",
+                    "Player's birthdate:": "1972",
+                    "Player's gender:": "M",
+                    "Player's rank:": 11,
+                    "Pairing number": "1",
+                    "Score": 0.0,
                     "Opponents": [
-                        7,
-                        4,
-                        2
+                        7
                     ]
                 },
                 {
@@ -351,11 +422,9 @@
                     "Player's gender:": "X",
                     "Player's rank:": 12,
                     "Pairing number": "6",
-                    "Score": 3.0,
+                    "Score": 1.0,
                     "Opponents": [
-                        3,
-                        7,
-                        5
+                        3
                     ]
                 },
                 {
@@ -365,11 +434,9 @@
                     "Player's gender:": "F",
                     "Player's rank:": 13,
                     "Pairing number": "5",
-                    "Score": 1.5,
+                    "Score": 0.5,
                     "Opponents": [
-                        4,
-                        8,
-                        6
+                        4
                     ]
                 },
                 {
@@ -381,188 +448,55 @@
                     "Pairing number": "2",
                     "Score": 0.0,
                     "Opponents": [
-                        8,
-                        3,
+                        8
+                    ]
+                },
+                {
+                    "Player's family name:": "Roux",
+                    "Player's first name:": "Cedric",
+                    "Player's birthdate:": "1979",
+                    "Player's gender:": "M",
+                    "Player's rank:": 15,
+                    "Pairing number": "7",
+                    "Score": 1.0,
+                    "Opponents": [
                         1
                     ]
                 },
                 {
-                    "Player's family name:": "Roux",
-                    "Player's first name:": "Cedric",
-                    "Player's birthdate:": "1979",
-                    "Player's gender:": "M",
-                    "Player's rank:": 15,
-                    "Pairing number": "7",
-                    "Score": 2.0,
-                    "Opponents": [
-                        1,
-                        6,
-                        3
-                    ]
-                },
-                {
                     "Player's family name:": "Dupuis",
                     "Player's first name:": "Monique",
                     "Player's birthdate:": "1965",
                     "Player's gender:": "F",
                     "Player's rank:": 16,
                     "Pairing number": "3",
-                    "Score": 1.0,
+                    "Score": 0.0,
                     "Opponents": [
-                        6,
-                        2,
-                        7
-                    ]
-                },
-                {
-                    "Player's family name:": "Bepas",
-                    "Player's first name:": "Marion",
-                    "Player's birthdate:": "1987",
-                    "Player's gender:": "F",
-                    "Player's rank:": 17,
-                    "Pairing number": "4",
-                    "Score": 2.0,
-                    "Opponents": [
-                        5,
-                        1,
-                        8
-                    ]
-                },
-                {
-                    "Player's family name:": "Gagnieu",
-                    "Player's first name:": "Arnaud",
-                    "Player's birthdate:": "1991",
-                    "Player's gender:": "M",
-                    "Player's rank:": 18,
-                    "Pairing number": "8",
-                    "Score": 1.0,
-                    "Opponents": [
-                        2,
-                        5,
-                        4
-                    ]
-                }
-            ]
-        },
-        "5": {
-            "Tournament's name:": "essai",
-            "Tournament's adress:": "Chassieu",
-            "Tournament's Date:": "Janvier",
-            "Total number of rounds:": 4,
-            "Time control:": "300",
-            "Number of player:": 8,
-            "players:Comments:": "Dictionnaire temporaire",
-            "players": [
-                {
-                    "Player's family name:": "Dupont",
-                    "Player's first name:": "Alexandre",
-                    "Player's birthdate:": "1972",
-                    "Player's gender:": "M",
-                    "Player's rank:": 11,
-                    "Pairing number": "1",
-                    "Score": 0.5,
-                    "Opponents": [
-                        7,
-                        5,
-                        8
-                    ]
-                },
-                {
-                    "Player's family name:": "Liotard",
-                    "Player's first name:": "David",
-                    "Player's birthdate:": "1974",
-                    "Player's gender:": "X",
-                    "Player's rank:": 12,
-                    "Pairing number": "6",
-                    "Score": 1.0,
-                    "Opponents": [
-                        3,
-                        2,
-                        4
-                    ]
-                },
-                {
-                    "Player's family name:": "Menant",
-                    "Player's first name:": "laureen",
-                    "Player's birthdate:": "1994",
-                    "Player's gender:": "F",
-                    "Player's rank:": 13,
-                    "Pairing number": "5",
-                    "Score": 0.5,
-                    "Opponents": [
-                        4,
-                        1,
-                        3
-                    ]
-                },
-                {
-                    "Player's family name:": "Durand",
-                    "Player's first name:": "Aurelie",
-                    "Player's birthdate:": "1990",
-                    "Player's gender:": "F",
-                    "Player's rank:": 14,
-                    "Pairing number": "2",
-                    "Score": 3.0,
-                    "Opponents": [
-                        8,
-                        6,
-                        7
-                    ]
-                },
-                {
-                    "Player's family name:": "Roux",
-                    "Player's first name:": "Cedric",
-                    "Player's birthdate:": "1979",
-                    "Player's gender:": "M",
-                    "Player's rank:": 15,
-                    "Pairing number": "7",
-                    "Score": 2.0,
-                    "Opponents": [
-                        1,
-                        4,
-                        2
-                    ]
-                },
-                {
-                    "Player's family name:": "Dupuis",
-                    "Player's first name:": "Monique",
-                    "Player's birthdate:": "1965",
-                    "Player's gender:": "F",
-                    "Player's rank:": 16,
-                    "Pairing number": "3",
-                    "Score": 1.0,
-                    "Opponents": [
-                        6,
-                        8,
-                        5
-                    ]
-                },
-                {
-                    "Player's family name:": "Bepas",
-                    "Player's first name:": "Marion",
-                    "Player's birthdate:": "1987",
-                    "Player's gender:": "F",
-                    "Player's rank:": 17,
-                    "Pairing number": "4",
-                    "Score": 2.0,
-                    "Opponents": [
-                        5,
-                        7,
                         6
                     ]
                 },
                 {
+                    "Player's family name:": "Bepas",
+                    "Player's first name:": "Marion",
+                    "Player's birthdate:": "1987",
+                    "Player's gender:": "F",
+                    "Player's rank:": 17,
+                    "Pairing number": "4",
+                    "Score": 0.5,
+                    "Opponents": [
+                        5
+                    ]
+                },
+                {
                     "Player's family name:": "Gagnieu",
                     "Player's first name:": "Arnaud",
                     "Player's birthdate:": "1991",
                     "Player's gender:": "M",
                     "Player's rank:": 18,
                     "Pairing number": "8",
-                    "Score": 2.0,
+                    "Score": 1.0,
                     "Opponents": [
-                        2,
-                        3,
-                        1
+                        2
                     ]
                 }
             ]
@@ -572,9 +506,15 @@
             "Tournament's adress:": "Chassieu",
             "Tournament's Date:": "Janvier",
             "Total number of rounds:": 4,
+            "Round number": 1,
             "Time control:": "300",
             "Number of player:": 8,
-            "players:Comments:": "Dictionnaire temporaire",
+            "Comments:": "Dictionnaire temporaire",
+            "Round 1": null,
+            "Round 2": null,
+            "Round 3": null,
+            "Round 4": null,
+            "Tournament's matches": null,
             "players": [
                 {
                     "Player's family name:": "Dupont",
@@ -585,8 +525,7 @@
                     "Pairing number": "1",
                     "Score": 0.0,
                     "Opponents": [
-                        7,
-                        6
+                        7
                     ]
                 },
                 {
@@ -598,8 +537,7 @@
                     "Pairing number": "6",
                     "Score": 1.0,
                     "Opponents": [
-                        3,
-                        1
+                        3
                     ]
                 },
                 {
@@ -609,10 +547,9 @@
                     "Player's gender:": "F",
                     "Player's rank:": 13,
                     "Pairing number": "5",
-                    "Score": 1.0,
+                    "Score": 0.5,
                     "Opponents": [
-                        4,
-                        2
+                        4
                     ]
                 },
                 {
@@ -624,8 +561,7 @@
                     "Pairing number": "2",
                     "Score": 0.0,
                     "Opponents": [
-                        8,
-                        5
+                        8
                     ]
                 },
                 {
@@ -635,10 +571,9 @@
                     "Player's gender:": "M",
                     "Player's rank:": 15,
                     "Pairing number": "7",
-                    "Score": 2.0,
+                    "Score": 1.0,
                     "Opponents": [
-                        1,
-                        3
+                        1
                     ]
                 },
                 {
@@ -648,10 +583,9 @@
                     "Player's gender:": "F",
                     "Player's rank:": 16,
                     "Pairing number": "3",
-                    "Score": 1.0,
+                    "Score": 0.0,
                     "Opponents": [
-                        6,
-                        7
+                        6
                     ]
                 },
                 {
@@ -661,10 +595,9 @@
                     "Player's gender:": "F",
                     "Player's rank:": 17,
                     "Pairing number": "4",
-                    "Score": 1.5,
+                    "Score": 0.5,
                     "Opponents": [
-                        5,
-                        8
+                        5
                     ]
                 },
                 {
@@ -674,10 +607,9 @@
                     "Player's gender:": "M",
                     "Player's rank:": 18,
                     "Pairing number": "8",
-                    "Score": 1.5,
+                    "Score": 1.0,
                     "Opponents": [
-                        2,
-                        4
+                        2
                     ]
                 }
             ]
@@ -687,9 +619,15 @@
             "Tournament's adress:": "Chassieu",
             "Tournament's Date:": "Janvier",
             "Total number of rounds:": 4,
+            "Round number": 0,
             "Time control:": "300",
             "Number of player:": 8,
-            "players:Comments:": "Dictionnaire temporaire",
+            "Comments:": "Dictionnaire temporaire",
+            "Round 1": null,
+            "Round 2": null,
+            "Round 3": null,
+            "Round 4": null,
+            "Tournament's matches": null,
             "players": [
                 {
                     "Player's family name:": "Dupont",
@@ -698,13 +636,8 @@
                     "Player's gender:": "M",
                     "Player's rank:": 11,
                     "Pairing number": "1",
-                    "Score": 2.0,
-                    "Opponents": [
-                        7,
-                        8,
-                        6,
-                        5
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Liotard",
@@ -713,13 +646,8 @@
                     "Player's gender:": "X",
                     "Player's rank:": 12,
                     "Pairing number": "6",
-                    "Score": 2.5,
-                    "Opponents": [
-                        3,
-                        7,
-                        1,
-                        2
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Menant",
@@ -728,13 +656,8 @@
                     "Player's gender:": "F",
                     "Player's rank:": 13,
                     "Pairing number": "5",
-                    "Score": 0.0,
-                    "Opponents": [
-                        4,
-                        3,
-                        8,
-                        1
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Durand",
@@ -743,13 +666,8 @@
                     "Player's gender:": "F",
                     "Player's rank:": 14,
                     "Pairing number": "2",
-                    "Score": 3.0,
-                    "Opponents": [
-                        8,
-                        4,
-                        7,
-                        6
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Roux",
@@ -758,13 +676,8 @@
                     "Player's gender:": "M",
                     "Player's rank:": 15,
                     "Pairing number": "7",
-                    "Score": 2.0,
-                    "Opponents": [
-                        1,
-                        6,
-                        2,
-                        4
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Dupuis",
@@ -773,13 +686,8 @@
                     "Player's gender:": "F",
                     "Player's rank:": 16,
                     "Pairing number": "3",
-                    "Score": 2.0,
-                    "Opponents": [
-                        6,
-                        5,
-                        4,
-                        8
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Bepas",
@@ -788,13 +696,8 @@
                     "Player's gender:": "F",
                     "Player's rank:": 17,
                     "Pairing number": "4",
-                    "Score": 3.0,
-                    "Opponents": [
-                        5,
-                        2,
-                        3,
-                        7
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Gagnieu",
@@ -803,13 +706,8 @@
                     "Player's gender:": "M",
                     "Player's rank:": 18,
                     "Pairing number": "8",
-                    "Score": 1.5,
-                    "Opponents": [
-                        2,
-                        1,
-                        5,
-                        3
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 }
             ]
         },
@@ -818,9 +716,15 @@
             "Tournament's adress:": "Chassieu",
             "Tournament's Date:": "Janvier",
             "Total number of rounds:": 4,
+            "Round number": 0,
             "Time control:": "300",
             "Number of player:": 8,
-            "players:Comments:": "Dictionnaire temporaire",
+            "Comments:": "Dictionnaire temporaire",
+            "Round 1": null,
+            "Round 2": null,
+            "Round 3": null,
+            "Round 4": null,
+            "Tournament's matches": null,
             "players": [
                 {
                     "Player's family name:": "Dupont",
@@ -829,12 +733,8 @@
                     "Player's gender:": "M",
                     "Player's rank:": 11,
                     "Pairing number": "1",
-                    "Score": 1.5,
-                    "Opponents": [
-                        7,
-                        4,
-                        6
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Liotard",
@@ -843,12 +743,8 @@
                     "Player's gender:": "X",
                     "Player's rank:": 12,
                     "Pairing number": "6",
-                    "Score": 1.5,
-                    "Opponents": [
-                        3,
-                        2,
-                        1
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Menant",
@@ -857,12 +753,8 @@
                     "Player's gender:": "F",
                     "Player's rank:": 13,
                     "Pairing number": "5",
-                    "Score": 1.0,
-                    "Opponents": [
-                        4,
-                        8,
-                        3
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Durand",
@@ -871,12 +763,8 @@
                     "Player's gender:": "F",
                     "Player's rank:": 14,
                     "Pairing number": "2",
-                    "Score": 1.0,
-                    "Opponents": [
-                        8,
-                        6,
-                        4
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Roux",
@@ -885,12 +773,8 @@
                     "Player's gender:": "M",
                     "Player's rank:": 15,
                     "Pairing number": "7",
-                    "Score": 2.0,
-                    "Opponents": [
-                        1,
-                        3,
-                        8
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Dupuis",
@@ -899,12 +783,8 @@
                     "Player's gender:": "F",
                     "Player's rank:": 16,
                     "Pairing number": "3",
-                    "Score": 2.0,
-                    "Opponents": [
-                        6,
-                        7,
-                        5
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Bepas",
@@ -913,12 +793,8 @@
                     "Player's gender:": "F",
                     "Player's rank:": 17,
                     "Pairing number": "4",
-                    "Score": 0.5,
-                    "Opponents": [
-                        5,
-                        1,
-                        2
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Gagnieu",
@@ -927,12 +803,8 @@
                     "Player's gender:": "M",
                     "Player's rank:": 18,
                     "Pairing number": "8",
-                    "Score": 2.5,
-                    "Opponents": [
-                        2,
-                        5,
-                        7
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 }
             ]
         },
@@ -941,9 +813,15 @@
             "Tournament's adress:": "Chassieu",
             "Tournament's Date:": "Janvier",
             "Total number of rounds:": 4,
+            "Round number": 1,
             "Time control:": "300",
             "Number of player:": 8,
-            "players:Comments:": "Dictionnaire temporaire",
+            "Comments:": "Dictionnaire temporaire",
+            "Round 1": null,
+            "Round 2": null,
+            "Round 3": null,
+            "Round 4": null,
+            "Tournament's matches": null,
             "players": [
                 {
                     "Player's family name:": "Dupont",
@@ -952,11 +830,9 @@
                     "Player's gender:": "M",
                     "Player's rank:": 11,
                     "Pairing number": "1",
-                    "Score": 1.5,
+                    "Score": 0.0,
                     "Opponents": [
-                        7,
-                        4,
-                        6
+                        7
                     ]
                 },
                 {
@@ -966,11 +842,9 @@
                     "Player's gender:": "X",
                     "Player's rank:": 12,
                     "Pairing number": "6",
-                    "Score": 1.5,
+                    "Score": 1.0,
                     "Opponents": [
-                        3,
-                        2,
-                        1
+                        3
                     ]
                 },
                 {
@@ -980,11 +854,9 @@
                     "Player's gender:": "F",
                     "Player's rank:": 13,
                     "Pairing number": "5",
-                    "Score": 1.0,
+                    "Score": 0.5,
                     "Opponents": [
-                        4,
-                        8,
-                        3
+                        4
                     ]
                 },
                 {
@@ -994,11 +866,9 @@
                     "Player's gender:": "F",
                     "Player's rank:": 14,
                     "Pairing number": "2",
-                    "Score": 1.0,
+                    "Score": 0.0,
                     "Opponents": [
-                        8,
-                        6,
-                        4
+                        8
                     ]
                 },
                 {
@@ -1008,11 +878,9 @@
                     "Player's gender:": "M",
                     "Player's rank:": 15,
                     "Pairing number": "7",
-                    "Score": 2.0,
+                    "Score": 1.0,
                     "Opponents": [
-                        1,
-                        3,
-                        8
+                        1
                     ]
                 },
                 {
@@ -1022,11 +890,9 @@
                     "Player's gender:": "F",
                     "Player's rank:": 16,
                     "Pairing number": "3",
-                    "Score": 2.0,
+                    "Score": 0.0,
                     "Opponents": [
-                        6,
-                        7,
-                        5
+                        6
                     ]
                 },
                 {
@@ -1038,9 +904,7 @@
                     "Pairing number": "4",
                     "Score": 0.5,
                     "Opponents": [
-                        5,
-                        1,
-                        2
+                        5
                     ]
                 },
                 {
@@ -1050,11 +914,9 @@
                     "Player's gender:": "M",
                     "Player's rank:": 18,
                     "Pairing number": "8",
-                    "Score": 2.5,
+                    "Score": 1.0,
                     "Opponents": [
-                        2,
-                        5,
-                        7
+                        2
                     ]
                 }
             ]
@@ -1064,9 +926,15 @@
             "Tournament's adress:": "Chassieu",
             "Tournament's Date:": "Janvier",
             "Total number of rounds:": 4,
+            "Round number": 1,
             "Time control:": "300",
             "Number of player:": 8,
-            "players:Comments:": "Dictionnaire temporaire",
+            "Comments:": "Dictionnaire temporaire",
+            "Round 1": null,
+            "Round 2": null,
+            "Round 3": null,
+            "Round 4": null,
+            "Tournament's matches": null,
             "players": [
                 {
                     "Player's family name:": "Dupont",
@@ -1075,11 +943,9 @@
                     "Player's gender:": "M",
                     "Player's rank:": 11,
                     "Pairing number": "1",
-                    "Score": 1.5,
+                    "Score": 0.0,
                     "Opponents": [
-                        7,
-                        4,
-                        6
+                        7
                     ]
                 },
                 {
@@ -1089,11 +955,9 @@
                     "Player's gender:": "X",
                     "Player's rank:": 12,
                     "Pairing number": "6",
-                    "Score": 1.5,
+                    "Score": 1.0,
                     "Opponents": [
-                        3,
-                        2,
-                        1
+                        3
                     ]
                 },
                 {
@@ -1103,11 +967,9 @@
                     "Player's gender:": "F",
                     "Player's rank:": 13,
                     "Pairing number": "5",
-                    "Score": 1.0,
+                    "Score": 0.5,
                     "Opponents": [
-                        4,
-                        8,
-                        3
+                        4
                     ]
                 },
                 {
@@ -1117,11 +979,9 @@
                     "Player's gender:": "F",
                     "Player's rank:": 14,
                     "Pairing number": "2",
-                    "Score": 1.0,
+                    "Score": 0.0,
                     "Opponents": [
-                        8,
-                        6,
-                        4
+                        8
                     ]
                 },
                 {
@@ -1131,11 +991,9 @@
                     "Player's gender:": "M",
                     "Player's rank:": 15,
                     "Pairing number": "7",
-                    "Score": 2.0,
+                    "Score": 1.0,
                     "Opponents": [
-                        1,
-                        3,
-                        8
+                        1
                     ]
                 },
                 {
@@ -1145,11 +1003,9 @@
                     "Player's gender:": "F",
                     "Player's rank:": 16,
                     "Pairing number": "3",
-                    "Score": 2.0,
+                    "Score": 0.0,
                     "Opponents": [
-                        6,
-                        7,
-                        5
+                        6
                     ]
                 },
                 {
@@ -1161,9 +1017,7 @@
                     "Pairing number": "4",
                     "Score": 0.5,
                     "Opponents": [
-                        5,
-                        1,
-                        2
+                        5
                     ]
                 },
                 {
@@ -1173,11 +1027,9 @@
                     "Player's gender:": "M",
                     "Player's rank:": 18,
                     "Pairing number": "8",
-                    "Score": 2.5,
+                    "Score": 1.0,
                     "Opponents": [
-                        2,
-                        5,
-                        7
+                        2
                     ]
                 }
             ]
@@ -1187,9 +1039,15 @@
             "Tournament's adress:": "Chassieu",
             "Tournament's Date:": "Janvier",
             "Total number of rounds:": 4,
+            "Round number": 1,
             "Time control:": "300",
             "Number of player:": 8,
-            "players:Comments:": "Dictionnaire temporaire",
+            "Comments:": "Dictionnaire temporaire",
+            "Round 1": null,
+            "Round 2": null,
+            "Round 3": null,
+            "Round 4": null,
+            "Tournament's matches": null,
             "players": [
                 {
                     "Player's family name:": "Dupont",
@@ -1198,11 +1056,9 @@
                     "Player's gender:": "M",
                     "Player's rank:": 11,
                     "Pairing number": "1",
-                    "Score": 1.5,
+                    "Score": 0.0,
                     "Opponents": [
-                        7,
-                        4,
-                        6
+                        7
                     ]
                 },
                 {
@@ -1212,11 +1068,9 @@
                     "Player's gender:": "X",
                     "Player's rank:": 12,
                     "Pairing number": "6",
-                    "Score": 1.5,
+                    "Score": 1.0,
                     "Opponents": [
-                        3,
-                        2,
-                        1
+                        3
                     ]
                 },
                 {
@@ -1226,11 +1080,9 @@
                     "Player's gender:": "F",
                     "Player's rank:": 13,
                     "Pairing number": "5",
-                    "Score": 1.0,
+                    "Score": 0.5,
                     "Opponents": [
-                        4,
-                        8,
-                        3
+                        4
                     ]
                 },
                 {
@@ -1240,11 +1092,9 @@
                     "Player's gender:": "F",
                     "Player's rank:": 14,
                     "Pairing number": "2",
-                    "Score": 1.0,
+                    "Score": 0.0,
                     "Opponents": [
-                        8,
-                        6,
-                        4
+                        8
                     ]
                 },
                 {
@@ -1254,11 +1104,9 @@
                     "Player's gender:": "M",
                     "Player's rank:": 15,
                     "Pairing number": "7",
-                    "Score": 2.0,
+                    "Score": 1.0,
                     "Opponents": [
-                        1,
-                        3,
-                        8
+                        1
                     ]
                 },
                 {
@@ -1268,11 +1116,9 @@
                     "Player's gender:": "F",
                     "Player's rank:": 16,
                     "Pairing number": "3",
-                    "Score": 2.0,
+                    "Score": 0.0,
                     "Opponents": [
-                        6,
-                        7,
-                        5
+                        6
                     ]
                 },
                 {
@@ -1284,9 +1130,7 @@
                     "Pairing number": "4",
                     "Score": 0.5,
                     "Opponents": [
-                        5,
-                        1,
-                        2
+                        5
                     ]
                 },
                 {
@@ -1296,11 +1140,9 @@
                     "Player's gender:": "M",
                     "Player's rank:": 18,
                     "Pairing number": "8",
-                    "Score": 2.5,
+                    "Score": 1.0,
                     "Opponents": [
-                        2,
-                        5,
-                        7
+                        2
                     ]
                 }
             ]
@@ -1310,9 +1152,15 @@
             "Tournament's adress:": "Chassieu",
             "Tournament's Date:": "Janvier",
             "Total number of rounds:": 4,
+            "Round number": 15,
             "Time control:": "300",
             "Number of player:": 8,
-            "players:Comments:": "Dictionnaire temporaire",
+            "Comments:": "Dictionnaire temporaire",
+            "Round 1": null,
+            "Round 2": null,
+            "Round 3": null,
+            "Round 4": null,
+            "Tournament's matches": null,
             "players": [
                 {
                     "Player's family name:": "Dupont",
@@ -1321,9 +1169,12 @@
                     "Player's gender:": "M",
                     "Player's rank:": 11,
                     "Pairing number": "1",
-                    "Score": 1.0,
+                    "Score": 2.0,
                     "Opponents": [
-                        7
+                        7,
+                        4,
+                        6,
+                        2
                     ]
                 },
                 {
@@ -1333,9 +1184,12 @@
                     "Player's gender:": "X",
                     "Player's rank:": 12,
                     "Pairing number": "6",
-                    "Score": 0.5,
+                    "Score": 2.5,
                     "Opponents": [
-                        3
+                        3,
+                        7,
+                        1,
+                        8
                     ]
                 },
                 {
@@ -1345,9 +1199,12 @@
                     "Player's gender:": "F",
                     "Player's rank:": 13,
                     "Pairing number": "5",
-                    "Score": 0.0,
+                    "Score": 1.5,
                     "Opponents": [
-                        4
+                        4,
+                        8,
+                        2,
+                        7
                     ]
                 },
                 {
@@ -1357,9 +1214,12 @@
                     "Player's gender:": "F",
                     "Player's rank:": 14,
                     "Pairing number": "2",
-                    "Score": 0.0,
+                    "Score": 1.0,
                     "Opponents": [
-                        8
+                        8,
+                        3,
+                        5,
+                        1
                     ]
                 },
                 {
@@ -1369,9 +1229,12 @@
                     "Player's gender:": "M",
                     "Player's rank:": 15,
                     "Pairing number": "7",
-                    "Score": 0.0,
+                    "Score": 3.0,
                     "Opponents": [
-                        1
+                        1,
+                        6,
+                        8,
+                        5
                     ]
                 },
                 {
@@ -1383,7 +1246,10 @@
                     "Pairing number": "3",
                     "Score": 0.5,
                     "Opponents": [
-                        6
+                        6,
+                        2,
+                        4,
+                        4
                     ]
                 },
                 {
@@ -1393,9 +1259,12 @@
                     "Player's gender:": "F",
                     "Player's rank:": 17,
                     "Pairing number": "4",
-                    "Score": 1.0,
+                    "Score": 2.0,
                     "Opponents": [
-                        5
+                        5,
+                        1,
+                        3,
+                        3
                     ]
                 },
                 {
@@ -1405,9 +1274,12 @@
                     "Player's gender:": "M",
                     "Player's rank:": 18,
                     "Pairing number": "8",
-                    "Score": 1.0,
+                    "Score": 3.5,
                     "Opponents": [
-                        2
+                        2,
+                        5,
+                        7,
+                        6
                     ]
                 }
             ]
@@ -1417,9 +1289,15 @@
             "Tournament's adress:": "Chassieu",
             "Tournament's Date:": "Janvier",
             "Total number of rounds:": 4,
+            "Round number": 3,
             "Time control:": "300",
             "Number of player:": 8,
-            "players:Comments:": "Dictionnaire temporaire",
+            "Comments:": "Dictionnaire temporaire",
+            "Round 1": null,
+            "Round 2": null,
+            "Round 3": null,
+            "Round 4": null,
+            "Tournament's matches": null,
             "players": [
                 {
                     "Player's family name:": "Dupont",
@@ -1430,7 +1308,9 @@
                     "Pairing number": "1",
                     "Score": 0.0,
                     "Opponents": [
-                        7
+                        7,
+                        4,
+                        2
                     ]
                 },
                 {
@@ -1440,9 +1320,11 @@
                     "Player's gender:": "X",
                     "Player's rank:": 12,
                     "Pairing number": "6",
-                    "Score": 0.5,
+                    "Score": 2.0,
                     "Opponents": [
-                        3
+                        3,
+                        7,
+                        5
                     ]
                 },
                 {
@@ -1452,9 +1334,11 @@
                     "Player's gender:": "F",
                     "Player's rank:": 13,
                     "Pairing number": "5",
-                    "Score": 0.0,
+                    "Score": 2.5,
                     "Opponents": [
-                        4
+                        4,
+                        8,
+                        6
                     ]
                 },
                 {
@@ -1464,9 +1348,11 @@
                     "Player's gender:": "F",
                     "Player's rank:": 14,
                     "Pairing number": "2",
-                    "Score": 0.0,
+                    "Score": 1.0,
                     "Opponents": [
-                        8
+                        8,
+                        3,
+                        1
                     ]
                 },
                 {
@@ -1478,7 +1364,9 @@
                     "Pairing number": "7",
                     "Score": 1.0,
                     "Opponents": [
-                        1
+                        1,
+                        6,
+                        4
                     ]
                 },
                 {
@@ -1488,9 +1376,11 @@
                     "Player's gender:": "F",
                     "Player's rank:": 16,
                     "Pairing number": "3",
-                    "Score": 0.5,
+                    "Score": 1.0,
                     "Opponents": [
-                        6
+                        6,
+                        2,
+                        8
                     ]
                 },
                 {
@@ -1500,9 +1390,11 @@
                     "Player's gender:": "F",
                     "Player's rank:": 17,
                     "Pairing number": "4",
-                    "Score": 1.0,
+                    "Score": 2.5,
                     "Opponents": [
-                        5
+                        5,
+                        1,
+                        7
                     ]
                 },
                 {
@@ -1512,9 +1404,11 @@
                     "Player's gender:": "M",
                     "Player's rank:": 18,
                     "Pairing number": "8",
-                    "Score": 1.0,
+                    "Score": 2.0,
                     "Opponents": [
-                        2
+                        2,
+                        5,
+                        3
                     ]
                 }
             ]
@@ -1524,9 +1418,15 @@
             "Tournament's adress:": "Chassieu",
             "Tournament's Date:": "Janvier",
             "Total number of rounds:": 4,
+            "Round number": 4,
             "Time control:": "300",
             "Number of player:": 8,
-            "players:Comments:": "Dictionnaire temporaire",
+            "Comments:": "Dictionnaire temporaire",
+            "Round 1": null,
+            "Round 2": null,
+            "Round 3": null,
+            "Round 4": null,
+            "Tournament's matches": null,
             "players": [
                 {
                     "Player's family name:": "Dupont",
@@ -1535,9 +1435,12 @@
                     "Player's gender:": "M",
                     "Player's rank:": 11,
                     "Pairing number": "1",
-                    "Score": 0.0,
+                    "Score": 3.0,
                     "Opponents": [
-                        7
+                        7,
+                        4,
+                        6,
+                        5
                     ]
                 },
                 {
@@ -1547,9 +1450,12 @@
                     "Player's gender:": "X",
                     "Player's rank:": 12,
                     "Pairing number": "6",
-                    "Score": 1.0,
+                    "Score": 2.0,
                     "Opponents": [
-                        3
+                        3,
+                        7,
+                        1,
+                        4
                     ]
                 },
                 {
@@ -1559,9 +1465,12 @@
                     "Player's gender:": "F",
                     "Player's rank:": 13,
                     "Pairing number": "5",
-                    "Score": 0.5,
+                    "Score": 2.5,
                     "Opponents": [
-                        4
+                        4,
+                        8,
+                        7,
+                        1
                     ]
                 },
                 {
@@ -1573,6 +1482,9 @@
                     "Pairing number": "2",
                     "Score": 0.0,
                     "Opponents": [
+                        8,
+                        3,
+                        4,
                         8
                     ]
                 },
@@ -1583,9 +1495,12 @@
                     "Player's gender:": "M",
                     "Player's rank:": 15,
                     "Pairing number": "7",
-                    "Score": 1.0,
+                    "Score": 3.0,
                     "Opponents": [
-                        1
+                        1,
+                        6,
+                        5,
+                        3
                     ]
                 },
                 {
@@ -1595,9 +1510,12 @@
                     "Player's gender:": "F",
                     "Player's rank:": 16,
                     "Pairing number": "3",
-                    "Score": 0.0,
+                    "Score": 2.0,
                     "Opponents": [
-                        6
+                        6,
+                        2,
+                        8,
+                        7
                     ]
                 },
                 {
@@ -1607,9 +1525,12 @@
                     "Player's gender:": "F",
                     "Player's rank:": 17,
                     "Pairing number": "4",
-                    "Score": 0.5,
+                    "Score": 1.5,
                     "Opponents": [
-                        5
+                        5,
+                        1,
+                        2,
+                        6
                     ]
                 },
                 {
@@ -1619,8 +1540,11 @@
                     "Player's gender:": "M",
                     "Player's rank:": 18,
                     "Pairing number": "8",
-                    "Score": 1.0,
+                    "Score": 2.0,
                     "Opponents": [
+                        2,
+                        5,
+                        3,
                         2
                     ]
                 }
@@ -1631,9 +1555,15 @@
             "Tournament's adress:": "Chassieu",
             "Tournament's Date:": "Janvier",
             "Total number of rounds:": 4,
+            "Round number": 0,
             "Time control:": "300",
             "Number of player:": 8,
-            "players:Comments:": "Dictionnaire temporaire",
+            "Comments:": "Dictionnaire temporaire",
+            "Round 1": null,
+            "Round 2": null,
+            "Round 3": null,
+            "Round 4": null,
+            "Tournament's matches": null,
             "players": [
                 {
                     "Player's family name:": "Dupont",
@@ -1642,10 +1572,8 @@
                     "Player's gender:": "M",
                     "Player's rank:": 11,
                     "Pairing number": "1",
-                    "Score": 0.0,
-                    "Opponents": [
-                        7
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Liotard",
@@ -1654,10 +1582,8 @@
                     "Player's gender:": "X",
                     "Player's rank:": 12,
                     "Pairing number": "6",
-                    "Score": 1.0,
-                    "Opponents": [
-                        3
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Menant",
@@ -1666,10 +1592,8 @@
                     "Player's gender:": "F",
                     "Player's rank:": 13,
                     "Pairing number": "5",
-                    "Score": 0.5,
-                    "Opponents": [
-                        4
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Durand",
@@ -1678,10 +1602,8 @@
                     "Player's gender:": "F",
                     "Player's rank:": 14,
                     "Pairing number": "2",
-                    "Score": 0.0,
-                    "Opponents": [
-                        8
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Roux",
@@ -1690,10 +1612,8 @@
                     "Player's gender:": "M",
                     "Player's rank:": 15,
                     "Pairing number": "7",
-                    "Score": 1.0,
-                    "Opponents": [
-                        1
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Dupuis",
@@ -1702,10 +1622,8 @@
                     "Player's gender:": "F",
                     "Player's rank:": 16,
                     "Pairing number": "3",
-                    "Score": 0.0,
-                    "Opponents": [
-                        6
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Bepas",
@@ -1714,10 +1632,8 @@
                     "Player's gender:": "F",
                     "Player's rank:": 17,
                     "Pairing number": "4",
-                    "Score": 0.5,
-                    "Opponents": [
-                        5
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 },
                 {
                     "Player's family name:": "Gagnieu",
@@ -1726,10 +1642,8 @@
                     "Player's gender:": "M",
                     "Player's rank:": 18,
                     "Pairing number": "8",
-                    "Score": 1.0,
-                    "Opponents": [
-                        2
-                    ]
+                    "Score": 0,
+                    "Opponents": []
                 }
             ]
         },
@@ -1738,9 +1652,15 @@
             "Tournament's adress:": "Chassieu",
             "Tournament's Date:": "Janvier",
             "Total number of rounds:": 4,
+            "Round number": 4,
             "Time control:": "300",
             "Number of player:": 8,
-            "players:Comments:": "Dictionnaire temporaire",
+            "Comments:": "Dictionnaire temporaire",
+            "Round 1": null,
+            "Round 2": null,
+            "Round 3": null,
+            "Round 4": null,
+            "Tournament's matches": null,
             "players": [
                 {
                     "Player's family name:": "Dupont",
@@ -1749,9 +1669,12 @@
                     "Player's gender:": "M",
                     "Player's rank:": 11,
                     "Pairing number": "1",
-                    "Score": 0.0,
+                    "Score": 1.5,
                     "Opponents": [
-                        7
+                        7,
+                        5,
+                        8,
+                        5
                     ]
                 },
                 {
@@ -1761,9 +1684,12 @@
                     "Player's gender:": "X",
                     "Player's rank:": 12,
                     "Pairing number": "6",
-                    "Score": 1.0,
+                    "Score": 1.5,
                     "Opponents": [
-                        3
+                        3,
+                        2,
+                        4,
+                        7
                     ]
                 },
                 {
@@ -1775,7 +1701,10 @@
                     "Pairing number": "5",
                     "Score": 0.5,
                     "Opponents": [
-                        4
+                        4,
+                        1,
+                        3,
+                        1
                     ]
                 },
                 {
@@ -1785,9 +1714,12 @@
                     "Player's gender:": "F",
                     "Player's rank:": 14,
                     "Pairing number": "2",
-                    "Score": 0.0,
+                    "Score": 1.5,
                     "Opponents": [
-                        8
+                        8,
+                        6,
+                        7,
+                        3
                     ]
                 },
                 {
@@ -1797,9 +1729,149 @@
                     "Player's gender:": "M",
                     "Player's rank:": 15,
                     "Pairing number": "7",
+                    "Score": 3.0,
+                    "Opponents": [
+                        1,
+                        4,
+                        2,
+                        6
+                    ]
+                },
+                {
+                    "Player's family name:": "Dupuis",
+                    "Player's first name:": "Monique",
+                    "Player's birthdate:": "1965",
+                    "Player's gender:": "F",
+                    "Player's rank:": 16,
+                    "Pairing number": "3",
+                    "Score": 2.0,
+                    "Opponents": [
+                        6,
+                        8,
+                        5,
+                        2
+                    ]
+                },
+                {
+                    "Player's family name:": "Bepas",
+                    "Player's first name:": "Marion",
+                    "Player's birthdate:": "1987",
+                    "Player's gender:": "F",
+                    "Player's rank:": 17,
+                    "Pairing number": "4",
+                    "Score": 3.0,
+                    "Opponents": [
+                        5,
+                        7,
+                        6,
+                        8
+                    ]
+                },
+                {
+                    "Player's family name:": "Gagnieu",
+                    "Player's first name:": "Arnaud",
+                    "Player's birthdate:": "1991",
+                    "Player's gender:": "M",
+                    "Player's rank:": 18,
+                    "Pairing number": "8",
+                    "Score": 3.0,
+                    "Opponents": [
+                        2,
+                        3,
+                        1,
+                        4
+                    ]
+                }
+            ]
+        },
+        "17": {
+            "Tournament's name:": "essai",
+            "Tournament's adress:": "Chassieu",
+            "Tournament's Date:": "Janvier",
+            "Total number of rounds:": 4,
+            "Round number": 4,
+            "Time control:": "300",
+            "Number of player:": 8,
+            "Comments:": "Dictionnaire temporaire",
+            "Round 1": null,
+            "Round 2": null,
+            "Round 3": null,
+            "Round 4": null,
+            "Tournament's matches": null,
+            "players": [
+                {
+                    "Player's family name:": "Dupont",
+                    "Player's first name:": "Alexandre",
+                    "Player's birthdate:": "1972",
+                    "Player's gender:": "M",
+                    "Player's rank:": 11,
+                    "Pairing number": "1",
                     "Score": 1.0,
                     "Opponents": [
-                        1
+                        7,
+                        5,
+                        2,
+                        8
+                    ]
+                },
+                {
+                    "Player's family name:": "Liotard",
+                    "Player's first name:": "David",
+                    "Player's birthdate:": "1974",
+                    "Player's gender:": "X",
+                    "Player's rank:": 12,
+                    "Pairing number": "6",
+                    "Score": 2.5,
+                    "Opponents": [
+                        3,
+                        2,
+                        4,
+                        7
+                    ]
+                },
+                {
+                    "Player's family name:": "Menant",
+                    "Player's first name:": "laureen",
+                    "Player's birthdate:": "1994",
+                    "Player's gender:": "F",
+                    "Player's rank:": 13,
+                    "Pairing number": "5",
+                    "Score": 2.0,
+                    "Opponents": [
+                        4,
+                        1,
+                        3,
+                        3
+                    ]
+                },
+                {
+                    "Player's family name:": "Durand",
+                    "Player's first name:": "Aurelie",
+                    "Player's birthdate:": "1990",
+                    "Player's gender:": "F",
+                    "Player's rank:": 14,
+                    "Pairing number": "2",
+                    "Score": 3.5,
+                    "Opponents": [
+                        8,
+                        6,
+                        1,
+                        4
+                    ]
+                },
+                {
+                    "Player's family name:": "Roux",
+                    "Player's first name:": "Cedric",
+                    "Player's birthdate:": "1979",
+                    "Player's gender:": "M",
+                    "Player's rank:": 15,
+                    "Pairing number": "7",
+                    "Score": 3.0,
+                    "Opponents": [
+                        1,
+                        4,
+                        8,
+                        6
                     ]
                 },
                 {
@@ -1811,7 +1883,10 @@
                     "Pairing number": "3",
                     "Score": 0.0,
                     "Opponents": [
-                        6
+                        6,
+                        8,
+                        5,
+                        5
                     ]
                 },
                 {
@@ -1821,9 +1896,1676 @@
                     "Player's gender:": "F",
                     "Player's rank:": 17,
                     "Pairing number": "4",
+                    "Score": 2.0,
+                    "Opponents": [
+                        5,
+                        7,
+                        6,
+                        2
+                    ]
+                },
+                {
+                    "Player's family name:": "Gagnieu",
+                    "Player's first name:": "Arnaud",
+                    "Player's birthdate:": "1991",
+                    "Player's gender:": "M",
+                    "Player's rank:": 18,
+                    "Pairing number": "8",
+                    "Score": 2.0,
+                    "Opponents": [
+                        2,
+                        3,
+                        7,
+                        1
+                    ]
+                }
+            ]
+        },
+        "18": {
+            "Tournament's name:": "essai",
+            "Tournament's adress:": "Chassieu",
+            "Tournament's Date:": "Janvier",
+            "Total number of rounds:": 4,
+            "Round number": 4,
+            "Time control:": "300",
+            "Number of player:": 8,
+            "Comments:": "Dictionnaire temporaire",
+            "Round 1": null,
+            "Round 2": null,
+            "Round 3": null,
+            "Round 4": null,
+            "Tournament's matches": null,
+            "players": [
+                {
+                    "Player's family name:": "Dupont",
+                    "Player's first name:": "Alexandre",
+                    "Player's birthdate:": "1972",
+                    "Player's gender:": "M",
+                    "Player's rank:": 11,
+                    "Pairing number": "1",
+                    "Score": 2.0,
+                    "Opponents": [
+                        7,
+                        4,
+                        6,
+                        2
+                    ]
+                },
+                {
+                    "Player's family name:": "Liotard",
+                    "Player's first name:": "David",
+                    "Player's birthdate:": "1974",
+                    "Player's gender:": "X",
+                    "Player's rank:": 12,
+                    "Pairing number": "6",
+                    "Score": 2.5,
+                    "Opponents": [
+                        3,
+                        7,
+                        1,
+                        5
+                    ]
+                },
+                {
+                    "Player's family name:": "Menant",
+                    "Player's first name:": "laureen",
+                    "Player's birthdate:": "1994",
+                    "Player's gender:": "F",
+                    "Player's rank:": 13,
+                    "Pairing number": "5",
+                    "Score": 3.0,
+                    "Opponents": [
+                        4,
+                        8,
+                        7,
+                        6
+                    ]
+                },
+                {
+                    "Player's family name:": "Durand",
+                    "Player's first name:": "Aurelie",
+                    "Player's birthdate:": "1990",
+                    "Player's gender:": "F",
+                    "Player's rank:": 14,
+                    "Pairing number": "2",
+                    "Score": 1.0,
+                    "Opponents": [
+                        8,
+                        3,
+                        4,
+                        1
+                    ]
+                },
+                {
+                    "Player's family name:": "Roux",
+                    "Player's first name:": "Cedric",
+                    "Player's birthdate:": "1979",
+                    "Player's gender:": "M",
+                    "Player's rank:": 15,
+                    "Pairing number": "7",
+                    "Score": 2.0,
+                    "Opponents": [
+                        1,
+                        6,
+                        5,
+                        8
+                    ]
+                },
+                {
+                    "Player's family name:": "Dupuis",
+                    "Player's first name:": "Monique",
+                    "Player's birthdate:": "1965",
+                    "Player's gender:": "F",
+                    "Player's rank:": 16,
+                    "Pairing number": "3",
+                    "Score": 1.5,
+                    "Opponents": [
+                        6,
+                        2,
+                        8,
+                        4
+                    ]
+                },
+                {
+                    "Player's family name:": "Bepas",
+                    "Player's first name:": "Marion",
+                    "Player's birthdate:": "1987",
+                    "Player's gender:": "F",
+                    "Player's rank:": 17,
+                    "Pairing number": "4",
+                    "Score": 1.0,
+                    "Opponents": [
+                        5,
+                        1,
+                        2,
+                        3
+                    ]
+                },
+                {
+                    "Player's family name:": "Gagnieu",
+                    "Player's first name:": "Arnaud",
+                    "Player's birthdate:": "1991",
+                    "Player's gender:": "M",
+                    "Player's rank:": 18,
+                    "Pairing number": "8",
+                    "Score": 3.0,
+                    "Opponents": [
+                        2,
+                        5,
+                        3,
+                        7
+                    ]
+                }
+            ]
+        },
+        "19": {
+            "Tournament's name:": "essai",
+            "Tournament's adress:": "Chassieu",
+            "Tournament's Date:": "Janvier",
+            "Total number of rounds:": 4,
+            "Round number": 4,
+            "Time control:": "300",
+            "Number of player:": 8,
+            "Comments:": "Dictionnaire temporaire",
+            "Round 1": null,
+            "Round 2": null,
+            "Round 3": null,
+            "Round 4": null,
+            "Tournament's matches": null,
+            "players": [
+                {
+                    "Player's family name:": "Dupont",
+                    "Player's first name:": "Alexandre",
+                    "Player's birthdate:": "1972",
+                    "Player's gender:": "M",
+                    "Player's rank:": 11,
+                    "Pairing number": "1",
+                    "Score": 1.5,
+                    "Opponents": [
+                        7,
+                        4,
+                        3,
+                        2
+                    ]
+                },
+                {
+                    "Player's family name:": "Liotard",
+                    "Player's first name:": "David",
+                    "Player's birthdate:": "1974",
+                    "Player's gender:": "X",
+                    "Player's rank:": 12,
+                    "Pairing number": "6",
+                    "Score": 3.0,
+                    "Opponents": [
+                        3,
+                        7,
+                        4,
+                        8
+                    ]
+                },
+                {
+                    "Player's family name:": "Menant",
+                    "Player's first name:": "laureen",
+                    "Player's birthdate:": "1994",
+                    "Player's gender:": "F",
+                    "Player's rank:": 13,
+                    "Pairing number": "5",
+                    "Score": 1.5,
+                    "Opponents": [
+                        4,
+                        8,
+                        2,
+                        7
+                    ]
+                },
+                {
+                    "Player's family name:": "Durand",
+                    "Player's first name:": "Aurelie",
+                    "Player's birthdate:": "1990",
+                    "Player's gender:": "F",
+                    "Player's rank:": 14,
+                    "Pairing number": "2",
+                    "Score": 1.0,
+                    "Opponents": [
+                        8,
+                        3,
+                        5,
+                        1
+                    ]
+                },
+                {
+                    "Player's family name:": "Roux",
+                    "Player's first name:": "Cedric",
+                    "Player's birthdate:": "1979",
+                    "Player's gender:": "M",
+                    "Player's rank:": 15,
+                    "Pairing number": "7",
+                    "Score": 3.0,
+                    "Opponents": [
+                        1,
+                        6,
+                        8,
+                        5
+                    ]
+                },
+                {
+                    "Player's family name:": "Dupuis",
+                    "Player's first name:": "Monique",
+                    "Player's birthdate:": "1965",
+                    "Player's gender:": "F",
+                    "Player's rank:": 16,
+                    "Pairing number": "3",
+                    "Score": 2.0,
+                    "Opponents": [
+                        6,
+                        2,
+                        1,
+                        4
+                    ]
+                },
+                {
+                    "Player's family name:": "Bepas",
+                    "Player's first name:": "Marion",
+                    "Player's birthdate:": "1987",
+                    "Player's gender:": "F",
+                    "Player's rank:": 17,
+                    "Pairing number": "4",
+                    "Score": 1.0,
+                    "Opponents": [
+                        5,
+                        1,
+                        6,
+                        3
+                    ]
+                },
+                {
+                    "Player's family name:": "Gagnieu",
+                    "Player's first name:": "Arnaud",
+                    "Player's birthdate:": "1991",
+                    "Player's gender:": "M",
+                    "Player's rank:": 18,
+                    "Pairing number": "8",
+                    "Score": 3.0,
+                    "Opponents": [
+                        2,
+                        5,
+                        7,
+                        6
+                    ]
+                }
+            ]
+        },
+        "20": {
+            "Tournament's name:": "essai",
+            "Tournament's adress:": "Chassieu",
+            "Tournament's Date:": "Janvier",
+            "Total number of rounds:": 4,
+            "Round number": 4,
+            "Time control:": "300",
+            "Number of player:": 8,
+            "Comments:": "Dictionnaire temporaire",
+            "Round 1": null,
+            "Round 2": null,
+            "Round 3": null,
+            "Round 4": null,
+            "Tournament's matches": null,
+            "players": [
+                {
+                    "Player's family name:": "Dupont",
+                    "Player's first name:": "Alexandre",
+                    "Player's birthdate:": "1972",
+                    "Player's gender:": "M",
+                    "Player's rank:": 11,
+                    "Pairing number": "1",
+                    "Score": 1.5,
+                    "Opponents": [
+                        7,
+                        5,
+                        8,
+                        5
+                    ]
+                },
+                {
+                    "Player's family name:": "Liotard",
+                    "Player's first name:": "David",
+                    "Player's birthdate:": "1974",
+                    "Player's gender:": "X",
+                    "Player's rank:": 12,
+                    "Pairing number": "6",
+                    "Score": 1.5,
+                    "Opponents": [
+                        3,
+                        2,
+                        4,
+                        7
+                    ]
+                },
+                {
+                    "Player's family name:": "Menant",
+                    "Player's first name:": "laureen",
+                    "Player's birthdate:": "1994",
+                    "Player's gender:": "F",
+                    "Player's rank:": 13,
+                    "Pairing number": "5",
                     "Score": 0.5,
                     "Opponents": [
+                        4,
+                        1,
+                        3,
+                        1
+                    ]
+                },
+                {
+                    "Player's family name:": "Durand",
+                    "Player's first name:": "Aurelie",
+                    "Player's birthdate:": "1990",
+                    "Player's gender:": "F",
+                    "Player's rank:": 14,
+                    "Pairing number": "2",
+                    "Score": 1.5,
+                    "Opponents": [
+                        8,
+                        6,
+                        7,
+                        3
+                    ]
+                },
+                {
+                    "Player's family name:": "Roux",
+                    "Player's first name:": "Cedric",
+                    "Player's birthdate:": "1979",
+                    "Player's gender:": "M",
+                    "Player's rank:": 15,
+                    "Pairing number": "7",
+                    "Score": 3.0,
+                    "Opponents": [
+                        1,
+                        4,
+                        2,
+                        6
+                    ]
+                },
+                {
+                    "Player's family name:": "Dupuis",
+                    "Player's first name:": "Monique",
+                    "Player's birthdate:": "1965",
+                    "Player's gender:": "F",
+                    "Player's rank:": 16,
+                    "Pairing number": "3",
+                    "Score": 2.0,
+                    "Opponents": [
+                        6,
+                        8,
+                        5,
+                        2
+                    ]
+                },
+                {
+                    "Player's family name:": "Bepas",
+                    "Player's first name:": "Marion",
+                    "Player's birthdate:": "1987",
+                    "Player's gender:": "F",
+                    "Player's rank:": 17,
+                    "Pairing number": "4",
+                    "Score": 3.0,
+                    "Opponents": [
+                        5,
+                        7,
+                        6,
+                        8
+                    ]
+                },
+                {
+                    "Player's family name:": "Gagnieu",
+                    "Player's first name:": "Arnaud",
+                    "Player's birthdate:": "1991",
+                    "Player's gender:": "M",
+                    "Player's rank:": 18,
+                    "Pairing number": "8",
+                    "Score": 3.0,
+                    "Opponents": [
+                        2,
+                        3,
+                        1,
+                        4
+                    ]
+                }
+            ]
+        },
+        "21": {
+            "Tournament's name:": "essai",
+            "Tournament's adress:": "Chassieu",
+            "Tournament's Date:": "Janvier",
+            "Total number of rounds:": 4,
+            "Round number": 4,
+            "Time control:": "300",
+            "Number of player:": 8,
+            "Comments:": "Dictionnaire temporaire",
+            "Round 1": null,
+            "Round 2": null,
+            "Round 3": null,
+            "Round 4": null,
+            "Tournament's matches": null,
+            "players": [
+                {
+                    "Player's family name:": "Dupont",
+                    "Player's first name:": "Alexandre",
+                    "Player's birthdate:": "1972",
+                    "Player's gender:": "M",
+                    "Player's rank:": 11,
+                    "Pairing number": "1",
+                    "Score": 1.5,
+                    "Opponents": [
+                        7,
+                        5,
+                        8,
                         5
+                    ]
+                },
+                {
+                    "Player's family name:": "Liotard",
+                    "Player's first name:": "David",
+                    "Player's birthdate:": "1974",
+                    "Player's gender:": "X",
+                    "Player's rank:": 12,
+                    "Pairing number": "6",
+                    "Score": 1.5,
+                    "Opponents": [
+                        3,
+                        2,
+                        4,
+                        7
+                    ]
+                },
+                {
+                    "Player's family name:": "Menant",
+                    "Player's first name:": "laureen",
+                    "Player's birthdate:": "1994",
+                    "Player's gender:": "F",
+                    "Player's rank:": 13,
+                    "Pairing number": "5",
+                    "Score": 0.5,
+                    "Opponents": [
+                        4,
+                        1,
+                        3,
+                        1
+                    ]
+                },
+                {
+                    "Player's family name:": "Durand",
+                    "Player's first name:": "Aurelie",
+                    "Player's birthdate:": "1990",
+                    "Player's gender:": "F",
+                    "Player's rank:": 14,
+                    "Pairing number": "2",
+                    "Score": 1.5,
+                    "Opponents": [
+                        8,
+                        6,
+                        7,
+                        3
+                    ]
+                },
+                {
+                    "Player's family name:": "Roux",
+                    "Player's first name:": "Cedric",
+                    "Player's birthdate:": "1979",
+                    "Player's gender:": "M",
+                    "Player's rank:": 15,
+                    "Pairing number": "7",
+                    "Score": 3.0,
+                    "Opponents": [
+                        1,
+                        4,
+                        2,
+                        6
+                    ]
+                },
+                {
+                    "Player's family name:": "Dupuis",
+                    "Player's first name:": "Monique",
+                    "Player's birthdate:": "1965",
+                    "Player's gender:": "F",
+                    "Player's rank:": 16,
+                    "Pairing number": "3",
+                    "Score": 2.0,
+                    "Opponents": [
+                        6,
+                        8,
+                        5,
+                        2
+                    ]
+                },
+                {
+                    "Player's family name:": "Bepas",
+                    "Player's first name:": "Marion",
+                    "Player's birthdate:": "1987",
+                    "Player's gender:": "F",
+                    "Player's rank:": 17,
+                    "Pairing number": "4",
+                    "Score": 3.0,
+                    "Opponents": [
+                        5,
+                        7,
+                        6,
+                        8
+                    ]
+                },
+                {
+                    "Player's family name:": "Gagnieu",
+                    "Player's first name:": "Arnaud",
+                    "Player's birthdate:": "1991",
+                    "Player's gender:": "M",
+                    "Player's rank:": 18,
+                    "Pairing number": "8",
+                    "Score": 3.0,
+                    "Opponents": [
+                        2,
+                        3,
+                        1,
+                        4
+                    ]
+                }
+            ]
+        },
+        "22": {
+            "Tournament's name:": "essai",
+            "Tournament's adress:": "Chassieu",
+            "Tournament's Date:": "Janvier",
+            "Total number of rounds:": 4,
+            "Round number": 4,
+            "Time control:": "300",
+            "Number of player:": 8,
+            "Comments:": "Dictionnaire temporaire",
+            "Round 1": null,
+            "Round 2": null,
+            "Round 3": null,
+            "Round 4": null,
+            "Tournament's matches": null,
+            "players": [
+                {
+                    "Player's family name:": "Dupont",
+                    "Player's first name:": "Alexandre",
+                    "Player's birthdate:": "1972",
+                    "Player's gender:": "M",
+                    "Player's rank:": 11,
+                    "Pairing number": "1",
+                    "Score": 1.5,
+                    "Opponents": [
+                        7,
+                        5,
+                        8,
+                        5
+                    ]
+                },
+                {
+                    "Player's family name:": "Liotard",
+                    "Player's first name:": "David",
+                    "Player's birthdate:": "1974",
+                    "Player's gender:": "X",
+                    "Player's rank:": 12,
+                    "Pairing number": "6",
+                    "Score": 1.5,
+                    "Opponents": [
+                        3,
+                        2,
+                        4,
+                        7
+                    ]
+                },
+                {
+                    "Player's family name:": "Menant",
+                    "Player's first name:": "laureen",
+                    "Player's birthdate:": "1994",
+                    "Player's gender:": "F",
+                    "Player's rank:": 13,
+                    "Pairing number": "5",
+                    "Score": 0.5,
+                    "Opponents": [
+                        4,
+                        1,
+                        3,
+                        1
+                    ]
+                },
+                {
+                    "Player's family name:": "Durand",
+                    "Player's first name:": "Aurelie",
+                    "Player's birthdate:": "1990",
+                    "Player's gender:": "F",
+                    "Player's rank:": 14,
+                    "Pairing number": "2",
+                    "Score": 1.5,
+                    "Opponents": [
+                        8,
+                        6,
+                        7,
+                        3
+                    ]
+                },
+                {
+                    "Player's family name:": "Roux",
+                    "Player's first name:": "Cedric",
+                    "Player's birthdate:": "1979",
+                    "Player's gender:": "M",
+                    "Player's rank:": 15,
+                    "Pairing number": "7",
+                    "Score": 3.0,
+                    "Opponents": [
+                        1,
+                        4,
+                        2,
+                        6
+                    ]
+                },
+                {
+                    "Player's family name:": "Dupuis",
+                    "Player's first name:": "Monique",
+                    "Player's birthdate:": "1965",
+                    "Player's gender:": "F",
+                    "Player's rank:": 16,
+                    "Pairing number": "3",
+                    "Score": 2.0,
+                    "Opponents": [
+                        6,
+                        8,
+                        5,
+                        2
+                    ]
+                },
+                {
+                    "Player's family name:": "Bepas",
+                    "Player's first name:": "Marion",
+                    "Player's birthdate:": "1987",
+                    "Player's gender:": "F",
+                    "Player's rank:": 17,
+                    "Pairing number": "4",
+                    "Score": 3.0,
+                    "Opponents": [
+                        5,
+                        7,
+                        6,
+                        8
+                    ]
+                },
+                {
+                    "Player's family name:": "Gagnieu",
+                    "Player's first name:": "Arnaud",
+                    "Player's birthdate:": "1991",
+                    "Player's gender:": "M",
+                    "Player's rank:": 18,
+                    "Pairing number": "8",
+                    "Score": 3.0,
+                    "Opponents": [
+                        2,
+                        3,
+                        1,
+                        4
+                    ]
+                }
+            ]
+        },
+        "23": {
+            "Tournament's name:": "essai",
+            "Tournament's adress:": "Chassieu",
+            "Tournament's Date:": "Janvier",
+            "Total number of rounds:": 4,
+            "Round number": 4,
+            "Time control:": "300",
+            "Number of player:": 8,
+            "Comments:": "Dictionnaire temporaire",
+            "Round 1": null,
+            "Round 2": null,
+            "Round 3": null,
+            "Round 4": null,
+            "Tournament's matches": null,
+            "players": [
+                {
+                    "Player's family name:": "Dupont",
+                    "Player's first name:": "Alexandre",
+                    "Player's birthdate:": "1972",
+                    "Player's gender:": "M",
+                    "Player's rank:": 11,
+                    "Pairing number": "1",
+                    "Score": 1.5,
+                    "Opponents": [
+                        7,
+                        5,
+                        8,
+                        5
+                    ]
+                },
+                {
+                    "Player's family name:": "Liotard",
+                    "Player's first name:": "David",
+                    "Player's birthdate:": "1974",
+                    "Player's gender:": "X",
+                    "Player's rank:": 12,
+                    "Pairing number": "6",
+                    "Score": 1.5,
+                    "Opponents": [
+                        3,
+                        2,
+                        4,
+                        7
+                    ]
+                },
+                {
+                    "Player's family name:": "Menant",
+                    "Player's first name:": "laureen",
+                    "Player's birthdate:": "1994",
+                    "Player's gender:": "F",
+                    "Player's rank:": 13,
+                    "Pairing number": "5",
+                    "Score": 0.5,
+                    "Opponents": [
+                        4,
+                        1,
+                        3,
+                        1
+                    ]
+                },
+                {
+                    "Player's family name:": "Durand",
+                    "Player's first name:": "Aurelie",
+                    "Player's birthdate:": "1990",
+                    "Player's gender:": "F",
+                    "Player's rank:": 14,
+                    "Pairing number": "2",
+                    "Score": 1.5,
+                    "Opponents": [
+                        8,
+                        6,
+                        7,
+                        3
+                    ]
+                },
+                {
+                    "Player's family name:": "Roux",
+                    "Player's first name:": "Cedric",
+                    "Player's birthdate:": "1979",
+                    "Player's gender:": "M",
+                    "Player's rank:": 15,
+                    "Pairing number": "7",
+                    "Score": 3.0,
+                    "Opponents": [
+                        1,
+                        4,
+                        2,
+                        6
+                    ]
+                },
+                {
+                    "Player's family name:": "Dupuis",
+                    "Player's first name:": "Monique",
+                    "Player's birthdate:": "1965",
+                    "Player's gender:": "F",
+                    "Player's rank:": 16,
+                    "Pairing number": "3",
+                    "Score": 2.0,
+                    "Opponents": [
+                        6,
+                        8,
+                        5,
+                        2
+                    ]
+                },
+                {
+                    "Player's family name:": "Bepas",
+                    "Player's first name:": "Marion",
+                    "Player's birthdate:": "1987",
+                    "Player's gender:": "F",
+                    "Player's rank:": 17,
+                    "Pairing number": "4",
+                    "Score": 3.0,
+                    "Opponents": [
+                        5,
+                        7,
+                        6,
+                        8
+                    ]
+                },
+                {
+                    "Player's family name:": "Gagnieu",
+                    "Player's first name:": "Arnaud",
+                    "Player's birthdate:": "1991",
+                    "Player's gender:": "M",
+                    "Player's rank:": 18,
+                    "Pairing number": "8",
+                    "Score": 3.0,
+                    "Opponents": [
+                        2,
+                        3,
+                        1,
+                        4
+                    ]
+                }
+            ]
+        },
+        "24": {
+            "Tournament's name:": "essai",
+            "Tournament's adress:": "Chassieu",
+            "Tournament's Date:": "Janvier",
+            "Total number of rounds:": 4,
+            "Round number": 0,
+            "Time control:": "300",
+            "Number of player:": 8,
+            "Comments:": "Dictionnaire temporaire",
+            "Round 1": null,
+            "Round 2": null,
+            "Round 3": null,
+            "Round 4": null,
+            "Tournament's matches": null,
+            "players": [
+                {
+                    "Player's family name:": "Dupont",
+                    "Player's first name:": "Alexandre",
+                    "Player's birthdate:": "1972",
+                    "Player's gender:": "M",
+                    "Player's rank:": 11,
+                    "Pairing number": "1",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Liotard",
+                    "Player's first name:": "David",
+                    "Player's birthdate:": "1974",
+                    "Player's gender:": "X",
+                    "Player's rank:": 12,
+                    "Pairing number": "6",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Menant",
+                    "Player's first name:": "laureen",
+                    "Player's birthdate:": "1994",
+                    "Player's gender:": "F",
+                    "Player's rank:": 13,
+                    "Pairing number": "5",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Durand",
+                    "Player's first name:": "Aurelie",
+                    "Player's birthdate:": "1990",
+                    "Player's gender:": "F",
+                    "Player's rank:": 14,
+                    "Pairing number": "2",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Roux",
+                    "Player's first name:": "Cedric",
+                    "Player's birthdate:": "1979",
+                    "Player's gender:": "M",
+                    "Player's rank:": 15,
+                    "Pairing number": "7",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Dupuis",
+                    "Player's first name:": "Monique",
+                    "Player's birthdate:": "1965",
+                    "Player's gender:": "F",
+                    "Player's rank:": 16,
+                    "Pairing number": "3",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Bepas",
+                    "Player's first name:": "Marion",
+                    "Player's birthdate:": "1987",
+                    "Player's gender:": "F",
+                    "Player's rank:": 17,
+                    "Pairing number": "4",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Gagnieu",
+                    "Player's first name:": "Arnaud",
+                    "Player's birthdate:": "1991",
+                    "Player's gender:": "M",
+                    "Player's rank:": 18,
+                    "Pairing number": "8",
+                    "Score": 0,
+                    "Opponents": []
+                }
+            ]
+        },
+        "25": {
+            "Tournament's name:": "essai",
+            "Tournament's adress:": "Chassieu",
+            "Tournament's Date:": "Janvier",
+            "Total number of rounds:": 4,
+            "Round number": 4,
+            "Time control:": "300",
+            "Number of player:": 8,
+            "Comments:": "Dictionnaire temporaire",
+            "Round 1": null,
+            "Round 2": null,
+            "Round 3": null,
+            "Round 4": null,
+            "Tournament's matches": null,
+            "players": [
+                {
+                    "Player's family name:": "Dupont",
+                    "Player's first name:": "Alexandre",
+                    "Player's birthdate:": "1972",
+                    "Player's gender:": "M",
+                    "Player's rank:": 11,
+                    "Pairing number": "1",
+                    "Score": 1.5,
+                    "Opponents": [
+                        7,
+                        5,
+                        8,
+                        5
+                    ]
+                },
+                {
+                    "Player's family name:": "Liotard",
+                    "Player's first name:": "David",
+                    "Player's birthdate:": "1974",
+                    "Player's gender:": "X",
+                    "Player's rank:": 12,
+                    "Pairing number": "6",
+                    "Score": 1.5,
+                    "Opponents": [
+                        3,
+                        2,
+                        4,
+                        7
+                    ]
+                },
+                {
+                    "Player's family name:": "Menant",
+                    "Player's first name:": "laureen",
+                    "Player's birthdate:": "1994",
+                    "Player's gender:": "F",
+                    "Player's rank:": 13,
+                    "Pairing number": "5",
+                    "Score": 0.5,
+                    "Opponents": [
+                        4,
+                        1,
+                        3,
+                        1
+                    ]
+                },
+                {
+                    "Player's family name:": "Durand",
+                    "Player's first name:": "Aurelie",
+                    "Player's birthdate:": "1990",
+                    "Player's gender:": "F",
+                    "Player's rank:": 14,
+                    "Pairing number": "2",
+                    "Score": 1.5,
+                    "Opponents": [
+                        8,
+                        6,
+                        7,
+                        3
+                    ]
+                },
+                {
+                    "Player's family name:": "Roux",
+                    "Player's first name:": "Cedric",
+                    "Player's birthdate:": "1979",
+                    "Player's gender:": "M",
+                    "Player's rank:": 15,
+                    "Pairing number": "7",
+                    "Score": 3.0,
+                    "Opponents": [
+                        1,
+                        4,
+                        2,
+                        6
+                    ]
+                },
+                {
+                    "Player's family name:": "Dupuis",
+                    "Player's first name:": "Monique",
+                    "Player's birthdate:": "1965",
+                    "Player's gender:": "F",
+                    "Player's rank:": 16,
+                    "Pairing number": "3",
+                    "Score": 2.0,
+                    "Opponents": [
+                        6,
+                        8,
+                        5,
+                        2
+                    ]
+                },
+                {
+                    "Player's family name:": "Bepas",
+                    "Player's first name:": "Marion",
+                    "Player's birthdate:": "1987",
+                    "Player's gender:": "F",
+                    "Player's rank:": 17,
+                    "Pairing number": "4",
+                    "Score": 3.0,
+                    "Opponents": [
+                        5,
+                        7,
+                        6,
+                        8
+                    ]
+                },
+                {
+                    "Player's family name:": "Gagnieu",
+                    "Player's first name:": "Arnaud",
+                    "Player's birthdate:": "1991",
+                    "Player's gender:": "M",
+                    "Player's rank:": 18,
+                    "Pairing number": "8",
+                    "Score": 3.0,
+                    "Opponents": [
+                        2,
+                        3,
+                        1,
+                        4
+                    ]
+                }
+            ]
+        },
+        "26": {
+            "Tournament's name:": "essai",
+            "Tournament's adress:": "Chassieu",
+            "Tournament's Date:": "Janvier",
+            "Total number of rounds:": 4,
+            "Round number": 0,
+            "Time control:": "300",
+            "Number of player:": 8,
+            "Comments:": "Dictionnaire temporaire",
+            "Round 1": null,
+            "Round 2": null,
+            "Round 3": null,
+            "Round 4": null,
+            "Tournament's matches": null,
+            "players": [
+                {
+                    "Player's family name:": "Dupont",
+                    "Player's first name:": "Alexandre",
+                    "Player's birthdate:": "1972",
+                    "Player's gender:": "M",
+                    "Player's rank:": 11,
+                    "Pairing number": "1",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Liotard",
+                    "Player's first name:": "David",
+                    "Player's birthdate:": "1974",
+                    "Player's gender:": "X",
+                    "Player's rank:": 12,
+                    "Pairing number": "6",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Menant",
+                    "Player's first name:": "laureen",
+                    "Player's birthdate:": "1994",
+                    "Player's gender:": "F",
+                    "Player's rank:": 13,
+                    "Pairing number": "5",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Durand",
+                    "Player's first name:": "Aurelie",
+                    "Player's birthdate:": "1990",
+                    "Player's gender:": "F",
+                    "Player's rank:": 14,
+                    "Pairing number": "2",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Roux",
+                    "Player's first name:": "Cedric",
+                    "Player's birthdate:": "1979",
+                    "Player's gender:": "M",
+                    "Player's rank:": 15,
+                    "Pairing number": "7",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Dupuis",
+                    "Player's first name:": "Monique",
+                    "Player's birthdate:": "1965",
+                    "Player's gender:": "F",
+                    "Player's rank:": 16,
+                    "Pairing number": "3",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Bepas",
+                    "Player's first name:": "Marion",
+                    "Player's birthdate:": "1987",
+                    "Player's gender:": "F",
+                    "Player's rank:": 17,
+                    "Pairing number": "4",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Gagnieu",
+                    "Player's first name:": "Arnaud",
+                    "Player's birthdate:": "1991",
+                    "Player's gender:": "M",
+                    "Player's rank:": 18,
+                    "Pairing number": "8",
+                    "Score": 0,
+                    "Opponents": []
+                }
+            ]
+        },
+        "27": {
+            "Tournament's name:": "essai",
+            "Tournament's adress:": "Chassieu",
+            "Tournament's Date:": "Janvier",
+            "Total number of rounds:": 4,
+            "Round number": 0,
+            "Time control:": "300",
+            "Number of player:": 8,
+            "Comments:": "Dictionnaire temporaire",
+            "Round 1": null,
+            "Round 2": null,
+            "Round 3": null,
+            "Round 4": null,
+            "Tournament's matches": null,
+            "players": [
+                {
+                    "Player's family name:": "Dupont",
+                    "Player's first name:": "Alexandre",
+                    "Player's birthdate:": "1972",
+                    "Player's gender:": "M",
+                    "Player's rank:": 11,
+                    "Pairing number": "1",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Liotard",
+                    "Player's first name:": "David",
+                    "Player's birthdate:": "1974",
+                    "Player's gender:": "X",
+                    "Player's rank:": 12,
+                    "Pairing number": "6",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Menant",
+                    "Player's first name:": "laureen",
+                    "Player's birthdate:": "1994",
+                    "Player's gender:": "F",
+                    "Player's rank:": 13,
+                    "Pairing number": "5",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Durand",
+                    "Player's first name:": "Aurelie",
+                    "Player's birthdate:": "1990",
+                    "Player's gender:": "F",
+                    "Player's rank:": 14,
+                    "Pairing number": "2",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Roux",
+                    "Player's first name:": "Cedric",
+                    "Player's birthdate:": "1979",
+                    "Player's gender:": "M",
+                    "Player's rank:": 15,
+                    "Pairing number": "7",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Dupuis",
+                    "Player's first name:": "Monique",
+                    "Player's birthdate:": "1965",
+                    "Player's gender:": "F",
+                    "Player's rank:": 16,
+                    "Pairing number": "3",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Bepas",
+                    "Player's first name:": "Marion",
+                    "Player's birthdate:": "1987",
+                    "Player's gender:": "F",
+                    "Player's rank:": 17,
+                    "Pairing number": "4",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Gagnieu",
+                    "Player's first name:": "Arnaud",
+                    "Player's birthdate:": "1991",
+                    "Player's gender:": "M",
+                    "Player's rank:": 18,
+                    "Pairing number": "8",
+                    "Score": 0,
+                    "Opponents": []
+                }
+            ]
+        },
+        "28": {
+            "Tournament's name:": "essai",
+            "Tournament's adress:": "Chassieu",
+            "Tournament's Date:": "Janvier",
+            "Total number of rounds:": 4,
+            "Round number": 0,
+            "Time control:": "300",
+            "Number of player:": 8,
+            "Comments:": "Dictionnaire temporaire",
+            "Round 1": null,
+            "Round 2": null,
+            "Round 3": null,
+            "Round 4": null,
+            "Tournament's matches": null,
+            "players": [
+                {
+                    "Player's family name:": "Dupont",
+                    "Player's first name:": "Alexandre",
+                    "Player's birthdate:": "1972",
+                    "Player's gender:": "M",
+                    "Player's rank:": 11,
+                    "Pairing number": "1",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Liotard",
+                    "Player's first name:": "David",
+                    "Player's birthdate:": "1974",
+                    "Player's gender:": "X",
+                    "Player's rank:": 12,
+                    "Pairing number": "6",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Menant",
+                    "Player's first name:": "laureen",
+                    "Player's birthdate:": "1994",
+                    "Player's gender:": "F",
+                    "Player's rank:": 13,
+                    "Pairing number": "5",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Durand",
+                    "Player's first name:": "Aurelie",
+                    "Player's birthdate:": "1990",
+                    "Player's gender:": "F",
+                    "Player's rank:": 14,
+                    "Pairing number": "2",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Roux",
+                    "Player's first name:": "Cedric",
+                    "Player's birthdate:": "1979",
+                    "Player's gender:": "M",
+                    "Player's rank:": 15,
+                    "Pairing number": "7",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Dupuis",
+                    "Player's first name:": "Monique",
+                    "Player's birthdate:": "1965",
+                    "Player's gender:": "F",
+                    "Player's rank:": 16,
+                    "Pairing number": "3",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Bepas",
+                    "Player's first name:": "Marion",
+                    "Player's birthdate:": "1987",
+                    "Player's gender:": "F",
+                    "Player's rank:": 17,
+                    "Pairing number": "4",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Gagnieu",
+                    "Player's first name:": "Arnaud",
+                    "Player's birthdate:": "1991",
+                    "Player's gender:": "M",
+                    "Player's rank:": 18,
+                    "Pairing number": "8",
+                    "Score": 0,
+                    "Opponents": []
+                }
+            ]
+        },
+        "29": {
+            "Tournament's name:": "essai",
+            "Tournament's adress:": "Chassieu",
+            "Tournament's Date:": "Janvier",
+            "Total number of rounds:": 4,
+            "Round number": 0,
+            "Time control:": "300",
+            "Number of player:": 8,
+            "Comments:": "Dictionnaire temporaire",
+            "Round 1": null,
+            "Round 2": null,
+            "Round 3": null,
+            "Round 4": null,
+            "Tournament's matches": null,
+            "players": [
+                {
+                    "Player's family name:": "Dupont",
+                    "Player's first name:": "Alexandre",
+                    "Player's birthdate:": "1972",
+                    "Player's gender:": "M",
+                    "Player's rank:": 11,
+                    "Pairing number": "1",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Liotard",
+                    "Player's first name:": "David",
+                    "Player's birthdate:": "1974",
+                    "Player's gender:": "X",
+                    "Player's rank:": 12,
+                    "Pairing number": "6",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Menant",
+                    "Player's first name:": "laureen",
+                    "Player's birthdate:": "1994",
+                    "Player's gender:": "F",
+                    "Player's rank:": 13,
+                    "Pairing number": "5",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Durand",
+                    "Player's first name:": "Aurelie",
+                    "Player's birthdate:": "1990",
+                    "Player's gender:": "F",
+                    "Player's rank:": 14,
+                    "Pairing number": "2",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Roux",
+                    "Player's first name:": "Cedric",
+                    "Player's birthdate:": "1979",
+                    "Player's gender:": "M",
+                    "Player's rank:": 15,
+                    "Pairing number": "7",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Dupuis",
+                    "Player's first name:": "Monique",
+                    "Player's birthdate:": "1965",
+                    "Player's gender:": "F",
+                    "Player's rank:": 16,
+                    "Pairing number": "3",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Bepas",
+                    "Player's first name:": "Marion",
+                    "Player's birthdate:": "1987",
+                    "Player's gender:": "F",
+                    "Player's rank:": 17,
+                    "Pairing number": "4",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Gagnieu",
+                    "Player's first name:": "Arnaud",
+                    "Player's birthdate:": "1991",
+                    "Player's gender:": "M",
+                    "Player's rank:": 18,
+                    "Pairing number": "8",
+                    "Score": 0,
+                    "Opponents": []
+                }
+            ]
+        },
+        "30": {
+            "Tournament's name:": "essai",
+            "Tournament's adress:": "Chassieu",
+            "Tournament's Date:": "Janvier",
+            "Total number of rounds:": 4,
+            "Round number": 0,
+            "Time control:": "300",
+            "Number of player:": 8,
+            "Comments:": "Dictionnaire temporaire",
+            "Round 1": null,
+            "Round 2": null,
+            "Round 3": null,
+            "Round 4": null,
+            "Tournament's matches": null,
+            "players": [
+                {
+                    "Player's family name:": "Dupont",
+                    "Player's first name:": "Alexandre",
+                    "Player's birthdate:": "1972",
+                    "Player's gender:": "M",
+                    "Player's rank:": 11,
+                    "Pairing number": "1",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Liotard",
+                    "Player's first name:": "David",
+                    "Player's birthdate:": "1974",
+                    "Player's gender:": "X",
+                    "Player's rank:": 12,
+                    "Pairing number": "6",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Menant",
+                    "Player's first name:": "laureen",
+                    "Player's birthdate:": "1994",
+                    "Player's gender:": "F",
+                    "Player's rank:": 13,
+                    "Pairing number": "5",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Durand",
+                    "Player's first name:": "Aurelie",
+                    "Player's birthdate:": "1990",
+                    "Player's gender:": "F",
+                    "Player's rank:": 14,
+                    "Pairing number": "2",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Roux",
+                    "Player's first name:": "Cedric",
+                    "Player's birthdate:": "1979",
+                    "Player's gender:": "M",
+                    "Player's rank:": 15,
+                    "Pairing number": "7",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Dupuis",
+                    "Player's first name:": "Monique",
+                    "Player's birthdate:": "1965",
+                    "Player's gender:": "F",
+                    "Player's rank:": 16,
+                    "Pairing number": "3",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Bepas",
+                    "Player's first name:": "Marion",
+                    "Player's birthdate:": "1987",
+                    "Player's gender:": "F",
+                    "Player's rank:": 17,
+                    "Pairing number": "4",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Gagnieu",
+                    "Player's first name:": "Arnaud",
+                    "Player's birthdate:": "1991",
+                    "Player's gender:": "M",
+                    "Player's rank:": 18,
+                    "Pairing number": "8",
+                    "Score": 0,
+                    "Opponents": []
+                }
+            ]
+        },
+        "31": {
+            "Tournament's name:": "essai",
+            "Tournament's adress:": "Chassieu",
+            "Tournament's Date:": "Janvier",
+            "Total number of rounds:": 4,
+            "Round number": 2,
+            "Time control:": "300",
+            "Number of player:": 8,
+            "Comments:": "Dictionnaire temporaire",
+            "Round 1": null,
+            "Round 2": null,
+            "Round 3": null,
+            "Round 4": null,
+            "Tournament's matches": null,
+            "players": [
+                {
+                    "Player's family name:": "Dupont",
+                    "Player's first name:": "Alexandre",
+                    "Player's birthdate:": "1972",
+                    "Player's gender:": "M",
+                    "Player's rank:": 11,
+                    "Pairing number": "1",
+                    "Score": 1.0,
+                    "Opponents": [
+                        7,
+                        5
+                    ]
+                },
+                {
+                    "Player's family name:": "Liotard",
+                    "Player's first name:": "David",
+                    "Player's birthdate:": "1974",
+                    "Player's gender:": "X",
+                    "Player's rank:": 12,
+                    "Pairing number": "6",
+                    "Score": 1.5,
+                    "Opponents": [
+                        3,
+                        2
+                    ]
+                },
+                {
+                    "Player's family name:": "Menant",
+                    "Player's first name:": "laureen",
+                    "Player's birthdate:": "1994",
+                    "Player's gender:": "F",
+                    "Player's rank:": 13,
+                    "Pairing number": "5",
+                    "Score": 0.0,
+                    "Opponents": [
+                        4,
+                        1
+                    ]
+                },
+                {
+                    "Player's family name:": "Durand",
+                    "Player's first name:": "Aurelie",
+                    "Player's birthdate:": "1990",
+                    "Player's gender:": "F",
+                    "Player's rank:": 14,
+                    "Pairing number": "2",
+                    "Score": 1.5,
+                    "Opponents": [
+                        8,
+                        6
+                    ]
+                },
+                {
+                    "Player's family name:": "Roux",
+                    "Player's first name:": "Cedric",
+                    "Player's birthdate:": "1979",
+                    "Player's gender:": "M",
+                    "Player's rank:": 15,
+                    "Pairing number": "7",
+                    "Score": 1.0,
+                    "Opponents": [
+                        1,
+                        4
+                    ]
+                },
+                {
+                    "Player's family name:": "Dupuis",
+                    "Player's first name:": "Monique",
+                    "Player's birthdate:": "1965",
+                    "Player's gender:": "F",
+                    "Player's rank:": 16,
+                    "Pairing number": "3",
+                    "Score": 0.0,
+                    "Opponents": [
+                        6,
+                        8
+                    ]
+                },
+                {
+                    "Player's family name:": "Bepas",
+                    "Player's first name:": "Marion",
+                    "Player's birthdate:": "1987",
+                    "Player's gender:": "F",
+                    "Player's rank:": 17,
+                    "Pairing number": "4",
+                    "Score": 2.0,
+                    "Opponents": [
+                        5,
+                        7
                     ]
                 },
                 {
@@ -1835,7 +3577,339 @@
                     "Pairing number": "8",
                     "Score": 1.0,
                     "Opponents": [
+                        2,
+                        3
+                    ]
+                }
+            ]
+        },
+        "32": {
+            "Tournament's name:": "essai",
+            "Tournament's adress:": "Chassieu",
+            "Tournament's Date:": "Janvier",
+            "Total number of rounds:": 4,
+            "Round number": 0,
+            "Time control:": "300",
+            "Number of player:": 8,
+            "Comments:": "Dictionnaire temporaire",
+            "Round 1": null,
+            "Round 2": null,
+            "Round 3": null,
+            "Round 4": null,
+            "Tournament's matches": null,
+            "players": [
+                {
+                    "Player's family name:": "Dupont",
+                    "Player's first name:": "Alexandre",
+                    "Player's birthdate:": "1972",
+                    "Player's gender:": "M",
+                    "Player's rank:": 11,
+                    "Pairing number": "1",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Liotard",
+                    "Player's first name:": "David",
+                    "Player's birthdate:": "1974",
+                    "Player's gender:": "X",
+                    "Player's rank:": 12,
+                    "Pairing number": "6",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Menant",
+                    "Player's first name:": "laureen",
+                    "Player's birthdate:": "1994",
+                    "Player's gender:": "F",
+                    "Player's rank:": 13,
+                    "Pairing number": "5",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Durand",
+                    "Player's first name:": "Aurelie",
+                    "Player's birthdate:": "1990",
+                    "Player's gender:": "F",
+                    "Player's rank:": 14,
+                    "Pairing number": "2",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Roux",
+                    "Player's first name:": "Cedric",
+                    "Player's birthdate:": "1979",
+                    "Player's gender:": "M",
+                    "Player's rank:": 15,
+                    "Pairing number": "7",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Dupuis",
+                    "Player's first name:": "Monique",
+                    "Player's birthdate:": "1965",
+                    "Player's gender:": "F",
+                    "Player's rank:": 16,
+                    "Pairing number": "3",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Bepas",
+                    "Player's first name:": "Marion",
+                    "Player's birthdate:": "1987",
+                    "Player's gender:": "F",
+                    "Player's rank:": 17,
+                    "Pairing number": "4",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Gagnieu",
+                    "Player's first name:": "Arnaud",
+                    "Player's birthdate:": "1991",
+                    "Player's gender:": "M",
+                    "Player's rank:": 18,
+                    "Pairing number": "8",
+                    "Score": 0,
+                    "Opponents": []
+                }
+            ]
+        },
+        "33": {
+            "Tournament's name:": "essai",
+            "Tournament's adress:": "Chassieu",
+            "Tournament's Date:": "Janvier",
+            "Total number of rounds:": 4,
+            "Round number": 0,
+            "Time control:": "300",
+            "Number of player:": 8,
+            "Comments:": "Dictionnaire temporaire",
+            "Round 1": null,
+            "Round 2": null,
+            "Round 3": null,
+            "Round 4": null,
+            "Tournament's matches": null,
+            "players": [
+                {
+                    "Player's family name:": "Dupont",
+                    "Player's first name:": "Alexandre",
+                    "Player's birthdate:": "1972",
+                    "Player's gender:": "M",
+                    "Player's rank:": 11,
+                    "Pairing number": "1",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Liotard",
+                    "Player's first name:": "David",
+                    "Player's birthdate:": "1974",
+                    "Player's gender:": "X",
+                    "Player's rank:": 12,
+                    "Pairing number": "6",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Menant",
+                    "Player's first name:": "laureen",
+                    "Player's birthdate:": "1994",
+                    "Player's gender:": "F",
+                    "Player's rank:": 13,
+                    "Pairing number": "5",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Durand",
+                    "Player's first name:": "Aurelie",
+                    "Player's birthdate:": "1990",
+                    "Player's gender:": "F",
+                    "Player's rank:": 14,
+                    "Pairing number": "2",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Roux",
+                    "Player's first name:": "Cedric",
+                    "Player's birthdate:": "1979",
+                    "Player's gender:": "M",
+                    "Player's rank:": 15,
+                    "Pairing number": "7",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Dupuis",
+                    "Player's first name:": "Monique",
+                    "Player's birthdate:": "1965",
+                    "Player's gender:": "F",
+                    "Player's rank:": 16,
+                    "Pairing number": "3",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Bepas",
+                    "Player's first name:": "Marion",
+                    "Player's birthdate:": "1987",
+                    "Player's gender:": "F",
+                    "Player's rank:": 17,
+                    "Pairing number": "4",
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Player's family name:": "Gagnieu",
+                    "Player's first name:": "Arnaud",
+                    "Player's birthdate:": "1991",
+                    "Player's gender:": "M",
+                    "Player's rank:": 18,
+                    "Pairing number": "8",
+                    "Score": 0,
+                    "Opponents": []
+                }
+            ]
+        },
+        "34": {
+            "Tournament's name:": "essai",
+            "Tournament's adress:": "Chassieu",
+            "Tournament's Date:": "Janvier",
+            "Total number of rounds:": 4,
+            "Round number": 4,
+            "Time control:": "300",
+            "Number of player:": 8,
+            "Comments:": "Dictionnaire temporaire",
+            "Round 1": null,
+            "Round 2": null,
+            "Round 3": null,
+            "Round 4": null,
+            "Tournament's matches": null,
+            "players": [
+                {
+                    "Player's family name:": "Dupont",
+                    "Player's first name:": "Alexandre",
+                    "Player's birthdate:": "1972",
+                    "Player's gender:": "M",
+                    "Player's rank:": 11,
+                    "Pairing number": "1",
+                    "Score": 2.0,
+                    "Opponents": [
+                        7,
+                        4,
+                        6,
+                        5
+                    ]
+                },
+                {
+                    "Player's family name:": "Liotard",
+                    "Player's first name:": "David",
+                    "Player's birthdate:": "1974",
+                    "Player's gender:": "X",
+                    "Player's rank:": 12,
+                    "Pairing number": "6",
+                    "Score": 1.0,
+                    "Opponents": [
+                        3,
+                        7,
+                        1,
+                        4
+                    ]
+                },
+                {
+                    "Player's family name:": "Menant",
+                    "Player's first name:": "laureen",
+                    "Player's birthdate:": "1994",
+                    "Player's gender:": "F",
+                    "Player's rank:": 13,
+                    "Pairing number": "5",
+                    "Score": 3.5,
+                    "Opponents": [
+                        4,
+                        8,
+                        7,
+                        1
+                    ]
+                },
+                {
+                    "Player's family name:": "Durand",
+                    "Player's first name:": "Aurelie",
+                    "Player's birthdate:": "1990",
+                    "Player's gender:": "F",
+                    "Player's rank:": 14,
+                    "Pairing number": "2",
+                    "Score": 0.5,
+                    "Opponents": [
+                        8,
+                        3,
+                        4,
+                        3
+                    ]
+                },
+                {
+                    "Player's family name:": "Roux",
+                    "Player's first name:": "Cedric",
+                    "Player's birthdate:": "1979",
+                    "Player's gender:": "M",
+                    "Player's rank:": 15,
+                    "Pairing number": "7",
+                    "Score": 2.0,
+                    "Opponents": [
+                        1,
+                        6,
+                        5,
+                        8
+                    ]
+                },
+                {
+                    "Player's family name:": "Dupuis",
+                    "Player's first name:": "Monique",
+                    "Player's birthdate:": "1965",
+                    "Player's gender:": "F",
+                    "Player's rank:": 16,
+                    "Pairing number": "3",
+                    "Score": 1.5,
+                    "Opponents": [
+                        6,
+                        2,
+                        8,
                         2
+                    ]
+                },
+                {
+                    "Player's family name:": "Bepas",
+                    "Player's first name:": "Marion",
+                    "Player's birthdate:": "1987",
+                    "Player's gender:": "F",
+                    "Player's rank:": 17,
+                    "Pairing number": "4",
+                    "Score": 2.5,
+                    "Opponents": [
+                        5,
+                        1,
+                        2,
+                        6
+                    ]
+                },
+                {
+                    "Player's family name:": "Gagnieu",
+                    "Player's first name:": "Arnaud",
+                    "Player's birthdate:": "1991",
+                    "Player's gender:": "M",
+                    "Player's rank:": 18,
+                    "Pairing number": "8",
+                    "Score": 3.0,
+                    "Opponents": [
+                        2,
+                        5,
+                        3,
+                        7
                     ]
                 }
             ]

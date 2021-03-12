@@ -16,14 +16,21 @@ class TournamentInput:
         
         
         tournament = {"Tournament's name:": 'essai',
-                           "Tournament's adress:": 'Chassieu',
-                           "Tournament's Date:": 'Janvier',
-                           "Total number of rounds:": 4,
-                           "Time control:": '300',
-                           "Number of player:": 8,
-                           "players:" ''
-                           "Comments:": 'Dictionnaire temporaire'
-                          } #tournoi factice comme raccourci
+                      "Tournament's adress:": 'Chassieu',
+                      "Tournament's Date:": 'Janvier',
+                      "Total number of rounds:": 4,
+                      "Round number": 0,
+                      "Time control:": '300',
+                      "Number of player:": 8,
+                      "Comments:": 'Dictionnaire temporaire',
+                      "Round 1": None,
+                      "Round 2": None,
+                      "Round 3": None,
+                      "Round 4": None,
+                      "Tournament's matches": None
+                      
+                      
+                      } #tournoi factice comme raccourci
 
         
         
