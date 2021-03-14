@@ -21,13 +21,13 @@ class TournamentInput:
                       "Total number of rounds:": 4,
                       "Round number": 0,
                       "Time control:": '300',
-                      "Number of player:": 8,
+                      "Number of player": 8,
                       "Comments:": 'Dictionnaire temporaire',
                       "Round 1": None,
                       "Round 2": None,
                       "Round 3": None,
                       "Round 4": None,
-                      "Tournament's matches": None
+                      "Tournament's matches": {}
                       
                       
                       } #tournoi factice comme raccourci

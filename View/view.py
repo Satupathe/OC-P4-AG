@@ -43,7 +43,13 @@ class TournamentView:
             else:
                 tour_infos[i] = input(i)
 
-        tour_infos["Current round"] = 0 
+        tour_infos["Round number"] = 0 
+        tour_infos["Number of player"] = 8
+        tour_infos["Round 1"] = None
+        tour_infos["Round 2"] = None
+        tour_infos["Round 3"] = None
+        tour_infos["Round 4"] = None
+        tour_infos["Tournament's matches"] = {}
         
         return tour_infos # renvoi le dictionnaire du tournoi
 
@@ -171,3 +177,26 @@ class AskContinue:
     def ask_end_round(self):
         print("")
         input("Entrez END pour finir le round: ")
+
+    def ask_go_next_round(self):
+        print("")
+        print("Voulez-vous passer au round suivant ?")
+        print("")
+        print("Pour passer au round suivant entrez 'yes'")
+        print("Pour revenir au menu principal entrez 'menu', les actions précédentes sont enregistrées")
+        ask_action = input("Voulez_vous continuer ?   ")
+        print("")
+        action = None
+
+        if ask_action == "yes":
+            action = "yes"
+
+        elif ask_action =="menu":
+            action = "menu"
+
+        else:
+            print("")
+            print("Merci de rentrer la bonne commande comme indiqué dans les propositions ci-dessous")
+            self.ask_go_next_round()
+
+        return action

@@ -46,7 +46,7 @@ class FrontController:
             """elif exit du programme qui ferme la console windows"""
 
         elif self.running =="exit":
-            os._exit("A bientot")
+            os.exit()
 
 
         else:
@@ -78,9 +78,15 @@ class ContinueTournamentController:
         else:
             tournament = TournamentController()
             tournament.round_players(tournament_number)
-            tournament.round_selection(tournament_number)
-            tournament.call_final_score()
+            action = tournament.round_selection(tournament_number)
+            menu = FrontController()
 
+            if action is not None:
+                menu.start()
+            else:
+                tournament.call_final_score()
+            
+        menu.start()
 
 class ShowInformationsController:
     def __call__(self):
@@ -97,9 +103,16 @@ class LaunchTournamentController:
         tournament.group_tournament_and_players()
         tournament.json_save()
         tournament.round_players(tournament_number)
-        tournament.round_selection(tournament_number)
-        tournament.call_final_score()
+        action = tournament.round_selection(tournament_number)
+        menu = FrontController()
+        
+        if action is not None:
+            
+            menu.start()
+        else:
+            tournament.call_final_score()
 
+        menu.start()
 
 class TournamentController:
 
@@ -143,10 +156,21 @@ class TournamentController:
         previous_round_number = self.tournament.get_round_number(tournament_number)
         """print(previous_round_number)"""
         number_of_round = 4 - previous_round_number
+        action = None
         
         for r in range(number_of_round):
             one_round = RoundController()
             round_nb = previous_round_number + 1            
+            next_round = view.AskContinue().ask_go_next_round()
+            #print("next round ", next_round)
+            #print("type next round ", type(next_round))
+            if next_round == 'yes':
+                pass
+
+            else:
+                action = 'break'
+                break
+             
             
             if previous_round_number == 0:
                 matchs_round_1 = one_round.first_round(self.round_players, round_nb)
@@ -155,7 +179,7 @@ class TournamentController:
                 for k in range(4):
                     players_and_score.append(matchs_round_1[k][0])
                     players_and_score.append(matchs_round_1[k][1])
-                self.tournament.json_score_opponent_player(players_and_score, matchs_round_1, tournament_number)
+                self.tournament.json_score_opponent_player(players_and_score, matchs_round_1, tournament_number, round_nb)
 
             else:
                 actual_round = self.tournament.get_previous_round_list(tournament_number)
@@ -183,8 +207,11 @@ class TournamentController:
                     self.players_and_score_other_round.append(score_other_round[k][1]) 
                 #print("la liste des joueurs fin tour ", self.players_and_score_other_round)         
                 
-                self.tournament.json_score_opponent_player(self.players_and_score_other_round, score_other_round, tournament_number)
+                self.tournament.json_score_opponent_player(self.players_and_score_other_round, score_other_round, tournament_number, round_nb)
             previous_round_number += 1
+
+        #print("action ", action)
+        return action
 
     def call_final_score(self):
         sorted_list = sorted(self.players_and_score_other_round, key=lambda x: x[3], reverse=True)

@@ -25,13 +25,13 @@ class TournamentModel:
         self.total_tournament["players"] = players_list
         return self.total_tournament
 
-    def get_match_list(self): # enlever cette fonction ? 
+    """def get_match_list(self): # enlever cette fonction ? 
         self.played_matchs_list = []#décomposer par round !!!!!!
         return self.played_matchs_list#prendre dans le json ?
 
 
     def add_to_match_list(self, round_matches):
-        self.played_matchs_list.append(round_matches) # enlever ces fonctions ?
+        self.played_matchs_list.append(round_matches) # enlever ces fonctions ?"""
 
     def json_save(self, tournament_dict):
         """sauvegarde les infos tournoi et joueur dans le json"""
@@ -78,7 +78,7 @@ class TournamentModel:
 
         return players
 
-    def json_score_opponent_player(self, players_and_score, matchs_round, tournament_number):
+    def json_score_opponent_player(self, players_and_score, matchs_round, tournament_number, round_nb):
         #télécharger le json en vue de faire des modifications dessus
         """self.jtournament = TinyDB('jtournament.json',ensure_ascii=False, encoding='utf8', indent=4)"""
         """tournament_table = self.jtournament.table('tournaments')"""
@@ -108,9 +108,15 @@ class TournamentModel:
         print("")"""
         
         self.players = tournament_table.get(doc_id=tournament_id)["players"]
-        """print("matchs_round: ", matchs_round, "par match")
-        print("")"""
+        print("matchs_round: ", matchs_round, "par match")
+        print("")
         
+        tournament_matches = tournament_table.get(doc_id=tournament_id)["Tournament's matches"]
+        print("tournament_matches 1: ", tournament_matches)
+        round_id = "Round number " + str(round_nb)
+        tournament_matches[round_id] = matchs_round
+        print("tournament_matches 2: ", tournament_matches)
+        tournament_table.update(set("Tournament's matches", tournament_matches), doc_ids=[tournament_id])
 
 
         opponents_ids = {}
