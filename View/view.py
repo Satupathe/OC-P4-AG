@@ -45,10 +45,7 @@ class TournamentView:
 
         tour_infos["Round number"] = 0 
         tour_infos["Number of player"] = 8
-        tour_infos["Round 1"] = None
-        tour_infos["Round 2"] = None
-        tour_infos["Round 3"] = None
-        tour_infos["Round 4"] = None
+        tour_infos["Rounds"] = {}
         tour_infos["Tournament's matches"] = {}
         
         return tour_infos # renvoi le dictionnaire du tournoi
@@ -59,11 +56,11 @@ class PlayersView:
         """Appelle les input pour chaque joueur et renvoi une liste de dictionnaires"""
         players_infos = []
 
-        questions = ["Player's family name:",
-                     "Player's first name:",
-                     "Player's birthdate:",
-                     "Player's gender:",
-                     "Player's rank:"
+        questions = ["Player's family name",
+                     "Player's first name",
+                     "Player's birthdate",
+                     "Player's gender",
+                     "Player's rank"
                     ]
 
         for i in range(8):
@@ -130,7 +127,7 @@ class FinalScore:
         for i in final_score_list:
             print("Place "+str(place)+" : ", i)
             place += 1
-
+        print("")
 
 class HomeMenuView:
     
@@ -138,10 +135,10 @@ class HomeMenuView:
         print ("Menu de selection des options du logiciel")
         print("")
         print("Merci d'entrer un des mots suivant: ")
-        print("start:         Permet de commencer un nouveau tournoi")
-        print("continuation:  Permet de reprendre un ancien tournoi")
-        print("show:          Permet d'afficher les informations d'anciens tournois")
-        print("exit:          Permet de quitter le programme et fermer la console de commande")
+        print("start:            Permet de commencer un nouveau tournoi")
+        print("continuation:     Permet de reprendre un ancien tournoi")
+        print("show:             Permet d'afficher les informations d'anciens tournois")
+        print("exit:             Permet de quitter le programme et fermer la console de commande")
         print("")
         ask_action = input("Action choisie: ")
 
@@ -178,7 +175,7 @@ class AskContinue:
         print("")
         input("Entrez END pour finir le round: ")
 
-    def ask_go_next_round(self):
+    def ask_go_next_round(self): # attention vrifier et fixer la récursivité !!!!!!
         print("")
         print("Voulez-vous passer au round suivant ?")
         print("")
@@ -200,3 +197,93 @@ class AskContinue:
             self.ask_go_next_round()
 
         return action
+
+class CallShowAction:
+    def ask_show_action(self):
+        print ("Menu d'affichage des rapports de données")
+        print("")
+        print("Merci d'entrer un des mots suivant: ")
+        print("tournaments:      Permet de sélectionner un tournoi spécifique")
+        print("total players:    Permet d'afficher l'ensemble des joueurs")
+        print("menu:             Permet de retourner au menu principal")
+        print("")
+        ask_action = input("Action choisie: ")
+        print("")
+
+        return ask_action
+
+    def ask_type_tournament(self):
+        print ("Voulez-vous afficher les tournois en cours ou l'ensemble des tournois?")
+        print("")
+        print("Merci d'entrer un des mots suivant: ")
+        print("total:            Permet d'afficher la liste de tous les tournois enregistrés")
+        print("unfinished:       Permet d'afficher seulement les tournoi en cours")
+        print("back:             Permet de retourner au menu précédent")
+        print("")
+        ask_action = input("Action choisie: ")
+        print("")
+
+        return ask_action
+
+    def ask_players_sorting(self):
+        print ("Voulez-vous afficher la liste des joueurs par rank ou ordre alphabétique?")
+        print("")
+        print("Merci d'entrer un des mots suivant: ")
+        print("rank:             Permet d'afficher la liste des joueurs par rank")
+        print("name:             Permet d'afficher la liste des joueurs par ordre alphabétique")
+        print("back:             Permet de retourner au menu précédent")
+        print("")
+        ask_action = input("Action choisie: ")
+        print("")
+
+        return ask_action
+
+    def print_sorted_players(self, info_type, informations):
+        print("liste de l'ensemble des joueurs triés par " + info_type + " :")
+        print(informations)
+        print("")
+
+
+    def print_tournaments_list(self, all_tournaments):
+        print ("Liste de l'ensemble des tournois enregistrés")
+        print("")
+        for tournament in all_tournaments:
+            print(tournament)
+        print("")
+
+    def print_unfinished_tournaments(self, all_tournaments):
+        print ("Liste de l'ensemble des tournois en cours")
+        print("")
+        for tournament in all_tournaments:
+            print(tournament)
+        print("")
+
+    def ask_tournament_id(self):
+        print ("Merci de renseigner le numéro du tournoi sélectionné")
+        print("")
+        ask_action = input("Numéro du tournoi: ")
+        print("")
+
+        return ask_action
+
+    def ask_tournament_action(self, tournament_id):
+        print ("Veuillez sélectionner les informations à afficher pour le tournoi numéro " + tournament_id)
+        print("")
+        print("Merci d'entrer un des mots suivant: ")
+        print("score:            Permet d'afficher la liste des joueurs du tournoi par score")
+        print("name:             Permet d'afficher la liste des joueurs du tournoi par ordre alphabétique")
+        print("rounds:           Permet d'afficher les rounds du tournoi")
+        print("matchs:           Permet d'afficher la liste des matchs du tournoi")
+        print("back:             Permet de changer le numéro du tournoi sélectionné")
+        print("menu:             Permet de retourner à la racine du menu show")
+        print("")
+        ask_action = input("Action choisie: ")
+        print("")
+
+        return ask_action
+
+    def print_specific_informations(self, tournament_id, info_type, informations):
+        print("liste " + info_type + " pour le tournoi " + tournament_id)
+        for element in informations:
+            print(element)
+        print("")

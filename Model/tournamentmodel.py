@@ -78,7 +78,103 @@ class TournamentModel:
 
         return players
 
-    def json_score_opponent_player(self, players_and_score, matchs_round, tournament_number, round_nb):
+    def get_total_tournaments(self):
+        jtournament = TinyDB('jtournament.json',ensure_ascii=False, encoding='utf8', indent=4)
+        tournament_table = jtournament.table('tournaments')
+        total_table = tournament_table.all()
+        #print("total_table: ", total_table)
+        all_tournaments = []
+        
+        for tournament in total_table:
+            one_tournament = {}
+            one_tournament["ID"] = tournament.doc_id
+            one_tournament["Nom"] = tournament["Tournament's name"]
+            one_tournament["Date"] = tournament["Tournament's Date"]
+            one_tournament["Adresse"] = tournament["Tournament's adress"]
+            all_tournaments.append(one_tournament)
+
+        #print("all_tournaments", all_tournaments)
+        return all_tournaments
+
+    def get_unfinished_tournaments(self):
+        jtournament = TinyDB('jtournament.json',ensure_ascii=False, encoding='utf8', indent=4)
+        tournament_table = jtournament.table('tournaments')
+        total_table = tournament_table.search(Query()["Round number"] != 4)
+        #print("total_table: ", total_table)
+        all_tournaments = []
+        
+        for tournament in total_table:
+            one_tournament = {}
+            one_tournament["ID"] = tournament.doc_id
+            one_tournament["Nom"] = tournament["Tournament's name"]
+            one_tournament["Date"] = tournament["Tournament's Date"]
+            one_tournament["Adresse"] = tournament["Tournament's adress"]
+            all_tournaments.append(one_tournament)
+
+        #print("all_tournaments", all_tournaments)
+        return all_tournaments
+
+    def sorted_score_1T(self, tournament_id):
+        jtournament = TinyDB('jtournament.json',ensure_ascii=False, encoding='utf8', indent=4)
+        tournament_table = jtournament.table('tournaments')
+        tid = int(tournament_id)   
+        players_table = tournament_table.get(doc_id=tid)["players"]
+        #print("players_table: ", players_table)
+        sorted_list = []
+      
+        score = 4.0
+        while len(sorted_list)< 8: # permet de classer par score et par rank
+            by_score = []
+            for player in players_table:
+                if player["Score"] == score:
+                    by_score.append(player)
+            by_score.sort(key=itemgetter("Rank"), reverse=False)
+            #print("by score", by_score)
+            for item in by_score:
+                sorted_list.append(item)
+            score -= 0.5
+
+        #print(sorted_list)
+        return sorted_list
+    
+
+    def sorted_name_1T(self, tournament_id):
+        #récupèrer les infos des joueurs selon l'id du tournoi
+        #garder leur rank dans le tournoi, leur rank actuel, nom, prénom, pairing number, score
+        #mettre le tout sous forme de liste
+        #trier la liste
+        #retourner la liste
+        pass
+
+    def sorted_rounds_1T(self, tournament_id):
+        #récupèrer les infos des joueurs selon l'id du tournoi
+        #garder toutes les informations disponibles
+        #mettre le tout sous forme de liste
+        #retourner la liste
+        pass
+
+    def sorted_matches_1T(self, tournament_id):
+        #récupèrer les infos des joueurs selon l'id du tournoi
+        #garder leur rank dans le tournoi, leur rank actuel, nom, prénom, pairing number, score
+        #mettre le tout sous forme de liste
+        #retourner la liste
+        pass
+
+    def total_players_name(self):
+        #récupérer tous les joueurs
+        #Ne garder que les nom, prénom, date de naissance, genre, rank actuel
+        #ajouter à une liste en éliminant les doublons
+        #classer par ordre alphabétique des nom de famille
+        pass
+
+    def total_players_actual_rank(self):
+        #récupérer tous les joueurs
+        #Ne garder que les nom, prénom, date de naissance, genre, rank actuel
+        #ajouter à une liste en éliminant les doublons
+        #classer en fonction du rank actuel
+        pass
+
+    def json_score_opponent_player(self, players_and_score, matchs_round, tournament_number, round_nb, start, end):
         #télécharger le json en vue de faire des modifications dessus
         """self.jtournament = TinyDB('jtournament.json',ensure_ascii=False, encoding='utf8', indent=4)"""
         """tournament_table = self.jtournament.table('tournaments')"""
@@ -108,16 +204,28 @@ class TournamentModel:
         print("")"""
         
         self.players = tournament_table.get(doc_id=tournament_id)["players"]
-        print("matchs_round: ", matchs_round, "par match")
-        print("")
+        """print("matchs_round: ", matchs_round, "par match")
+        print("")"""
         
-        tournament_matches = tournament_table.get(doc_id=tournament_id)["Tournament's matches"]
+        #séparer en plusieurs fonctions ? garder ? car redondant ??!!??!!
+        """tournament_matches = tournament_table.get(doc_id=tournament_id)["Tournament's matches"]
         print("tournament_matches 1: ", tournament_matches)
         round_id = "Round number " + str(round_nb)
         tournament_matches[round_id] = matchs_round
         print("tournament_matches 2: ", tournament_matches)
-        tournament_table.update(set("Tournament's matches", tournament_matches), doc_ids=[tournament_id])
+        tournament_table.update(set("Tournament's matches", tournament_matches), doc_ids=[tournament_id])"""
 
+
+        #Mettre dans une autre fonction ?
+        saved_rounds = tournament_table.get(doc_id=tournament_id)["Rounds"]
+        """print("one round 1: ", saved_rounds)
+        print('')"""
+        round_id = "Round number " + str(round_nb)
+        round_infos = [start, end, matchs_round]
+        saved_rounds[round_id] = round_infos
+        """print("one round 2: ", saved_rounds)
+        print('')"""
+        tournament_table.update(set("Rounds", saved_rounds), doc_ids=[tournament_id])
 
         opponents_ids = {}
 
@@ -186,7 +294,7 @@ class TournamentModel:
             for player in sorted_players:
                 if player["Score"] == score:
                     by_score.append(player)
-            by_score.sort(key=itemgetter("Player's rank:"), reverse=False)
+            by_score.sort(key=itemgetter("Rank"), reverse=False)
             for item in by_score:
                 sorted_list.append(item)
             score -= 0.5

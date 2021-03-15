@@ -7,11 +7,11 @@ Keep informations available for the User
 class Player:
  
     def __init__(self, one_player_infos):
-        self.name = one_player_infos["Player's family name:"]
-        self.first_name = one_player_infos["Player's first name:"]
-        self.birth = one_player_infos["Player's birthdate:"]
-        self.gender = one_player_infos["Player's gender:"]
-        self.ranking = one_player_infos["Player's rank:"]
+        self.name = one_player_infos["Family name"]
+        self.first_name = one_player_infos["First name"]
+        self.birth = one_player_infos["Birthdate"]
+        self.gender = one_player_infos["Gender"]
+        self.ranking = one_player_infos["Rank"]
         self.pairing_nb = one_player_infos["Pairing number"]
         self.score = one_player_infos["Score"]
         self.opponents = one_player_infos["Opponents"]

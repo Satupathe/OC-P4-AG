@@ -1,6 +1,6 @@
 """ Controller for creation and use of objects"""
 
-from Controller import menu
+from Controller import menu, show
 from Model import tournamentmodel, player, rounds
 from View import view
 from operator import itemgetter
@@ -30,15 +30,10 @@ class FrontController:
             print("")
             continuation = ContinueTournamentController()
             continuation = continuation()
-            """une fois que l'utilisateur a retrouvé le numéro du tournoi qu'il souhaite avoir
-            il peut demander la continuation de celui-ci
-            fait en sorte de reprendre au bon numéro de round
-            et de réaliser le bon nombre de tours en fonction de ce numéro """
-
 
         elif self.running == "show":
             print("")
-            informations = ShowInformationsController()
+            informations = show.ShowInformationsController()
             informations = informations()
             """retrouver un tournoi en fonction de non nom et de sa date
             afficher le numéro du tournoi (objet json) associé à sa date et à son nom.  """
@@ -87,10 +82,6 @@ class ContinueTournamentController:
                 tournament.call_final_score()
             
         menu.start()
-
-class ShowInformationsController:
-    def __call__(self):
-        pass
 
 
 class LaunchTournamentController:
@@ -174,12 +165,14 @@ class TournamentController:
             
             if previous_round_number == 0:
                 matchs_round_1 = one_round.first_round(self.round_players, round_nb)
-                """self.tournament.add_to_match_list(matchs_round_1)"""
+                start = matchs_round_1[1]
+                end = matchs_round_1[2]
+                #print("score_other_round ", matchs_round_1)
 
                 for k in range(4):
-                    players_and_score.append(matchs_round_1[k][0])
-                    players_and_score.append(matchs_round_1[k][1])
-                self.tournament.json_score_opponent_player(players_and_score, matchs_round_1, tournament_number, round_nb)
+                    players_and_score.append(matchs_round_1[0][k][0])
+                    players_and_score.append(matchs_round_1[0][k][1])
+                self.tournament.json_score_opponent_player(players_and_score, matchs_round_1[0], tournament_number, round_nb, start, end)
 
             else:
                 actual_round = self.tournament.get_previous_round_list(tournament_number)
@@ -199,15 +192,17 @@ class TournamentController:
                     matchs_other_round.append(match)
                 
                 score_other_round = one_round.other_round(round_player_list, round_nb)
-                """self.tournament.add_to_match_list(score_other_round)"""
+                start = score_other_round[1]
+                end = score_other_round[2]
+                #print("score_other_round ", score_other_round)
                 self.players_and_score_other_round = []
                 #print ("players and score: ", self.players_and_score_other_round)
                 for k in range (4):
-                    self.players_and_score_other_round.append(score_other_round[k][0])
-                    self.players_and_score_other_round.append(score_other_round[k][1]) 
+                    self.players_and_score_other_round.append(score_other_round[0][k][0])
+                    self.players_and_score_other_round.append(score_other_round[0][k][1]) 
                 #print("la liste des joueurs fin tour ", self.players_and_score_other_round)         
                 
-                self.tournament.json_score_opponent_player(self.players_and_score_other_round, score_other_round, tournament_number, round_nb)
+                self.tournament.json_score_opponent_player(self.players_and_score_other_round, score_other_round[0], tournament_number, round_nb, start, end)
             previous_round_number += 1
 
         #print("action ", action)
@@ -263,7 +258,7 @@ class RoundController:
             match_list[i][0][3] += float(score_player_1)
             match_list[i][1][3] += float(score_player_2)          
 
-        return match_list
+        return match_list, begin, end
     
     def other_round(self, round_player, round_nb):
         #Permet de créer les autres rounds en fonction des matchs déjà effectués
@@ -290,5 +285,5 @@ class RoundController:
             match_list[i][0][3] += float(score_player_1)
             match_list[i][1][3] += float(score_player_2)          
 
-        return match_list
+        return match_list, begin, end
         # faire en premier un chemin vers round puis vers le json et le calcul ici.
