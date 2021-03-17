@@ -139,26 +139,40 @@ class TournamentModel:
     
 
     def sorted_name_1T(self, tournament_id):
-        #récupèrer les infos des joueurs selon l'id du tournoi
-        #garder leur rank dans le tournoi, leur rank actuel, nom, prénom, pairing number, score
-        #mettre le tout sous forme de liste
-        #trier la liste
-        #retourner la liste
-        pass
+        jtournament = TinyDB('jtournament.json',ensure_ascii=False, encoding='utf8', indent=4)
+        tournament_table = jtournament.table('tournaments')
+        tid = int(tournament_id)   
+        
+        players_table = tournament_table.get(doc_id=tid)["players"]
+        sorted_players_table = sorted(players_table, key=itemgetter("Family name"), reverse=False)
 
-    def sorted_rounds_1T(self, tournament_id):
-        #récupèrer les infos des joueurs selon l'id du tournoi
-        #garder toutes les informations disponibles
-        #mettre le tout sous forme de liste
-        #retourner la liste
-        pass
+        return sorted_players_table
+     
+    def sorted_rounds_1T(self, tournament_id):#finir la mise en forme de l'affichage des rounds
+        jtournament = TinyDB('jtournament.json',ensure_ascii=False, encoding='utf8', indent=4)
+        tournament_table = jtournament.table('tournaments')
+        tid = int(tournament_id)   
+
+        rounds_table = tournament_table.get(doc_id=tid)["Rounds"]
+        rounds_list = []
+        for one_round in rounds_table:
+            rounds_list.append(rounds_table[one_round])
+
+        return rounds_list
 
     def sorted_matches_1T(self, tournament_id):
-        #récupèrer les infos des joueurs selon l'id du tournoi
-        #garder leur rank dans le tournoi, leur rank actuel, nom, prénom, pairing number, score
-        #mettre le tout sous forme de liste
-        #retourner la liste
-        pass
+        jtournament = TinyDB('jtournament.json',ensure_ascii=False, encoding='utf8', indent=4)
+        tournament_table = jtournament.table('tournaments')
+        tid = int(tournament_id)   
+
+        rounds_table = tournament_table.get(doc_id=tid)["Rounds"]
+        matchs_list = []
+        for one_round in rounds_table:
+            for i in range(4):# définir en fonction du nombre de rounds déja passés (sinon erreur avec tournoi inachevé)
+                one_match = rounds_table[one_round][2][i][0], rounds_table[one_round][2][i][1] 
+                matchs_list.append(one_match)
+
+        return matchs_list
 
     def total_players_name(self):
         #récupérer tous les joueurs

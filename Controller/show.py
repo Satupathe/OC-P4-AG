@@ -52,22 +52,23 @@ class ShowInformationsController:
             info_type = "score"
 
         elif answer == "name":
-            informations = self.model.sorted_name_1T()
+            informations = self.model.sorted_name_1T(tournament_id)
             info_type = "name"
 
-        elif answer == "rounds":
-           informations = self.model.sorted_rounds_1T()
+        elif answer == "rounds":#finir la mise en forme
+           informations = self.model.sorted_rounds_1T(tournament_id)
            info_type = "rounds"
 
         elif answer == "matchs":
-            informations = self.model.sorted_matches_1T()  
+            informations = self.model.sorted_matches_1T(tournament_id)  
             info_type = "matchs"
 
         elif answer == "back":
             self.show_specific_informations()
 
         elif answer == "menu":
-            self.__call__()
+            self.__call__() #attention à la bonne fonction de retour
+            #attentions aux erreur à vérifier!!!!!
 
         else:
             print("Merci d'entrer: 'score', 'name', 'rounds', 'matchs', 'back' ou 'menu'. Veiller à ne pas mettre de majuscules")

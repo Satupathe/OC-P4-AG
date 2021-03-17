@@ -1,11 +1,15 @@
 """ Controller for creation and use of objects"""
 
+import os
+import pendulum
+
+from operator import itemgetter
+
 from Controller import menu, show
 from Model import tournamentmodel, player, rounds
 from View import view
-from operator import itemgetter
-import os
-import pendulum
+
+
 
 class FrontController:
     def __init__(self):
