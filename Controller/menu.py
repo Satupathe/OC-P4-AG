@@ -53,9 +53,9 @@ class PlayersInput:
               
         return self.players
 
-    def sorted_rank(self):
+    def sorted_rank(self): # à éliminer ? 
         """remet la liste des joueur dans l'ordre des ranks"""
 
-        sorted_players = sorted(self.players, key=itemgetter("Rank")) 
+        sorted_players = sorted(self.players, key=itemgetter("Pairing number")) 
 
         return sorted_players  

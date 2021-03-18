@@ -154,10 +154,12 @@ class TournamentModel:
         tid = int(tournament_id)   
 
         rounds_table = tournament_table.get(doc_id=tid)["Rounds"]
+        #print("rounds_table: ", rounds_table)
         rounds_list = []
         for one_round in rounds_table:
             rounds_list.append(rounds_table[one_round])
 
+        #print("round list: ", rounds_list)
         return rounds_list
 
     def sorted_matches_1T(self, tournament_id):
@@ -175,59 +177,113 @@ class TournamentModel:
         return matchs_list
 
     def total_players_name(self):
-        #récupérer tous les joueurs
-        #Ne garder que les nom, prénom, date de naissance, genre, rank actuel
-        #ajouter à une liste en éliminant les doublons
-        #classer par ordre alphabétique des nom de famille
-        pass
-
-    def total_players_actual_rank(self):
-        #récupérer tous les joueurs
-        #Ne garder que les nom, prénom, date de naissance, genre, rank actuel
-        #ajouter à une liste en éliminant les doublons
-        #classer en fonction du rank actuel
-        pass
-
-    def json_score_opponent_player(self, players_and_score, matchs_round, tournament_number, round_nb, start, end):
-        #télécharger le json en vue de faire des modifications dessus
-        """self.jtournament = TinyDB('jtournament.json',ensure_ascii=False, encoding='utf8', indent=4)"""
-        """tournament_table = self.jtournament.table('tournaments')"""
         jtournament = TinyDB('jtournament.json',ensure_ascii=False, encoding='utf8', indent=4)
         tournament_table = jtournament.table('tournaments')
-        #print("players_and_score:", players_and_score)
+        name = Query()
+        total_table = tournament_table.all()
+        final_name_players = []
+
+        for element in total_table:
+            for player in element["players"]:
+                polished_player = {}
+                polished_player["Family name"] = player["Family name"]
+                polished_player["First name"] = player["First name"]
+                polished_player["Birthdate"] = player["Birthdate"]
+                polished_player["Gender"] = player["Gender"]
+                polished_player["Rank"] = player["Rank"]
+                
+                if polished_player in final_name_players:
+                    pass
+                else:
+                    final_name_players.append(polished_player)
+
+        final_name_players.sort(key=itemgetter("Family name"), reverse=False)
+
+        return final_name_players
+
+    def total_players_actual_rank(self):
+        jtournament = TinyDB('jtournament.json',ensure_ascii=False, encoding='utf8', indent=4)
+        tournament_table = jtournament.table('tournaments')
+        name = Query()
+        total_table = tournament_table.all()
+        final_name_players = []
+
+        for element in total_table:
+            for player in element["players"]:
+                polished_player = {}
+                polished_player["Family name"] = player["Family name"]
+                polished_player["First name"] = player["First name"]
+                polished_player["Birthdate"] = player["Birthdate"]
+                polished_player["Gender"] = player["Gender"]
+                polished_player["Rank"] = player["Rank"]
+                
+                if polished_player in final_name_players:
+                    pass
+                else:
+                    final_name_players.append(polished_player)
+
+        final_name_players.sort(key=itemgetter("Rank"), reverse=False)
+
+        return final_name_players
+
+
+
+
+
+
+    def save_new_ranks(self, new_rank_players):
+        jtournament = TinyDB('jtournament.json',ensure_ascii=False, encoding='utf8', indent=4)
+        tournament_table = jtournament.table('tournaments')
+        total_table = tournament_table.all()  
         
+        #récupérer le doc_id
+        #s'en servir pour l'enregistrement
+
+        for player in new_rank_players:
+            identification_1 = f'{player["Family name"]} {player["First name"]} {player["Birthdate"]}'
+            #print("identification 1", identification_1)
+
+            for tournament in total_table:
+                tournament_id = tournament.doc_id
+                table_id = tournament_id - 1
+                
+                for list_player in tournament["players"]:
+                    identification_2 = f'{list_player["Family name"]} {list_player["First name"]} {list_player["Birthdate"]}'
+                    #print("identification 2", identification_2)
+                
+                    if identification_1 == identification_2:
+                        list_player["Rank"] = int(player["Rank"])
+                        
+                    else:
+                        pass
+
+                tournament_table.update(total_table[table_id], doc_ids=[tournament_id])
+
+    def json_score_opponent_player(self, players_and_score, matchs_round, tournament_number, round_nb, start, end):
+        jtournament = TinyDB('jtournament.json',ensure_ascii=False, encoding='utf8', indent=4)
+        tournament_table = jtournament.table('tournaments')        
         tournament_id = None
+        
         if tournament_number == 0:
             tournament_id = len(tournament_table)
-
         else:
             tournament_id = tournament_number
     
-
-        round_number = tournament_table.get(doc_id=tournament_id)["Round number"]
-        #print ("Round number:", round_number)
+        round_number = tournament_table.get(doc_id=tournament_id)["Round number"] # à garder ? 
         round_number = 1
         dict_round_number = {"Round number": round_number}
         #print("dict_round_number:", dict_round_number)
         tournament_table.update(add("Round number", round_number), doc_ids=[tournament_id])
         #print( "vérif mid enregistrement round number", tournament_table.get(doc_id=tournament_id)["Round number"])
         
-        sorted_players = sorted(players_and_score, key=lambda x: x[1], reverse=False)
+        # sorted_players = sorted(players_and_score, key=lambda x: x[1], reverse=False) # à garder ?
         """print("")
         print("tournamentmodel sorted_players: ", sorted_players, "par rank")
         print("")"""
         
-        self.players = tournament_table.get(doc_id=tournament_id)["players"]
-        """print("matchs_round: ", matchs_round, "par match")
-        print("")"""
-        
-        #séparer en plusieurs fonctions ? garder ? car redondant ??!!??!!
-        """tournament_matches = tournament_table.get(doc_id=tournament_id)["Tournament's matches"]
-        print("tournament_matches 1: ", tournament_matches)
-        round_id = "Round number " + str(round_nb)
-        tournament_matches[round_id] = matchs_round
-        print("tournament_matches 2: ", tournament_matches)
-        tournament_table.update(set("Tournament's matches", tournament_matches), doc_ids=[tournament_id])"""
+        self.players = tournament_table.get(doc_id=tournament_id)["players"] # par pairing number
+        print("matchs_round: ", matchs_round, "par match")
+        print("")
 
 
         #Mettre dans une autre fonction ?
@@ -243,39 +299,31 @@ class TournamentModel:
 
         opponents_ids = {}
 
-        for i in range(4): 
-            id_and_opponent1 = []
-            id_and_opponent2 = []
-            key1 = matchs_round[i][0][1] 
-            key2 = matchs_round[i][1][1] 
-            id_and_opponent1.append(matchs_round[i][0][2]) 
-            id_and_opponent2.append(matchs_round[i][1][2])
-            id_and_opponent1.append(matchs_round[i][1][2])
-            id_and_opponent2.append(matchs_round[i][0][2])
-            opponents_ids[key1] = id_and_opponent1
-            opponents_ids[key2] = id_and_opponent2
-       
-        """print("opponents_ids: ", opponents_ids)
-        print("")"""
+        for i in range(4): #ajouter  le rank à partir des listes fournies.
+            opponents_ids[matchs_round[i][0][2]] = matchs_round[i][1][2]
+            opponents_ids[matchs_round[i][1][2]] = matchs_round[i][0][2]
+        
+        print("opponents_ids: ", opponents_ids)
+        print("")
         self.sorted_opponent = sorted(opponents_ids.items(), reverse=False)
-        """print("self.sorted_opponent: ", self.sorted_opponent, "by rank")
-        print("")"""
+        print("self.sorted_opponent: ", self.sorted_opponent, "by Pairing number")
+        print("")
 
         j = 0
-        for i in sorted_players:
+        for i in players_and_score:
             self.players[j]["Score"] = i[3]
             j += 1
         
         k = 0
         for i in self.sorted_opponent:
-            self.players[k]["Opponents"].append(i[1][1])
+            self.players[k]["Opponents"].append(i[1])
             k += 1
 
         dict_player = {"players": self.players}
-        #print(dict_player)
+        print(dict_player)
         tournament_table.update(dict_player, doc_ids=[tournament_id])
 
-        #print( "vérif fin enregistrement round number", tournament_table.get(doc_id=tournament_id)["Round number"])
+        print( "vérif fin enregistrement round number", tournament_table.get(doc_id=tournament_id)["Round number"])
 
     def get_previous_round_list(self, tournament_number): #appeler pairing ?
         jtournament = TinyDB('jtournament.json',ensure_ascii=False, encoding='utf8', indent=4)

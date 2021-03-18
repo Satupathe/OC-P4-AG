@@ -129,6 +129,89 @@ class FinalScore:
             place += 1
         print("")
 
+class RankChange:
+
+    def __init__(self):
+        self.action_modif = None
+        self.ended_action = None
+        self.ongoing_action = None
+    
+    def ask_ended_tournament(self):
+        print("Voulez-vous modifier les ranks des joueurs du tournoi venant de se terminer?")
+        print("")
+        print("yes:              Permet de modifier le rank des joueurs du tournoi venant de se terminer")
+        print("menu:             Permet de revenir au menu principal, les actions précédentes sont enregistrées")
+        ask_action = input("Action choisie: ")
+        print("")
+        
+        if ask_action == "yes":
+            self.ended_action = "yes"
+
+        elif ask_action == "menu":
+            self.ended_action = "menu"
+
+        else:
+            print("Merci de rentrer la bonne commande comme indiqué dans les propositions ci-dessus")
+            self.ask_ended_tournament()
+
+        return self.ended_action
+
+    def ask_ongoing_tournament(self):
+        print("")
+        print("Voulez-vous modifier les ranks des joueurs du tournoi en cours?")
+        print("yes:              Permet de modifier le rank des joueurs du tournoi actuel")
+        print("no:               Permet de continuer sans modifications")
+        ask_action = input("Action choisie: ")
+        print("")
+        
+        if ask_action == "yes":
+            self.ongoing_action = "yes"
+
+        elif ask_action == "no":
+            self.ongoing_action = "no"
+
+        else:
+            print("Merci de rentrer la bonne commande comme indiqué dans les propositions ci-dessus")
+            self.ask_ongoing_tournament()
+
+        return self.ongoing_action
+
+    def ask_all_player(self, player):
+        print("Voulez-vous changer le rank du joueur suivant? Merci d'entrer 'yes' ou 'no'")
+        print(player)
+        ask_action = input("Action choisie: ")
+        
+        if ask_action == "yes":
+            self.action_modif = "yes"
+
+        elif ask_action == "no":
+            self.action_modif = "no"
+
+        else:
+            print("Merci de rentrer 'yes' ou 'no'")
+            self.ask_all_player(player)
+
+        print(self.action_modif)
+        return self.action_modif
+
+    def ask_one_player_number(self, players_list):
+        i = 0
+        for player in players_list:
+            print(f"Joueur {i+1}: {player}")
+            i += 1
+    
+        number = input("Numéro du joueur dont le rank est à changer: ")
+
+        return number
+
+    def ask_new_rank(self):
+
+        new_rank = input("Nouveau rank du joueur: ")
+        print("")
+
+        return new_rank
+
+
 class HomeMenuView:
     
     def __call__(self):
@@ -169,19 +252,19 @@ class CallTournamentNumber:
 class AskContinue:
     def ask_start_round(self):
         print("")
-        input("Entrez 'GO' pour commencer le round: ")
+        input("Appuyez sur ENTREE pour commencer le round")
 
     def ask_end_round(self):
         print("")
-        input("Entrez END pour finir le round: ")
+        input("Appuyez sur ENTREE pour ternimner le round")
 
     def ask_go_next_round(self): # attention vrifier et fixer la récursivité !!!!!!
         print("")
         print("Voulez-vous passer au round suivant ?")
         print("")
-        print("Pour passer au round suivant entrez 'yes'")
-        print("Pour revenir au menu principal entrez 'menu', les actions précédentes sont enregistrées")
-        ask_action = input("Voulez_vous continuer ?   ")
+        print("yes:              Permet de passer au round suivant")
+        print("menu:             Permet de revenir au menu principal, les actions précédentes sont enregistrées")
+        ask_action = input("Action choisie: ")
         print("")
         action = None
 
@@ -239,8 +322,11 @@ class CallShowAction:
         return ask_action
 
     def print_sorted_players(self, info_type, informations):
-        print("liste de l'ensemble des joueurs triés par " + info_type + " :")
-        print(informations)
+        print(f"liste de l'ensemble des joueurs triés par {info_type} :")
+        lenght = len(informations)
+        print(f"Nombre total de joueurs: {lenght}")
+        for player in informations:
+            print(player)
         print("")
 
 
@@ -284,8 +370,20 @@ class CallShowAction:
 
     def print_specific_informations(self, tournament_id, info_type, informations):
         print("liste " + info_type + " pour le tournoi " + tournament_id)
-        for element in informations:
-            print(element)
+        if len(informations) == 0:
+            null_informations = "Il n'y a eu aucun round de terminé pour ce tournoi"
+            print(null_informations)
+        else:
+            if info_type == "rounds":
+                for element in informations:
+                    print(f"Heure du début du round:   {element[0]}")
+                    print(f"Heure de fin du round:     {element[1]}")
+                    for match in element[2]:
+                        print(match)
+                    print("")
+            else:
+                for element in informations:
+                    print(element)
         print("")
 
         # attention retour au menu !!!!!

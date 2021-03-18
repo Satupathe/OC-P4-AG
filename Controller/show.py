@@ -1,5 +1,6 @@
 from View import view
 from Model import tournamentmodel
+from Controller import schedule
 
 class ShowInformationsController:
     def __call__(self):
@@ -35,7 +36,7 @@ class ShowInformationsController:
             self.show_specific_informations()
 
         elif answer == "back":
-            __call__()
+            self.__call__()
 
         else:
             print("Merci d'entrer: 'total', 'unfinished' ou 'back'. Veiller à ne pas mettre de majuscules")
@@ -48,7 +49,6 @@ class ShowInformationsController:
         info_type = None
         if answer == "score":
             informations = self.model.sorted_score_1T(tournament_id)
-            #print("informations", informations)
             info_type = "score"
 
         elif answer == "name":
@@ -57,6 +57,7 @@ class ShowInformationsController:
 
         elif answer == "rounds":#finir la mise en forme
            informations = self.model.sorted_rounds_1T(tournament_id)
+            
            info_type = "rounds"
 
         elif answer == "matchs":
@@ -75,6 +76,7 @@ class ShowInformationsController:
             self.show_specific_informations()
 
         self.level.print_specific_informations(tournament_id, info_type, informations)
+        self.show_specific_informations()
 
     def show_total_players(self):
         answer = self.level.ask_players_sorting()
@@ -93,17 +95,15 @@ class ShowInformationsController:
             self.show_total_players()
 
     def show_players_ranks(self):
-        self.model.total_players_actual_rank() 
-        #fait le tri et élimine les doublons
+        self.model = tournamentmodel.TournamentModel()
+        informations = self.model.total_players_actual_rank() 
         info_type = "rank"
-        #les classe en fonction des ranks actuels
-        #affiche la liste
-        pass
+        self.level.print_sorted_players(info_type, informations)
+        self.__call__()
 
     def show_players_name(self):
-        self.model.total_players_name()
+        self.model = tournamentmodel.TournamentModel()
+        informations = self.model.total_players_name()
         info_type = "nom"
-        #récupère tous les joueurs en enlevant les doublons (rank actuel)
-        #les classe par ordre alphabétique
-        #affiche la liste
-        pass
+        self.level.print_sorted_players(info_type, informations)
+        self.__call__()
