@@ -7,14 +7,14 @@ import pendulum
 from operator import itemgetter
 
 from Controller import menu, show
-from Model import tournamentmodel, player, rounds
+from Model import tournamentmodel, playermodel, rounds
 from View import view
-
 
 
 class FrontController:
     def __init__(self):
         self.controller = None
+        
 
     def start(self):
         self.running = MainMenuController()
@@ -83,9 +83,16 @@ class ContinueTournamentController:
                 menu.start()
             else:
                 tournament.call_final_score()
-        
-            tournament.final_rank_modification()
-        
+                ask_rank = view.RankChange()
+                change_ranks = ask_rank.ask_ended_tournament()
+           
+                if change_ranks == "yes":
+                    new_ranks = tournament.ask_rank_modification(action[1])
+                    print("new ranks:  ", new_ranks)
+                    tournament.final_rank_modification(new_ranks)
+                else:
+                    pass
+
         menu.start()
 
 
@@ -100,14 +107,25 @@ class LaunchTournamentController:
         tournament.json_save()
         tournament.round_players(tournament_number)
         action = tournament.round_selection(tournament_number)
+        print("action :  ", action)
+        print("action 0:  ", action[0])
+        print("action 1:  ", action[1])
         menu = FrontController()
         
-        if action is not None:
+        if action[0] == "menu":
             
             menu.start()
         else:
             tournament.call_final_score()
-        tournament.final_rank_modification()
+            ask_rank = view.RankChange()
+            change_ranks = ask_rank.ask_ended_tournament()
+           
+            if change_ranks == "yes":
+                new_ranks = tournament.ask_rank_modification(action[1])
+                print("new ranks:  ", new_ranks)
+                tournament.final_rank_modification(new_ranks)
+            else:
+                pass
 
         menu.start()
 
@@ -140,7 +158,7 @@ class TournamentController:
         players = self.tournament.get_players(tournament_number)
         self.round_players = [] 
         for i in range(8):
-            one_player = player.Player(players[i])
+            one_player = playermodel.Player(players[i])
             player_i = one_player.match_player()
             self.round_players.append(player_i)
         return self.round_players
@@ -158,11 +176,11 @@ class TournamentController:
             round_nb = previous_round_number + 1            
             next_round = view.AskContinue().ask_go_next_round()
 
-            if next_round == 'yes':
+            if next_round == "yes":
                 pass
 
             else:
-                action = 'menu'
+                action = "menu"
                 break
             
             if previous_round_number == 0:
@@ -209,20 +227,24 @@ class TournamentController:
 
             else:
                 actual_round = self.tournament.get_previous_round_list(tournament_number)
+                print("actual_round: ", actual_round)
                 round_player_list = []
                 matchs_other_round = []
 
                 for i in range (8):
-                    one_player = player.Player(actual_round[i])
+                    one_player = playermodel.Player(actual_round[i])
                     round_player = one_player.match_player()
                     round_player_list.append(round_player)
 
+                print("round_player_list:   ", round_player_list)
 
                 for j in range (1, 8, 2):
                     j1 = round_player_list[j-1]
                     j2 = round_player_list[j]
                     match = (j1, j2)
                     matchs_other_round.append(match)
+
+                print("Matchs other round:  ", matchs_other_round)
                 
                 score_other_round = one_round.other_round(round_player_list, round_nb)
                 start = score_other_round[1]
@@ -247,7 +269,7 @@ class TournamentController:
                 self.tournament.json_score_opponent_player(self.players_and_score_other_round, score_other_round[0], tournament_number, round_nb, start, end)
             previous_round_number += 1
 
-        return action
+        return action, self.players_and_score_other_round
 
     def call_final_score(self):
         
@@ -282,15 +304,41 @@ class TournamentController:
                 players_rank_modification.append(pairing_and_rank)
             else:
                 pass
+        
+        print("players_rank_modification:  ", players_rank_modification)
         return players_rank_modification
 
-    def final_rank_modification(self):
-        all_players = self.tournament.total_players_name()
-        print(all_players)
+    def final_rank_modification(self, new_ranks, tournament_number, players_and_score):
+        for i in range(8):
+            for element in new_ranks:
+                if element[0] == players_and_score[i][2]:
+                    players_and_score[i][1] = element[1]
+                    
+                else:
+                    pass
+
+        new_rank_players = self.tournament.get_players(tournament_number)
+        self.tournament.save_new_ranks(new_rank_players)
+
+
+sorted_new_ranks = sorted(players_and_score, key=lambda x: x[2], reverse=False) # by pairing number
+                    new_rank_players = self.tournament.get_players(tournament_number)
+                    print("new_rank_players 1:  ", new_rank_players)
+                    p = 0
+                    for player in new_rank_players:
+                        player["Rank"] = sorted_new_ranks[p][1]
+                        p += 1
+                    
+                    print("new_rank_players 2:  ", new_rank_players)
+
+                    self.tournament.save_new_ranks(new_rank_players)
+
+        """all_players = self.tournament.total_players_name()
+        print("all_players:  ", all_players)
         rank = view.RankChange()
         player_number = rank.ask_one_player_number(all_players)
         new_rank = rank.ask_new_rank()
-        all_players[player_number]["Rank"] = new_rank
+        all_players[player_number]["Rank"] = new_rank"""
 
 
 
@@ -331,8 +379,8 @@ class RoundController:
         #Permet de créer les autres rounds en fonction des matchs déjà effectués
         
         other_round = rounds.Round()
-        rank_players = sorted(round_players, key=lambda x: x[1], reverse=False)
-        match_list = other_round.pairing_other_round(rank_players) 
+        #rank_players = sorted(round_players, key=lambda x: x[1], reverse=False)
+        match_list = other_round.pairing_other_round(round_players) 
         
         for i in range(4):
             view_other_round = view.RoundView(i, round_nb, match_list[i])

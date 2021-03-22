@@ -49,11 +49,11 @@ class ShowInformationsController:
         info_type = None
         if answer == "score":
             informations = self.model.sorted_score_1T(tournament_id)
-            info_type = "score"
+            info_type = "Scores"
 
         elif answer == "name":
             informations = self.model.sorted_name_1T(tournament_id)
-            info_type = "name"
+            info_type = "Noms"
 
         elif answer == "rounds":#finir la mise en forme
            informations = self.model.sorted_rounds_1T(tournament_id)

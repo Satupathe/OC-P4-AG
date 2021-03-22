@@ -226,11 +226,6 @@ class TournamentModel:
 
         return final_name_players
 
-
-
-
-
-
     def save_new_ranks(self, new_rank_players):
         jtournament = TinyDB('jtournament.json',ensure_ascii=False, encoding='utf8', indent=4)
         tournament_table = jtournament.table('tournaments')
@@ -241,7 +236,7 @@ class TournamentModel:
 
         for player in new_rank_players:
             identification_1 = f'{player["Family name"]} {player["First name"]} {player["Birthdate"]}'
-            #print("identification 1", identification_1)
+            print("identification 1", identification_1)
 
             for tournament in total_table:
                 tournament_id = tournament.doc_id
@@ -249,7 +244,7 @@ class TournamentModel:
                 
                 for list_player in tournament["players"]:
                     identification_2 = f'{list_player["Family name"]} {list_player["First name"]} {list_player["Birthdate"]}'
-                    #print("identification 2", identification_2)
+                    print("identification 2", identification_2)
                 
                     if identification_1 == identification_2:
                         list_player["Rank"] = int(player["Rank"])
@@ -264,6 +259,7 @@ class TournamentModel:
         tournament_table = jtournament.table('tournaments')        
         tournament_id = None
         
+        
         if tournament_number == 0:
             tournament_id = len(tournament_table)
         else:
@@ -272,14 +268,15 @@ class TournamentModel:
         round_number = tournament_table.get(doc_id=tournament_id)["Round number"] # à garder ? 
         round_number = 1
         dict_round_number = {"Round number": round_number}
-        #print("dict_round_number:", dict_round_number)
+        print("dict_round_number:", dict_round_number)
         tournament_table.update(add("Round number", round_number), doc_ids=[tournament_id])
-        #print( "vérif mid enregistrement round number", tournament_table.get(doc_id=tournament_id)["Round number"])
-        
-        # sorted_players = sorted(players_and_score, key=lambda x: x[1], reverse=False) # à garder ?
-        """print("")
-        print("tournamentmodel sorted_players: ", sorted_players, "par rank")
-        print("")"""
+        print( "vérif mid enregistrement round number", tournament_table.get(doc_id=tournament_id)["Round number"])
+        print("")
+        print("players_and_score:  ", players_and_score)
+        sorted_players = sorted(players_and_score, key=lambda x: x[2], reverse=False) # par pairing number ? 
+        print("")
+        print("tournamentmodel sorted_players: ", sorted_players, "par pairing number")
+        print("")
         
         self.players = tournament_table.get(doc_id=tournament_id)["players"] # par pairing number
         print("matchs_round: ", matchs_round, "par match")
@@ -288,13 +285,13 @@ class TournamentModel:
 
         #Mettre dans une autre fonction ?
         saved_rounds = tournament_table.get(doc_id=tournament_id)["Rounds"]
-        """print("one round 1: ", saved_rounds)
-        print('')"""
+        print("one round 1: ", saved_rounds)
+        print('')
         round_id = "Round number " + str(round_nb)
         round_infos = [start, end, matchs_round]
         saved_rounds[round_id] = round_infos
-        """print("one round 2: ", saved_rounds)
-        print('')"""
+        print("one round 2: ", saved_rounds)
+        print('')
         tournament_table.update(set("Rounds", saved_rounds), doc_ids=[tournament_id])
 
         opponents_ids = {}
@@ -310,7 +307,7 @@ class TournamentModel:
         print("")
 
         j = 0
-        for i in players_and_score:
+        for i in sorted_players:
             self.players[j]["Score"] = i[3]
             j += 1
         
@@ -320,7 +317,7 @@ class TournamentModel:
             k += 1
 
         dict_player = {"players": self.players}
-        print(dict_player)
+        print("dict_player:  ", dict_player)
         tournament_table.update(dict_player, doc_ids=[tournament_id])
 
         print( "vérif fin enregistrement round number", tournament_table.get(doc_id=tournament_id)["Round number"])
@@ -328,7 +325,6 @@ class TournamentModel:
     def get_previous_round_list(self, tournament_number): #appeler pairing ?
         jtournament = TinyDB('jtournament.json',ensure_ascii=False, encoding='utf8', indent=4)
         tournament_table = jtournament.table('tournaments')
-        #récupérer les scores du round précédent
         
         tournament_id = None
         if tournament_number == 0:
@@ -337,15 +333,14 @@ class TournamentModel:
         else:
             tournament_id = tournament_number
 
-        #print("tournament_id: ", tournament_id)
-
         players = tournament_table.get(doc_id=tournament_id)["players"]
         
         sorted_players = sorted(players, key=itemgetter("Score"), reverse=True)
-        """print('')
+        print('')
         print("get previous players : sorted_players: ", sorted_players, "sorted by score")
+        print("")
         print("checkpoint 1")
-        print('')"""
+        print('')
 
         sorted_list = []
         round_matchs_list = []
@@ -361,52 +356,50 @@ class TournamentModel:
                 sorted_list.append(item)
             score -= 0.5
         
-        """print("sorted list by score and rank", sorted_list)
+        print("sorted list by score and rank", sorted_list)
         print("checkpoint 1")
-        """
+        
         already_took_players = [0] 
-
         
         for player in sorted_list:
-            #print("player = ", player)
+            print("player = ", player)
             pairing_number = int(player["Pairing number"])
-            #print("pairing_number:", pairing_number)
+            print("pairing_number:", pairing_number)
             next_opponent = None
             opponent = None
             if len(already_took_players) != 9:         
 
                 if pairing_number not in already_took_players:
-                    already_took_players.append(pairing_number)
+                    already_took_players.append(int(pairing_number))
                     round_match_players.append(pairing_number)
 
                     for other_player in sorted_list:
                         if int(other_player["Pairing number"]) not in already_took_players:
                             if pairing_number not in other_player["Opponents"]:
                                 opponent = other_player["Pairing number"]
-                                #print("opponent: ", opponent)
+                                print("opponent: ", opponent)
                                 already_took_players.append(int(opponent))
                                 round_match_players.append(int(opponent))
                                 round_matchs_list.append((pairing_number, int(opponent)))
                                 break
 
                             else:
-                                #print("pairing number in other_player opponent")
+                                print("pairing number in other_player opponent")
                                 pass
                         else:
-                            #print("other player pairing number in already_took player")
+                            print("other player pairing number in already_took player")
                             pass
                 else:
-                    #print("pairing number in already_took_player")
+                    print("pairing number in already_took_player")
                     pass
             else:
-                #print("longueur already took player == 9")
+                print("longueur already took player == 9")
                 break
 
-            
-            """print("checkpoint 2")
+            print("checkpoint 2")
             print("already_took_players early", already_took_players)
             print("round_matchs_list: ", round_matchs_list)
-            print("round_match_players: ",round_match_players)"""
+            print("round_match_players: ",round_match_players)
         
         results = []
         for j in range (8):
@@ -416,19 +409,5 @@ class TournamentModel:
                 else:
                     pass    
         
-
-
-        """print("results: ", results)"""
+        #print("results: ", results)
         return results  
-
-#doit appeler plusieurs round
-
-#creation d'un objet round 1 si liste vide"""
-
-""" 
-créer un tournoi
-dans le tournoi créer un premier round"""
-
-         
-           
-#if provisional_opponent is not 0:
