@@ -89,7 +89,7 @@ class ContinueTournamentController:
                 if change_ranks == "yes":
                     new_ranks = tournament.ask_rank_modification(action[1])
                     print("new ranks:  ", new_ranks)
-                    tournament.final_rank_modification(new_ranks)
+                    tournament.final_rank_modification(new_ranks, tournament_number, action[1])
                 else:
                     pass
 
@@ -123,7 +123,7 @@ class LaunchTournamentController:
             if change_ranks == "yes":
                 new_ranks = tournament.ask_rank_modification(action[1])
                 print("new ranks:  ", new_ranks)
-                tournament.final_rank_modification(new_ranks)
+                tournament.final_rank_modification(new_ranks, tournament_number, action[1])
             else:
                 pass
 
@@ -317,21 +317,20 @@ class TournamentController:
                 else:
                     pass
 
+        print("players_and_score final:                ", players_and_score)
+        print("")
+        sorted_new_ranks = sorted(players_and_score, key=lambda x: x[2], reverse=False) # by pairing number
         new_rank_players = self.tournament.get_players(tournament_number)
+        print("new_rank_players final 1:               ", new_rank_players)
+        p = 0
+        for player in new_rank_players:
+            player["Rank"] = sorted_new_ranks[p][1]
+            p += 1
+        
+        print("new_rank_players final 2:               ", new_rank_players)
+
         self.tournament.save_new_ranks(new_rank_players)
-
-
-sorted_new_ranks = sorted(players_and_score, key=lambda x: x[2], reverse=False) # by pairing number
-                    new_rank_players = self.tournament.get_players(tournament_number)
-                    print("new_rank_players 1:  ", new_rank_players)
-                    p = 0
-                    for player in new_rank_players:
-                        player["Rank"] = sorted_new_ranks[p][1]
-                        p += 1
-                    
-                    print("new_rank_players 2:  ", new_rank_players)
-
-                    self.tournament.save_new_ranks(new_rank_players)
+        
 
         """all_players = self.tournament.total_players_name()
         print("all_players:  ", all_players)

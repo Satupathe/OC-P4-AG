@@ -280,7 +280,7 @@
                     "First name": "Aurelie",
                     "Birthdate": "1990",
                     "Gender": "F",
-                    "Rank": 14,
+                    "Rank": 300,
                     "Pairing number": 2,
                     "Score": 1.5,
                     "Opponents": [
@@ -295,7 +295,7 @@
                     "First name": "Monique",
                     "Birthdate": "1965",
                     "Gender": "F",
-                    "Rank": 150,
+                    "Rank": 600,
                     "Pairing number": 3,
                     "Score": 2.5,
                     "Opponents": [
@@ -325,7 +325,7 @@
                     "First name": "laureen",
                     "Birthdate": "1994",
                     "Gender": "F",
-                    "Rank": 185,
+                    "Rank": 13,
                     "Pairing number": 5,
                     "Score": 2.5,
                     "Opponents": [
@@ -340,7 +340,7 @@
                     "First name": "David",
                     "Birthdate": "1974",
                     "Gender": "X",
-                    "Rank": 12,
+                    "Rank": 400,
                     "Pairing number": 6,
                     "Score": 2.0,
                     "Opponents": [
@@ -355,7 +355,7 @@
                     "First name": "Cedric",
                     "Birthdate": "1979",
                     "Gender": "M",
-                    "Rank": 15,
+                    "Rank": 500,
                     "Pairing number": 7,
                     "Score": 1.0,
                     "Opponents": [
@@ -378,6 +378,1152 @@
                         1,
                         7,
                         4
+                    ]
+                }
+            ]
+        },
+        "2": {
+            "Tournament's name": "essai",
+            "Tournament's adress": "Chassieu",
+            "Tournament's Date": "Janvier",
+            "Total number of rounds": 4,
+            "Round number": 4,
+            "Time control": "300",
+            "Number of player": 8,
+            "Comments": "Dictionnaire temporaire",
+            "Rounds": {
+                "Round number 1": [
+                    "Monday, 22-Mar-2021 19:14:57 CET",
+                    "Monday, 22-Mar-2021 19:14:58 CET",
+                    [
+                        [
+                            [
+                                "Dupont Alexandre (Rank, Pairing number, Score): ",
+                                11,
+                                1,
+                                0.0
+                            ],
+                            [
+                                "Roux Cedric (Rank, Pairing number, Score): ",
+                                15,
+                                7,
+                                1.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Liotard David (Rank, Pairing number, Score): ",
+                                12,
+                                6,
+                                1.0
+                            ],
+                            [
+                                "Dupuis Monique (Rank, Pairing number, Score): ",
+                                16,
+                                3,
+                                0.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Menant laureen (Rank, Pairing number, Score): ",
+                                13,
+                                5,
+                                0.0
+                            ],
+                            [
+                                "Bepas Marion (Rank, Pairing number, Score): ",
+                                17,
+                                4,
+                                1.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Durand Aurelie (Rank, Pairing number, Score): ",
+                                14,
+                                2,
+                                1.0
+                            ],
+                            [
+                                "Gagnieu Arnaud (Rank, Pairing number, Score): ",
+                                18,
+                                8,
+                                0.0
+                            ]
+                        ]
+                    ]
+                ],
+                "Round number 2": [
+                    "Monday, 22-Mar-2021 19:15:06 CET",
+                    "Monday, 22-Mar-2021 19:15:07 CET",
+                    [
+                        [
+                            [
+                                "Liotard David (Rank, Pairing number, Score): ",
+                                12,
+                                6,
+                                1.0
+                            ],
+                            [
+                                "Durand Aurelie (Rank, Pairing number, Score): ",
+                                14,
+                                2,
+                                2.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Roux Cedric (Rank, Pairing number, Score): ",
+                                15,
+                                7,
+                                2.0
+                            ],
+                            [
+                                "Bepas Marion (Rank, Pairing number, Score): ",
+                                17,
+                                4,
+                                1.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Dupont Alexandre (Rank, Pairing number, Score): ",
+                                11,
+                                1,
+                                0.5
+                            ],
+                            [
+                                "Menant laureen (Rank, Pairing number, Score): ",
+                                13,
+                                5,
+                                0.5
+                            ]
+                        ],
+                        [
+                            [
+                                "Dupuis Monique (Rank, Pairing number, Score): ",
+                                16,
+                                3,
+                                0.0
+                            ],
+                            [
+                                "Gagnieu Arnaud (Rank, Pairing number, Score): ",
+                                18,
+                                8,
+                                1.0
+                            ]
+                        ]
+                    ]
+                ],
+                "Round number 3": [
+                    "Monday, 22-Mar-2021 19:15:20 CET",
+                    "Monday, 22-Mar-2021 19:15:20 CET",
+                    [
+                        [
+                            [
+                                "Durand Aurelie (Rank, Pairing number, Score): ",
+                                14,
+                                2,
+                                2.0
+                            ],
+                            [
+                                "Roux Cedric (Rank, Pairing number, Score): ",
+                                15,
+                                7,
+                                3.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Liotard David (Rank, Pairing number, Score): ",
+                                12,
+                                6,
+                                2.0
+                            ],
+                            [
+                                "Bepas Marion (Rank, Pairing number, Score): ",
+                                17,
+                                4,
+                                1.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Gagnieu Arnaud (Rank, Pairing number, Score): ",
+                                18,
+                                8,
+                                1.5
+                            ],
+                            [
+                                "Dupont Alexandre (Rank, Pairing number, Score): ",
+                                11,
+                                1,
+                                1.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Menant laureen (Rank, Pairing number, Score): ",
+                                13,
+                                5,
+                                0.5
+                            ],
+                            [
+                                "Dupuis Monique (Rank, Pairing number, Score): ",
+                                16,
+                                3,
+                                1.0
+                            ]
+                        ]
+                    ]
+                ],
+                "Round number 4": [
+                    "Monday, 22-Mar-2021 19:15:27 CET",
+                    "Monday, 22-Mar-2021 19:15:27 CET",
+                    [
+                        [
+                            [
+                                "Roux Cedric (Rank, Pairing number, Score): ",
+                                15,
+                                7,
+                                3.0
+                            ],
+                            [
+                                "Liotard David (Rank, Pairing number, Score): ",
+                                12,
+                                6,
+                                3.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Durand Aurelie (Rank, Pairing number, Score): ",
+                                14,
+                                2,
+                                2.0
+                            ],
+                            [
+                                "Dupont Alexandre (Rank, Pairing number, Score): ",
+                                11,
+                                1,
+                                2.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Gagnieu Arnaud (Rank, Pairing number, Score): ",
+                                18,
+                                8,
+                                1.5
+                            ],
+                            [
+                                "Bepas Marion (Rank, Pairing number, Score): ",
+                                17,
+                                4,
+                                2.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Dupuis Monique (Rank, Pairing number, Score): ",
+                                16,
+                                3,
+                                1.0
+                            ],
+                            [
+                                "Menant laureen (Rank, Pairing number, Score): ",
+                                13,
+                                5,
+                                1.5
+                            ]
+                        ]
+                    ]
+                ]
+            },
+            "players": [
+                {
+                    "Family name": "Dupont",
+                    "First name": "Alexandre",
+                    "Birthdate": "1972",
+                    "Gender": "M",
+                    "Rank": 11,
+                    "Pairing number": 1,
+                    "Score": 2.0,
+                    "Opponents": [
+                        7,
+                        5,
+                        8,
+                        2
+                    ]
+                },
+                {
+                    "Family name": "Durand",
+                    "First name": "Aurelie",
+                    "Birthdate": "1990",
+                    "Gender": "F",
+                    "Rank": 300,
+                    "Pairing number": 2,
+                    "Score": 2.0,
+                    "Opponents": [
+                        8,
+                        6,
+                        7,
+                        1
+                    ]
+                },
+                {
+                    "Family name": "Dupuis",
+                    "First name": "Monique",
+                    "Birthdate": "1965",
+                    "Gender": "F",
+                    "Rank": 600,
+                    "Pairing number": 3,
+                    "Score": 1.0,
+                    "Opponents": [
+                        6,
+                        8,
+                        5,
+                        5
+                    ]
+                },
+                {
+                    "Family name": "Bepas",
+                    "First name": "Marion",
+                    "Birthdate": "1987",
+                    "Gender": "F",
+                    "Rank": 17,
+                    "Pairing number": 4,
+                    "Score": 2.0,
+                    "Opponents": [
+                        5,
+                        7,
+                        6,
+                        8
+                    ]
+                },
+                {
+                    "Family name": "Menant",
+                    "First name": "laureen",
+                    "Birthdate": "1994",
+                    "Gender": "F",
+                    "Rank": 13,
+                    "Pairing number": 5,
+                    "Score": 1.5,
+                    "Opponents": [
+                        4,
+                        1,
+                        3,
+                        3
+                    ]
+                },
+                {
+                    "Family name": "Liotard",
+                    "First name": "David",
+                    "Birthdate": "1974",
+                    "Gender": "X",
+                    "Rank": 400,
+                    "Pairing number": 6,
+                    "Score": 3.0,
+                    "Opponents": [
+                        3,
+                        2,
+                        4,
+                        7
+                    ]
+                },
+                {
+                    "Family name": "Roux",
+                    "First name": "Cedric",
+                    "Birthdate": "1979",
+                    "Gender": "M",
+                    "Rank": 500,
+                    "Pairing number": 7,
+                    "Score": 3.0,
+                    "Opponents": [
+                        1,
+                        4,
+                        2,
+                        6
+                    ]
+                },
+                {
+                    "Family name": "Gagnieu",
+                    "First name": "Arnaud",
+                    "Birthdate": "1991",
+                    "Gender": "M",
+                    "Rank": 18,
+                    "Pairing number": 8,
+                    "Score": 1.5,
+                    "Opponents": [
+                        2,
+                        3,
+                        1,
+                        4
+                    ]
+                }
+            ]
+        },
+        "3": {
+            "Tournament's name": "essai",
+            "Tournament's adress": "Chassieu",
+            "Tournament's Date": "Janvier",
+            "Total number of rounds": 4,
+            "Round number": 4,
+            "Time control": "300",
+            "Number of player": 8,
+            "Comments": "Dictionnaire temporaire",
+            "Rounds": {
+                "Round number 1": [
+                    "Monday, 22-Mar-2021 19:17:54 CET",
+                    "Monday, 22-Mar-2021 19:17:54 CET",
+                    [
+                        [
+                            [
+                                "Dupont Alexandre (Rank, Pairing number, Score): ",
+                                11,
+                                1,
+                                0.0
+                            ],
+                            [
+                                "Roux Cedric (Rank, Pairing number, Score): ",
+                                15,
+                                7,
+                                1.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Liotard David (Rank, Pairing number, Score): ",
+                                12,
+                                6,
+                                0.0
+                            ],
+                            [
+                                "Dupuis Monique (Rank, Pairing number, Score): ",
+                                16,
+                                3,
+                                1.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Menant laureen (Rank, Pairing number, Score): ",
+                                13,
+                                5,
+                                0.0
+                            ],
+                            [
+                                "Bepas Marion (Rank, Pairing number, Score): ",
+                                17,
+                                4,
+                                1.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Durand Aurelie (Rank, Pairing number, Score): ",
+                                14,
+                                2,
+                                0.0
+                            ],
+                            [
+                                "Gagnieu Arnaud (Rank, Pairing number, Score): ",
+                                18,
+                                8,
+                                1.0
+                            ]
+                        ]
+                    ]
+                ],
+                "Round number 2": [
+                    "Monday, 22-Mar-2021 19:18:04 CET",
+                    "Monday, 22-Mar-2021 19:18:04 CET",
+                    [
+                        [
+                            [
+                                "Roux Cedric (Rank, Pairing number, Score): ",
+                                15,
+                                7,
+                                1.0
+                            ],
+                            [
+                                "Dupuis Monique (Rank, Pairing number, Score): ",
+                                16,
+                                3,
+                                2.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Bepas Marion (Rank, Pairing number, Score): ",
+                                17,
+                                4,
+                                1.5
+                            ],
+                            [
+                                "Gagnieu Arnaud (Rank, Pairing number, Score): ",
+                                18,
+                                8,
+                                1.5
+                            ]
+                        ],
+                        [
+                            [
+                                "Dupont Alexandre (Rank, Pairing number, Score): ",
+                                11,
+                                1,
+                                0.0
+                            ],
+                            [
+                                "Liotard David (Rank, Pairing number, Score): ",
+                                12,
+                                6,
+                                1.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Menant laureen (Rank, Pairing number, Score): ",
+                                13,
+                                5,
+                                0.5
+                            ],
+                            [
+                                "Durand Aurelie (Rank, Pairing number, Score): ",
+                                14,
+                                2,
+                                0.5
+                            ]
+                        ]
+                    ]
+                ],
+                "Round number 3": [
+                    "Monday, 22-Mar-2021 19:18:13 CET",
+                    "Monday, 22-Mar-2021 19:18:14 CET",
+                    [
+                        [
+                            [
+                                "Dupuis Monique (Rank, Pairing number, Score): ",
+                                16,
+                                3,
+                                2.0
+                            ],
+                            [
+                                "Bepas Marion (Rank, Pairing number, Score): ",
+                                17,
+                                4,
+                                2.5
+                            ]
+                        ],
+                        [
+                            [
+                                "Gagnieu Arnaud (Rank, Pairing number, Score): ",
+                                18,
+                                8,
+                                1.5
+                            ],
+                            [
+                                "Liotard David (Rank, Pairing number, Score): ",
+                                12,
+                                6,
+                                2.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Roux Cedric (Rank, Pairing number, Score): ",
+                                15,
+                                7,
+                                1.0
+                            ],
+                            [
+                                "Menant laureen (Rank, Pairing number, Score): ",
+                                13,
+                                5,
+                                1.5
+                            ]
+                        ],
+                        [
+                            [
+                                "Durand Aurelie (Rank, Pairing number, Score): ",
+                                14,
+                                2,
+                                0.5
+                            ],
+                            [
+                                "Dupont Alexandre (Rank, Pairing number, Score): ",
+                                11,
+                                1,
+                                1.0
+                            ]
+                        ]
+                    ]
+                ],
+                "Round number 4": [
+                    "Monday, 22-Mar-2021 19:18:23 CET",
+                    "Monday, 22-Mar-2021 19:18:23 CET",
+                    [
+                        [
+                            [
+                                "Bepas Marion (Rank, Pairing number, Score): ",
+                                17,
+                                4,
+                                3.5
+                            ],
+                            [
+                                "Liotard David (Rank, Pairing number, Score): ",
+                                12,
+                                6,
+                                2.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Dupuis Monique (Rank, Pairing number, Score): ",
+                                16,
+                                3,
+                                3.0
+                            ],
+                            [
+                                "Menant laureen (Rank, Pairing number, Score): ",
+                                13,
+                                5,
+                                1.5
+                            ]
+                        ],
+                        [
+                            [
+                                "Gagnieu Arnaud (Rank, Pairing number, Score): ",
+                                18,
+                                8,
+                                1.5
+                            ],
+                            [
+                                "Dupont Alexandre (Rank, Pairing number, Score): ",
+                                11,
+                                1,
+                                2.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Roux Cedric (Rank, Pairing number, Score): ",
+                                15,
+                                7,
+                                1.0
+                            ],
+                            [
+                                "Durand Aurelie (Rank, Pairing number, Score): ",
+                                14,
+                                2,
+                                1.5
+                            ]
+                        ]
+                    ]
+                ]
+            },
+            "players": [
+                {
+                    "Family name": "Dupont",
+                    "First name": "Alexandre",
+                    "Birthdate": "1972",
+                    "Gender": "M",
+                    "Rank": 11,
+                    "Pairing number": 1,
+                    "Score": 2.0,
+                    "Opponents": [
+                        7,
+                        6,
+                        2,
+                        8
+                    ]
+                },
+                {
+                    "Family name": "Durand",
+                    "First name": "Aurelie",
+                    "Birthdate": "1990",
+                    "Gender": "F",
+                    "Rank": 300,
+                    "Pairing number": 2,
+                    "Score": 1.5,
+                    "Opponents": [
+                        8,
+                        5,
+                        1,
+                        7
+                    ]
+                },
+                {
+                    "Family name": "Dupuis",
+                    "First name": "Monique",
+                    "Birthdate": "1965",
+                    "Gender": "F",
+                    "Rank": 600,
+                    "Pairing number": 3,
+                    "Score": 3.0,
+                    "Opponents": [
+                        6,
+                        7,
+                        4,
+                        5
+                    ]
+                },
+                {
+                    "Family name": "Bepas",
+                    "First name": "Marion",
+                    "Birthdate": "1987",
+                    "Gender": "F",
+                    "Rank": 17,
+                    "Pairing number": 4,
+                    "Score": 3.5,
+                    "Opponents": [
+                        5,
+                        8,
+                        3,
+                        6
+                    ]
+                },
+                {
+                    "Family name": "Menant",
+                    "First name": "laureen",
+                    "Birthdate": "1994",
+                    "Gender": "F",
+                    "Rank": 13,
+                    "Pairing number": 5,
+                    "Score": 1.5,
+                    "Opponents": [
+                        4,
+                        2,
+                        7,
+                        3
+                    ]
+                },
+                {
+                    "Family name": "Liotard",
+                    "First name": "David",
+                    "Birthdate": "1974",
+                    "Gender": "X",
+                    "Rank": 400,
+                    "Pairing number": 6,
+                    "Score": 2.0,
+                    "Opponents": [
+                        3,
+                        1,
+                        8,
+                        4
+                    ]
+                },
+                {
+                    "Family name": "Roux",
+                    "First name": "Cedric",
+                    "Birthdate": "1979",
+                    "Gender": "M",
+                    "Rank": 500,
+                    "Pairing number": 7,
+                    "Score": 1.0,
+                    "Opponents": [
+                        1,
+                        3,
+                        5,
+                        2
+                    ]
+                },
+                {
+                    "Family name": "Gagnieu",
+                    "First name": "Arnaud",
+                    "Birthdate": "1991",
+                    "Gender": "M",
+                    "Rank": 18,
+                    "Pairing number": 8,
+                    "Score": 1.5,
+                    "Opponents": [
+                        2,
+                        4,
+                        6,
+                        1
+                    ]
+                }
+            ]
+        },
+        "4": {
+            "Tournament's name": "essai",
+            "Tournament's adress": "Chassieu",
+            "Tournament's Date": "Janvier",
+            "Total number of rounds": 4,
+            "Round number": 4,
+            "Time control": "300",
+            "Number of player": 8,
+            "Comments": "Dictionnaire temporaire",
+            "Rounds": {
+                "Round number 1": [
+                    "Monday, 22-Mar-2021 19:27:14 CET",
+                    "Monday, 22-Mar-2021 19:27:15 CET",
+                    [
+                        [
+                            [
+                                "Dupont Alexandre (Rank, Pairing number, Score): ",
+                                11,
+                                1,
+                                0.0
+                            ],
+                            [
+                                "Roux Cedric (Rank, Pairing number, Score): ",
+                                15,
+                                7,
+                                1.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Liotard David (Rank, Pairing number, Score): ",
+                                12,
+                                6,
+                                1.0
+                            ],
+                            [
+                                "Dupuis Monique (Rank, Pairing number, Score): ",
+                                16,
+                                3,
+                                0.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Menant laureen (Rank, Pairing number, Score): ",
+                                13,
+                                5,
+                                0.5
+                            ],
+                            [
+                                "Bepas Marion (Rank, Pairing number, Score): ",
+                                17,
+                                4,
+                                0.5
+                            ]
+                        ],
+                        [
+                            [
+                                "Durand Aurelie (Rank, Pairing number, Score): ",
+                                14,
+                                2,
+                                0.5
+                            ],
+                            [
+                                "Gagnieu Arnaud (Rank, Pairing number, Score): ",
+                                18,
+                                8,
+                                0.5
+                            ]
+                        ]
+                    ]
+                ],
+                "Round number 2": [
+                    "Monday, 22-Mar-2021 19:27:21 CET",
+                    "Monday, 22-Mar-2021 19:27:21 CET",
+                    [
+                        [
+                            [
+                                "Liotard David (Rank, Pairing number, Score): ",
+                                12,
+                                6,
+                                1.0
+                            ],
+                            [
+                                "Roux Cedric (Rank, Pairing number, Score): ",
+                                15,
+                                7,
+                                2.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Menant laureen (Rank, Pairing number, Score): ",
+                                13,
+                                5,
+                                0.5
+                            ],
+                            [
+                                "Durand Aurelie (Rank, Pairing number, Score): ",
+                                14,
+                                2,
+                                1.5
+                            ]
+                        ],
+                        [
+                            [
+                                "Bepas Marion (Rank, Pairing number, Score): ",
+                                17,
+                                4,
+                                0.5
+                            ],
+                            [
+                                "Gagnieu Arnaud (Rank, Pairing number, Score): ",
+                                18,
+                                8,
+                                1.5
+                            ]
+                        ],
+                        [
+                            [
+                                "Dupont Alexandre (Rank, Pairing number, Score): ",
+                                11,
+                                1,
+                                0.0
+                            ],
+                            [
+                                "Dupuis Monique (Rank, Pairing number, Score): ",
+                                16,
+                                3,
+                                1.0
+                            ]
+                        ]
+                    ]
+                ],
+                "Round number 3": [
+                    "Monday, 22-Mar-2021 19:27:29 CET",
+                    "Monday, 22-Mar-2021 19:27:30 CET",
+                    [
+                        [
+                            [
+                                "Roux Cedric (Rank, Pairing number, Score): ",
+                                15,
+                                7,
+                                2.0
+                            ],
+                            [
+                                "Durand Aurelie (Rank, Pairing number, Score): ",
+                                14,
+                                2,
+                                2.5
+                            ]
+                        ],
+                        [
+                            [
+                                "Gagnieu Arnaud (Rank, Pairing number, Score): ",
+                                18,
+                                8,
+                                1.5
+                            ],
+                            [
+                                "Liotard David (Rank, Pairing number, Score): ",
+                                12,
+                                6,
+                                2.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Dupuis Monique (Rank, Pairing number, Score): ",
+                                16,
+                                3,
+                                1.5
+                            ],
+                            [
+                                "Menant laureen (Rank, Pairing number, Score): ",
+                                13,
+                                5,
+                                1.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Bepas Marion (Rank, Pairing number, Score): ",
+                                17,
+                                4,
+                                1.0
+                            ],
+                            [
+                                "Dupont Alexandre (Rank, Pairing number, Score): ",
+                                11,
+                                1,
+                                0.5
+                            ]
+                        ]
+                    ]
+                ],
+                "Round number 4": [
+                    "Monday, 22-Mar-2021 19:27:36 CET",
+                    "Monday, 22-Mar-2021 19:27:37 CET",
+                    [
+                        [
+                            [
+                                "Durand Aurelie (Rank, Pairing number, Score): ",
+                                14,
+                                2,
+                                2.5
+                            ],
+                            [
+                                "Liotard David (Rank, Pairing number, Score): ",
+                                12,
+                                6,
+                                3.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Roux Cedric (Rank, Pairing number, Score): ",
+                                15,
+                                7,
+                                2.0
+                            ],
+                            [
+                                "Dupuis Monique (Rank, Pairing number, Score): ",
+                                16,
+                                3,
+                                2.5
+                            ]
+                        ],
+                        [
+                            [
+                                "Gagnieu Arnaud (Rank, Pairing number, Score): ",
+                                18,
+                                8,
+                                1.5
+                            ],
+                            [
+                                "Menant laureen (Rank, Pairing number, Score): ",
+                                13,
+                                5,
+                                2.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Bepas Marion (Rank, Pairing number, Score): ",
+                                17,
+                                4,
+                                1.0
+                            ],
+                            [
+                                "Dupont Alexandre (Rank, Pairing number, Score): ",
+                                11,
+                                1,
+                                1.5
+                            ]
+                        ]
+                    ]
+                ]
+            },
+            "players": [
+                {
+                    "Family name": "Dupont",
+                    "First name": "Alexandre",
+                    "Birthdate": "1972",
+                    "Gender": "M",
+                    "Rank": 11,
+                    "Pairing number": 1,
+                    "Score": 1.5,
+                    "Opponents": [
+                        7,
+                        3,
+                        4,
+                        4
+                    ]
+                },
+                {
+                    "Family name": "Durand",
+                    "First name": "Aurelie",
+                    "Birthdate": "1990",
+                    "Gender": "F",
+                    "Rank": 300,
+                    "Pairing number": 2,
+                    "Score": 2.5,
+                    "Opponents": [
+                        8,
+                        5,
+                        7,
+                        6
+                    ]
+                },
+                {
+                    "Family name": "Dupuis",
+                    "First name": "Monique",
+                    "Birthdate": "1965",
+                    "Gender": "F",
+                    "Rank": 600,
+                    "Pairing number": 3,
+                    "Score": 2.5,
+                    "Opponents": [
+                        6,
+                        1,
+                        5,
+                        7
+                    ]
+                },
+                {
+                    "Family name": "Bepas",
+                    "First name": "Marion",
+                    "Birthdate": "1987",
+                    "Gender": "F",
+                    "Rank": 17,
+                    "Pairing number": 4,
+                    "Score": 1.0,
+                    "Opponents": [
+                        5,
+                        8,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "Family name": "Menant",
+                    "First name": "laureen",
+                    "Birthdate": "1994",
+                    "Gender": "F",
+                    "Rank": 13,
+                    "Pairing number": 5,
+                    "Score": 2.0,
+                    "Opponents": [
+                        4,
+                        2,
+                        3,
+                        8
+                    ]
+                },
+                {
+                    "Family name": "Liotard",
+                    "First name": "David",
+                    "Birthdate": "1974",
+                    "Gender": "X",
+                    "Rank": 400,
+                    "Pairing number": 6,
+                    "Score": 3.0,
+                    "Opponents": [
+                        3,
+                        7,
+                        8,
+                        2
+                    ]
+                },
+                {
+                    "Family name": "Roux",
+                    "First name": "Cedric",
+                    "Birthdate": "1979",
+                    "Gender": "M",
+                    "Rank": 500,
+                    "Pairing number": 7,
+                    "Score": 2.0,
+                    "Opponents": [
+                        1,
+                        6,
+                        2,
+                        3
+                    ]
+                },
+                {
+                    "Family name": "Gagnieu",
+                    "First name": "Arnaud",
+                    "Birthdate": "1991",
+                    "Gender": "M",
+                    "Rank": 18,
+                    "Pairing number": 8,
+                    "Score": 1.5,
+                    "Opponents": [
+                        2,
+                        4,
+                        6,
+                        5
                     ]
                 }
             ]
