@@ -1,4 +1,4 @@
-"""Controller to display menu and inputs"""
+"""View module to display menu and ask informations through inputs"""
 
 import colorama
 from colorama import Fore, Back, Style
@@ -10,72 +10,58 @@ from Controller import menu
 
 
 class TournamentView:
-                     
+    """class to ask tournamment informations to the user"""       
     def ask_tournament(self):
-        """Appelle les input du tournoi et renvoi un dictionnaire"""
+        """
+        Function combining fixed informations on tournament and user inputs
+        return a dictionary of those informations
+        """
         colorama.init(autoreset=True)
         print(f"{Style.BRIGHT}{Fore.BLUE}Entrée des informations sur le nouveau tournoi{Fore.RESET}")
         print("")
-
+        loop_infos = {}
         tour_infos = {}
 
-        questions = ["Tournament's name:",
-                     "Tournament's adress:",
-                     "Tournament's Date:",
-                     "Time control:",
-                     "Comments:"
+        questions = ["Tournament's name",
+                     "Tournament's adress",
+                     "Tournament's Date",
+                     "Time control",
+                     "Comments"
                     ] 
 
         for i in questions:
-            if i is questions[3]:
-                try:
-                    tour_infos[i] = int(input(i))
+            loop_infos[i] = input(f"{i}:  ")
 
-                except ValueError:
-                    print('Please enter an integer')
-                    tour_infos[i] = int(input(i))
-
-            elif i is questions[5]:
-                try:
-                    tour_infos[i] = int(input(i))
-
-                except ValueError:
-                    print('Please enter an integer')
-                    tour_infos[i] = int(input(i))
-
-
-            elif i is questions[4]:
-                try:
-                    tour_infos[i] = int(input(i))
-
-                except ValueError:
-                    print('Please enter an integer')
-                    tour_infos[i] = int(input(i))
-
-            else:
-                tour_infos[i] = input(i)
-
+        tour_infos["Tournament's name"] = loop_infos["Tournament's name"]
+        tour_infos["Tournament's adress"] = loop_infos["Tournament's adress"]
+        tour_infos["Tournament's Date"] = loop_infos["Tournament's Date"] 
+        tour_infos["Total number of rounds"] = 4  
         tour_infos["Round number"] = 0 
+        tour_infos["Time control"] = loop_infos["Time control"]
         tour_infos["Number of player"] = 8
+        tour_infos["Comments"] = loop_infos["Comments"]
         tour_infos["Rounds"] = {}
-        tour_infos["Tournament's matches"] = {}
-        
-        return tour_infos # renvoi le dictionnaire du tournoi
+        print("")
+
+        return tour_infos
 
 class PlayersView:
-
+    """class to ask players informations to the user"""
     def ask_players(self):
-        """Appelle les input pour chaque joueur et renvoi une liste de dictionnaires"""
+        """
+        Function combining user input informations abouts the players
+        return a dictionary of those informations
+        """
         colorama.init(autoreset=True)
         print(f"{Style.BRIGHT}{Fore.BLUE}Entrée des informations sur les joueurs{Fore.RESET}")
 
         players_infos = []
 
-        questions = ["Player's family name",
-                     "Player's first name",
-                     "Player's birthdate",
-                     "Player's gender",
-                     "Player's rank"
+        questions = ["Family name",
+                     "First name",
+                     "Birthdate",
+                     "Gender",
+                     "Rank"
                     ]
 
         for i in range(8):
@@ -84,24 +70,24 @@ class PlayersView:
 
             for j in questions:
                 if j is not questions[4]:
-                    one_player[j] = input(j)
-
+                    one_player[j] = input(f"{j}:  ")
+                
                 else:
                     try:
-                        one_player[questions[4]] = int(input(j))
+                        one_player[questions[4]] = int(input(f"{j}:  "))
 
                     except ValueError:
                         print('Please enter an integer')
-                        #appel recursif faire uen fonction qui accepte le try except et dans le except rappeler la fonction
-                   
-            one_player["Pairing number"] = int(i)
+                        one_player[questions[4]] = int(input(f"{j}:  "))
+                  
+            one_player["Pairing number"] = int(i+1)
             one_player["Score"] = 0
             one_player["Opponents"] = []    
 
             players_infos.append(one_player)
+            print("")
 
-
-        return players_infos # renvoie la liste des dictionnaires
+        return players_infos
         
 
 class RoundView:
@@ -117,22 +103,22 @@ class RoundView:
     def ask_result(self, player):
         ask_result = input("Resultat: "+player[0]+" : ")
         
-        if ask_result == "v" or ask_result =="def" or ask_result =="d":
+        if ask_result == "victory" or ask_result =="defeat" or ask_result =="draw":
 
-            if ask_result == "v":
+            if ask_result == "victory":
                 self.score = 1.0
 
-            elif ask_result == "def":
+            elif ask_result == "defeat":
                 self.score = 0.0
 
-            elif ask_result == "d":
-                self.score = 0.5   #attention récursivité n'annule pas la fonction précédente
+            elif ask_result == "draw":
+                self.score = 0.5
 
         else:
             print("Merci d'entrer: victory, defeat ou draw dans la console")
             self.ask_result(player)
 
-        return self.score # mettre en dehors de la récursivité.
+        return self.score
     
 class FinalScore:
 
@@ -232,7 +218,7 @@ class RankChange:
 
 class HomeMenuView:
     
-    def __call__(self):
+    def __init__(self):
         colorama.init(autoreset=True)
         print (f"{Style.BRIGHT}{Fore.BLUE}Menu de selection des options du logiciel{Fore.RESET}")
         print(f"")
@@ -240,13 +226,36 @@ class HomeMenuView:
         print(f"{Style.BRIGHT}{Fore.RED}start:            {Style.NORMAL}{Fore.WHITE}Permet de commencer un nouveau tournoi")
         print(f"{Style.BRIGHT}{Fore.RED}continuation:     {Style.NORMAL}{Fore.WHITE}Permet de reprendre un ancien tournoi")
         print(f"{Style.BRIGHT}{Fore.RED}show:             {Style.NORMAL}{Fore.WHITE}Permet d'afficher les informations d'anciens tournois")
+        print(f"{Style.BRIGHT}{Fore.RED}clear:            {Style.NORMAL}{Fore.WHITE}Permet d'effacer les informations précédentes présentes sur la console")
         print(f"{Style.BRIGHT}{Fore.RED}exit:             {Style.NORMAL}{Fore.WHITE}Permet de quitter le programme et fermer la console de commande")
         print("")
+        self.action = None
+    
+    def call_first_action(self):
         ask_action = input("Action choisie: ")
 
-        return ask_action
+        if ask_action == "start":
+            self.action = "start"
+        elif ask_action == "continuation":
+            self.action = "continuation" 
+        elif ask_action == "show":
+            self.action = "show"
+        elif ask_action == "clear":
+            self.action = "clear"
+        elif ask_action == "exit":
+            self.action = "exit"
+        else:
+            print("")
+            print("Merci de rentrer la bonne commande comme indiqué dans les propositions ci-dessous")
+            self.call_first_action()
+
+        return self.action
+
 
 class CallTournamentNumber:
+
+    def __init__(self):
+        self.number = None
 
     def __call__(self):
         colorama.init(autoreset=True)
@@ -259,15 +268,20 @@ class CallTournamentNumber:
         
     def ask_number(self):
         try:
-            ask_action = int(input("Numero du tournoi: "))
+            ask_number = int(input("Numero du tournoi: "))
+            self.number = ask_number
             pass
 
         except ValueError:
             print("Merci d'entrer un nombre entier")
             print("")
-            self.__call__()
+            self.ask_number()
 
-        return ask_action
+        return self.number
+
+    def ask_again(self):
+        print("Merci d'entrer le numero valide d'un tournoi")
+
 
 class AskContinue:
     def __init__(self):
@@ -307,6 +321,7 @@ class AskContinue:
 class CallShowAction:
     def __init__(self):
         colorama.init(autoreset=True)
+        self.action = None
 
     def ask_show_action(self):
         print (f"{Style.BRIGHT}{Fore.BLUE}Menu d'affichage des rapports de données{Fore.RESET}")
@@ -319,7 +334,8 @@ class CallShowAction:
         ask_action = input("Action choisie: ")
         print("")
 
-        return ask_action
+        self.action = ask_action
+        return self.action
 
     def ask_type_tournament(self):
         print (f"{Style.BRIGHT}Voulez-vous afficher les tournois en cours ou l'ensemble des tournois?")
@@ -332,7 +348,8 @@ class CallShowAction:
         ask_action = input("Action choisie: ")
         print("")
 
-        return ask_action
+        self.action = ask_action
+        return self.action
 
     def ask_players_sorting(self):
         print (f"{Style.BRIGHT}Voulez-vous afficher la liste des joueurs par rank ou ordre alphabétique?")
@@ -345,7 +362,8 @@ class CallShowAction:
         ask_action = input("Action choisie: ")
         print("")
 
-        return ask_action
+        self.action = ask_action
+        return self.action
 
     def print_sorted_players(self, info_type, informations):
         print(f"{Style.BRIGHT}liste de l'ensemble des joueurs triés par {info_type} :")
@@ -373,10 +391,6 @@ class CallShowAction:
     def ask_tournament_id(self):
         print (f"{Style.BRIGHT}Merci de renseigner le numéro du tournoi sélectionné")
         print("")
-        ask_action = input("Numéro du tournoi: ")
-        print("")
-
-        return ask_action
 
     def ask_tournament_action(self, tournament_id):
         print (f"{Style.BRIGHT}Veuillez sélectionner les informations à afficher pour le tournoi numéro {tournament_id}")
@@ -392,7 +406,8 @@ class CallShowAction:
         ask_action = input("Action choisie: ")
         print("")
 
-        return ask_action
+        self.action = ask_action
+        return self.action
 
     def print_specific_informations(self, tournament_id, info_type, informations):
         print(f"{Style.BRIGHT} Liste des {info_type} pour le tournoi {tournament_id}")

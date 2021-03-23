@@ -6,6 +6,7 @@ class ShowInformationsController:
     def __call__(self):
         self.level = view.CallShowAction()
         answer = self.level.ask_show_action()
+        self.number = view.CallTournamentNumber()
         
         if answer == "tournaments":
             self.show_tournaments()
@@ -43,7 +44,9 @@ class ShowInformationsController:
             self.show_tournaments()
 
     def show_specific_informations(self):
-        tournament_id = self.level.ask_tournament_id()
+        self.level.ask_tournament_id()
+        tournament_id = self.number.ask_number()
+        print("tournament id:  ", tournament_id)
         answer = self.level.ask_tournament_action(tournament_id)
         informations = None
         info_type = None
