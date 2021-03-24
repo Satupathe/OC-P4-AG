@@ -1,6 +1,5 @@
 """ Main file to launch every part of the MVC pattern"""
 
-from Model import tournamentmodel
 from View import view
 
 from operator import itemgetter
@@ -14,10 +13,10 @@ class TournamentInput:
         return a dictionary of those informations
         """
         tournament_input = view.TournamentView()
-        tournament = tournament_input.ask_tournament()       
-        
+        tournament = tournament_input.ask_tournament()
+
         return tournament
-        
+
 
 class PlayersInput:
     """Controller calling view function with inputs of players informations"""
@@ -26,14 +25,14 @@ class PlayersInput:
         Call the ask_players function and informations about players of the new tournament
         return a dictionary of those informations
         """
-        players_input = view.PlayersView() 
+        players_input = view.PlayersView()
         self.players = players_input.ask_players()
-        
+
         return self.players
 
     def sorted_rank(self):
         """Sort the players by their Pairing number"""
 
-        sorted_players = sorted(self.players, key=itemgetter("Pairing number")) 
+        sorted_players = sorted(self.players, key=itemgetter("Pairing number"))
 
-        return sorted_players  
+        return sorted_players

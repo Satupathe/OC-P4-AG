@@ -1,12 +1,15 @@
-""" Player class. 
-Used to store player informations.
-Keep informations available for the User
+"""
+Player class
+Used to initialize players.
+Keep usefull informations.
+return player with name, first name, rank, pairing number and score
 """
 
 
 class Player:
- 
+    """initialize player and kepp selected informations"""
     def __init__(self, one_player_infos):
+        """initialise one player"""
         self.name = one_player_infos["Family name"]
         self.first_name = one_player_infos["First name"]
         self.birth = one_player_infos["Birthdate"]
@@ -15,19 +18,11 @@ class Player:
         self.pairing_nb = one_player_infos["Pairing number"]
         self.score = one_player_infos["Score"]
         self.opponents = one_player_infos["Opponents"]
-         
-        #attention au doublon de score avec match player
 
-    
     def match_player(self):
-        """Permet de garder les infos importantes d'un joueur pour un match"""
-        match_player = [f"{self.name} {self.first_name} (Rank, Pairing number, Score): ", int(self.ranking), int(self.pairing_nb), float(self.score)]
-        
-        return match_player #référence player est son ID (changer dans view ID = nom)
-        
-        #une liste pour chaque joueur issu de self.pairing
-        #créer une liste pour savoir qui a joué contre qui en fonction du rank
-        #si liste vide, c'est le premier round
- 
-#prévoir un id spécifique pour chaque joueur 1 à 8. 
+        """Keep useful informations for on player"""
+        match_player = [f"{self.name} {self.first_name} (Rank, Pairing number, Score): ",
+                        int(self.ranking), int(self.pairing_nb), float(self.score)
+                        ]
 
+        return match_player

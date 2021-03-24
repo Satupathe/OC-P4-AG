@@ -265,7 +265,7 @@
                     "First name": "Alexandre",
                     "Birthdate": "1972",
                     "Gender": "M",
-                    "Rank": 11,
+                    "Rank": 42,
                     "Pairing number": 1,
                     "Score": 1.0,
                     "Opponents": [
@@ -310,7 +310,7 @@
                     "First name": "Marion",
                     "Birthdate": "1987",
                     "Gender": "F",
-                    "Rank": 17,
+                    "Rank": 44,
                     "Pairing number": 4,
                     "Score": 2.5,
                     "Opponents": [
@@ -325,7 +325,7 @@
                     "First name": "laureen",
                     "Birthdate": "1994",
                     "Gender": "F",
-                    "Rank": 13,
+                    "Rank": 53,
                     "Pairing number": 5,
                     "Score": 2.5,
                     "Opponents": [
@@ -370,7 +370,7 @@
                     "First name": "Arnaud",
                     "Birthdate": "1991",
                     "Gender": "M",
-                    "Rank": 18,
+                    "Rank": 1000,
                     "Pairing number": 8,
                     "Score": 3.0,
                     "Opponents": [
@@ -647,7 +647,7 @@
                     "First name": "Alexandre",
                     "Birthdate": "1972",
                     "Gender": "M",
-                    "Rank": 11,
+                    "Rank": 42,
                     "Pairing number": 1,
                     "Score": 2.0,
                     "Opponents": [
@@ -692,7 +692,7 @@
                     "First name": "Marion",
                     "Birthdate": "1987",
                     "Gender": "F",
-                    "Rank": 17,
+                    "Rank": 44,
                     "Pairing number": 4,
                     "Score": 2.0,
                     "Opponents": [
@@ -707,7 +707,7 @@
                     "First name": "laureen",
                     "Birthdate": "1994",
                     "Gender": "F",
-                    "Rank": 13,
+                    "Rank": 53,
                     "Pairing number": 5,
                     "Score": 1.5,
                     "Opponents": [
@@ -752,7 +752,7 @@
                     "First name": "Arnaud",
                     "Birthdate": "1991",
                     "Gender": "M",
-                    "Rank": 18,
+                    "Rank": 1000,
                     "Pairing number": 8,
                     "Score": 1.5,
                     "Opponents": [
@@ -1029,7 +1029,7 @@
                     "First name": "Alexandre",
                     "Birthdate": "1972",
                     "Gender": "M",
-                    "Rank": 11,
+                    "Rank": 42,
                     "Pairing number": 1,
                     "Score": 2.0,
                     "Opponents": [
@@ -1074,7 +1074,7 @@
                     "First name": "Marion",
                     "Birthdate": "1987",
                     "Gender": "F",
-                    "Rank": 17,
+                    "Rank": 44,
                     "Pairing number": 4,
                     "Score": 3.5,
                     "Opponents": [
@@ -1089,7 +1089,7 @@
                     "First name": "laureen",
                     "Birthdate": "1994",
                     "Gender": "F",
-                    "Rank": 13,
+                    "Rank": 53,
                     "Pairing number": 5,
                     "Score": 1.5,
                     "Opponents": [
@@ -1134,7 +1134,7 @@
                     "First name": "Arnaud",
                     "Birthdate": "1991",
                     "Gender": "M",
-                    "Rank": 18,
+                    "Rank": 1000,
                     "Pairing number": 8,
                     "Score": 1.5,
                     "Opponents": [
@@ -1411,7 +1411,7 @@
                     "First name": "Alexandre",
                     "Birthdate": "1972",
                     "Gender": "M",
-                    "Rank": 11,
+                    "Rank": 42,
                     "Pairing number": 1,
                     "Score": 1.5,
                     "Opponents": [
@@ -1456,7 +1456,7 @@
                     "First name": "Marion",
                     "Birthdate": "1987",
                     "Gender": "F",
-                    "Rank": 17,
+                    "Rank": 44,
                     "Pairing number": 4,
                     "Score": 1.0,
                     "Opponents": [
@@ -1471,7 +1471,7 @@
                     "First name": "laureen",
                     "Birthdate": "1994",
                     "Gender": "F",
-                    "Rank": 13,
+                    "Rank": 53,
                     "Pairing number": 5,
                     "Score": 2.0,
                     "Opponents": [
@@ -1516,7 +1516,7 @@
                     "First name": "Arnaud",
                     "Birthdate": "1991",
                     "Gender": "M",
-                    "Rank": 18,
+                    "Rank": 1000,
                     "Pairing number": 8,
                     "Score": 1.5,
                     "Opponents": [
@@ -1731,7 +1731,7 @@
                     "First name": "Alexandre",
                     "Birthdate": "1972",
                     "Gender": "M",
-                    "Rank": 11,
+                    "Rank": 42,
                     "Pairing number": 1,
                     "Score": 0.0,
                     "Opponents": [
@@ -1773,7 +1773,7 @@
                     "First name": "Marion",
                     "Birthdate": "1987",
                     "Gender": "F",
-                    "Rank": 17,
+                    "Rank": 44,
                     "Pairing number": 4,
                     "Score": 2.5,
                     "Opponents": [
@@ -1787,7 +1787,7 @@
                     "First name": "laureen",
                     "Birthdate": "1994",
                     "Gender": "F",
-                    "Rank": 13,
+                    "Rank": 53,
                     "Pairing number": 5,
                     "Score": 2.0,
                     "Opponents": [
@@ -1829,7 +1829,7 @@
                     "First name": "Arnaud",
                     "Birthdate": "1991",
                     "Gender": "M",
-                    "Rank": 18,
+                    "Rank": 1000,
                     "Pairing number": 8,
                     "Score": 1.5,
                     "Opponents": [
@@ -2105,7 +2105,7 @@
                     "First name": "Alexandre",
                     "Birthdate": "1972",
                     "Gender": "M",
-                    "Rank": 11,
+                    "Rank": 42,
                     "Pairing number": 1,
                     "Score": 1.0,
                     "Opponents": [
@@ -2150,7 +2150,7 @@
                     "First name": "Marion",
                     "Birthdate": "1987",
                     "Gender": "F",
-                    "Rank": 17,
+                    "Rank": 44,
                     "Pairing number": 4,
                     "Score": 1.5,
                     "Opponents": [
@@ -2165,7 +2165,7 @@
                     "First name": "laureen",
                     "Birthdate": "1994",
                     "Gender": "F",
-                    "Rank": 13,
+                    "Rank": 53,
                     "Pairing number": 5,
                     "Score": 2.5,
                     "Opponents": [
@@ -2210,7 +2210,7 @@
                     "First name": "Arnaud",
                     "Birthdate": "1991",
                     "Gender": "M",
-                    "Rank": 18,
+                    "Rank": 1000,
                     "Pairing number": 8,
                     "Score": 2.5,
                     "Opponents": [
@@ -2227,21 +2227,149 @@
             "Tournament's adress": "Chassieu",
             "Tournament's Date": "Janvier",
             "Total number of rounds": 4,
-            "Round number": 0,
+            "Round number": 3,
             "Time control": "300",
             "Number of player": 8,
             "Comments": "Dictionnaire temporaire",
-            "Rounds": {},
+            "Rounds": {
+                "Round number 2": [
+                    "Wednesday, 24-Mar-2021 11:32:10 CET",
+                    "Wednesday, 24-Mar-2021 11:32:10 CET",
+                    [
+                        [
+                            [
+                                "Menant laureen (Rank, Pairing number, Score): ",
+                                "53",
+                                5,
+                                0.0
+                            ],
+                            [
+                                "Bepas Marion (Rank, Pairing number, Score): ",
+                                17,
+                                4,
+                                1.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Gagnieu Arnaud (Rank, Pairing number, Score): ",
+                                18,
+                                8,
+                                0.5
+                            ],
+                            [
+                                "Dupont Alexandre (Rank, Pairing number, Score): ",
+                                42,
+                                1,
+                                0.5
+                            ]
+                        ],
+                        [
+                            [
+                                "Roux Cedric (Rank, Pairing number, Score): ",
+                                150,
+                                7,
+                                0.5
+                            ],
+                            [
+                                "Durand Aurelie (Rank, Pairing number, Score): ",
+                                350,
+                                2,
+                                0.5
+                            ]
+                        ],
+                        [
+                            [
+                                "Liotard David (Rank, Pairing number, Score): ",
+                                400,
+                                6,
+                                0.0
+                            ],
+                            [
+                                "Dupuis Monique (Rank, Pairing number, Score): ",
+                                650,
+                                3,
+                                1.0
+                            ]
+                        ]
+                    ]
+                ],
+                "Round number 3": [
+                    "Wednesday, 24-Mar-2021 13:06:13 CET",
+                    "Wednesday, 24-Mar-2021 13:06:14 CET",
+                    [
+                        [
+                            [
+                                "Bepas Marion (Rank, Pairing number, Score): ",
+                                "44",
+                                4,
+                                1.0
+                            ],
+                            [
+                                "Dupuis Monique (Rank, Pairing number, Score): ",
+                                650,
+                                3,
+                                2.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Gagnieu Arnaud (Rank, Pairing number, Score): ",
+                                "1000",
+                                8,
+                                1.0
+                            ],
+                            [
+                                "Roux Cedric (Rank, Pairing number, Score): ",
+                                150,
+                                7,
+                                1.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Dupont Alexandre (Rank, Pairing number, Score): ",
+                                42,
+                                1,
+                                1.0
+                            ],
+                            [
+                                "Durand Aurelie (Rank, Pairing number, Score): ",
+                                350,
+                                2,
+                                1.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Menant laureen (Rank, Pairing number, Score): ",
+                                53,
+                                5,
+                                0.0
+                            ],
+                            [
+                                "Liotard David (Rank, Pairing number, Score): ",
+                                400,
+                                6,
+                                1.0
+                            ]
+                        ]
+                    ]
+                ]
+            },
             "players": [
                 {
                     "Family name": "Dupont",
                     "First name": "Alexandre",
                     "Birthdate": "1972",
                     "Gender": "M",
-                    "Rank": 11,
+                    "Rank": 42,
                     "Pairing number": 1,
-                    "Score": 0,
-                    "Opponents": []
+                    "Score": 1.0,
+                    "Opponents": [
+                        8,
+                        2
+                    ]
                 },
                 {
                     "Family name": "Durand",
@@ -2250,8 +2378,11 @@
                     "Gender": "F",
                     "Rank": 350,
                     "Pairing number": 2,
-                    "Score": 0,
-                    "Opponents": []
+                    "Score": 1.0,
+                    "Opponents": [
+                        7,
+                        1
+                    ]
                 },
                 {
                     "Family name": "Dupuis",
@@ -2260,28 +2391,37 @@
                     "Gender": "F",
                     "Rank": 650,
                     "Pairing number": 3,
-                    "Score": 0,
-                    "Opponents": []
+                    "Score": 2.0,
+                    "Opponents": [
+                        6,
+                        4
+                    ]
                 },
                 {
                     "Family name": "Bepas",
                     "First name": "Marion",
                     "Birthdate": "1987",
                     "Gender": "F",
-                    "Rank": 17,
+                    "Rank": 44,
                     "Pairing number": 4,
-                    "Score": 0,
-                    "Opponents": []
+                    "Score": 1.0,
+                    "Opponents": [
+                        5,
+                        3
+                    ]
                 },
                 {
                     "Family name": "Menant",
                     "First name": "laureen",
                     "Birthdate": "1994",
                     "Gender": "F",
-                    "Rank": 13,
+                    "Rank": 53,
                     "Pairing number": 5,
-                    "Score": 0,
-                    "Opponents": []
+                    "Score": 0.0,
+                    "Opponents": [
+                        4,
+                        6
+                    ]
                 },
                 {
                     "Family name": "Liotard",
@@ -2290,8 +2430,11 @@
                     "Gender": "X",
                     "Rank": 400,
                     "Pairing number": 6,
-                    "Score": 0,
-                    "Opponents": []
+                    "Score": 1.0,
+                    "Opponents": [
+                        3,
+                        5
+                    ]
                 },
                 {
                     "Family name": "Roux",
@@ -2300,18 +2443,24 @@
                     "Gender": "M",
                     "Rank": 150,
                     "Pairing number": 7,
-                    "Score": 0,
-                    "Opponents": []
+                    "Score": 1.0,
+                    "Opponents": [
+                        2,
+                        8
+                    ]
                 },
                 {
                     "Family name": "Gagnieu",
                     "First name": "Arnaud",
                     "Birthdate": "1991",
                     "Gender": "M",
-                    "Rank": 18,
+                    "Rank": 1000,
                     "Pairing number": 8,
-                    "Score": 0,
-                    "Opponents": []
+                    "Score": 1.0,
+                    "Opponents": [
+                        1,
+                        7
+                    ]
                 }
             ]
         },
@@ -2456,7 +2605,7 @@
                     "First name": "Alexandre",
                     "Birthdate": "1972",
                     "Gender": "M",
-                    "Rank": 11,
+                    "Rank": 42,
                     "Pairing number": 1,
                     "Score": 1.5,
                     "Opponents": [
@@ -2495,7 +2644,7 @@
                     "First name": "Marion",
                     "Birthdate": "1987",
                     "Gender": "F",
-                    "Rank": 17,
+                    "Rank": 44,
                     "Pairing number": 4,
                     "Score": 2.0,
                     "Opponents": [
@@ -2508,7 +2657,7 @@
                     "First name": "laureen",
                     "Birthdate": "1994",
                     "Gender": "F",
-                    "Rank": 13,
+                    "Rank": 53,
                     "Pairing number": 5,
                     "Score": 0.0,
                     "Opponents": [
@@ -2547,7 +2696,7 @@
                     "First name": "Arnaud",
                     "Birthdate": "1991",
                     "Gender": "M",
-                    "Rank": 18,
+                    "Rank": 1000,
                     "Pairing number": 8,
                     "Score": 1.0,
                     "Opponents": [
@@ -2760,7 +2909,7 @@
                     "First name": "Alexandre",
                     "Birthdate": "1972",
                     "Gender": "M",
-                    "Rank": 11,
+                    "Rank": 42,
                     "Pairing number": 1,
                     "Score": 1.5,
                     "Opponents": [
@@ -2802,7 +2951,7 @@
                     "First name": "Marion",
                     "Birthdate": "1987",
                     "Gender": "F",
-                    "Rank": 17,
+                    "Rank": 44,
                     "Pairing number": 4,
                     "Score": 1.0,
                     "Opponents": [
@@ -2816,7 +2965,7 @@
                     "First name": "laureen",
                     "Birthdate": "1994",
                     "Gender": "F",
-                    "Rank": 13,
+                    "Rank": 53,
                     "Pairing number": 5,
                     "Score": 2.5,
                     "Opponents": [
@@ -2858,7 +3007,7 @@
                     "First name": "Arnaud",
                     "Birthdate": "1991",
                     "Gender": "M",
-                    "Rank": 18,
+                    "Rank": 1000,
                     "Pairing number": 8,
                     "Score": 1.0,
                     "Opponents": [
@@ -2881,81 +3030,81 @@
             "Rounds": {},
             "players": [
                 {
-                    "Player's family name": "dupont",
-                    "Player's first name": "alice",
-                    "Player's birthdate": "1990",
-                    "Player's gender": "F",
-                    "Player's rank": 35,
+                    "Family name": "dupont",
+                    "First name": "alice",
+                    "Birthdate": "1990",
+                    "Gender": "F",
+                    "Rank": 35,
                     "Pairing number": 1,
                     "Score": 0,
                     "Opponents": []
                 },
                 {
-                    "Player's family name": "Durant",
-                    "Player's first name": "Alex",
-                    "Player's birthdate": "1998",
-                    "Player's gender": "M",
-                    "Player's rank": 12,
+                    "Family name": "Durant",
+                    "First name": "Alex",
+                    "Birthdate": "1998",
+                    "Gender": "M",
+                    "Rank": 12,
                     "Pairing number": 2,
                     "Score": 0,
                     "Opponents": []
                 },
                 {
-                    "Player's family name": "dupuis",
-                    "Player's first name": "alexa",
-                    "Player's birthdate": "1966",
-                    "Player's gender": "X",
-                    "Player's rank": 35,
+                    "Family name": "dupuis",
+                    "First name": "alexa",
+                    "Birthdate": "1966",
+                    "Gender": "X",
+                    "Rank": 35,
                     "Pairing number": 3,
                     "Score": 0,
                     "Opponents": []
                 },
                 {
-                    "Player's family name": "ezf",
-                    "Player's first name": "eÃ©rf",
-                    "Player's birthdate": "zer",
-                    "Player's gender": "evr",
-                    "Player's rank": 56,
+                    "Family name": "ezf",
+                    "First name": "eÃ©rf",
+                    "Birthdate": "zer",
+                    "Gender": "evr",
+                    "Rank": 56,
                     "Pairing number": 4,
                     "Score": 0,
                     "Opponents": []
                 },
                 {
-                    "Player's family name": "rzv",
-                    "Player's first name": "zctry",
-                    "Player's birthdate": "eyrtbzevc",
-                    "Player's gender": "zevez",
-                    "Player's rank": 22,
+                    "Family name": "rzv",
+                    "First name": "zctry",
+                    "Birthdate": "eyrtbzevc",
+                    "Gender": "zevez",
+                    "Rank": 22,
                     "Pairing number": 5,
                     "Score": 0,
                     "Opponents": []
                 },
                 {
-                    "Player's family name": "ertgxze",
-                    "Player's first name": "buikbgyj",
-                    "Player's birthdate": "rtcrte",
-                    "Player's gender": "F",
-                    "Player's rank": 11,
+                    "Family name": "ertgxze",
+                    "First name": "buikbgyj",
+                    "Birthdate": "rtcrte",
+                    "Gender": "F",
+                    "Rank": 11,
                     "Pairing number": 6,
                     "Score": 0,
                     "Opponents": []
                 },
                 {
-                    "Player's family name": "vyrtccrtse",
-                    "Player's first name": "ersgrfxcfng",
-                    "Player's birthdate": "rtyrtet",
-                    "Player's gender": "F",
-                    "Player's rank": 5,
+                    "Family name": "vyrtccrtse",
+                    "First name": "ersgrfxcfng",
+                    "Birthdate": "rtyrtet",
+                    "Gender": "F",
+                    "Rank": 5,
                     "Pairing number": 7,
                     "Score": 0,
                     "Opponents": []
                 },
                 {
-                    "Player's family name": "erfe",
-                    "Player's first name": "ryutyjrht",
-                    "Player's birthdate": "1983",
-                    "Player's gender": "M",
-                    "Player's rank": 99,
+                    "Family name": "erfe",
+                    "First name": "ryutyjrht",
+                    "Birthdate": "1983",
+                    "Gender": "M",
+                    "Rank": 99,
                     "Pairing number": 8,
                     "Score": 0,
                     "Opponents": []
@@ -3049,6 +3198,99 @@
                     "Birthdate": "1988",
                     "Gender": "X",
                     "Rank": 99,
+                    "Pairing number": 8,
+                    "Score": 0,
+                    "Opponents": []
+                }
+            ]
+        },
+        "12": {
+            "Tournament's name": "zefzer",
+            "Tournament's adress": "erxtbfewv",
+            "Tournament's Date": "sxrtgbrg",
+            "Total number of rounds": 4,
+            "Round number": 0,
+            "Time control": "xtrbgr",
+            "Number of player": 8,
+            "Comments": "xrtbgrt",
+            "Rounds": {},
+            "players": [
+                {
+                    "Family name": "xrtbrt",
+                    "First name": "rxtbgrt",
+                    "Birthdate": "xrtbxr",
+                    "Gender": "rxtytg",
+                    "Rank": 11,
+                    "Pairing number": 1,
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Family name": "rtbxgrv",
+                    "First name": "rxtb",
+                    "Birthdate": "revrxb",
+                    "Gender": "rxteb",
+                    "Rank": 22,
+                    "Pairing number": 2,
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Family name": "rtrtg",
+                    "First name": "rtxbrtb",
+                    "Birthdate": "rtxrtb",
+                    "Gender": "rxtgxbrtd",
+                    "Rank": 33,
+                    "Pairing number": 3,
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Family name": "yrthcrtb",
+                    "First name": "yutijvf",
+                    "Birthdate": "rtdxrg",
+                    "Gender": "rtnrbd",
+                    "Rank": 44,
+                    "Pairing number": 4,
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Family name": "ihjyvgf",
+                    "First name": "g,jgynh",
+                    "Birthdate": "tyvhfg",
+                    "Gender": "yvjvfgh",
+                    "Rank": 55,
+                    "Pairing number": 5,
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Family name": "ghjgvhnfb",
+                    "First name": "tyvnfg",
+                    "Birthdate": "hkuuhkij",
+                    "Gender": "fthgd",
+                    "Rank": 66,
+                    "Pairing number": 6,
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Family name": "rthtrgt",
+                    "First name": "tytuj",
+                    "Birthdate": "erxrse",
+                    "Gender": "rttcr",
+                    "Rank": 77,
+                    "Pairing number": 7,
+                    "Score": 0,
+                    "Opponents": []
+                },
+                {
+                    "Family name": "hcdg",
+                    "First name": "tytcdb",
+                    "Birthdate": "tynrtrb",
+                    "Gender": "ycntndf",
+                    "Rank": 88,
                     "Pairing number": 8,
                     "Score": 0,
                     "Opponents": []
