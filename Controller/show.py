@@ -57,7 +57,6 @@ class ShowInformationsController:
         """
         self.level.ask_tournament_id()
         tournament_id = self.number.ask_number()
-        print("tournament id:  ", tournament_id)
         answer = self.level.ask_tournament_action(tournament_id)
         informations = None
         info_type = None
