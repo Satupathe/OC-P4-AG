@@ -5,13 +5,11 @@ Allow to start or continue a tournament
 Call tournament number
 Call informations on tournament and players
 function to choose a round and go through it
-
 """
 import sys
+import os
 
 import pendulum
-
-from subprocess import call
 
 from Controller import menu, show
 from Model import tournamentmodel, playermodel, rounds
@@ -26,7 +24,7 @@ class FrontController:
 
     def clear(self):
         """Function to clear the terminal"""
-        _ = call("clear")
+        os.system('CLS')
 
     def start(self):
         """
@@ -93,7 +91,7 @@ class ContinueTournamentController:
             action = tournament.round_selection(tournament_number)
             menu = FrontController()
 
-            if action is not None:
+            if action[0] is not None:
                 menu.start()
             else:
                 tournament.call_final_score()
@@ -128,8 +126,7 @@ class LaunchTournamentController:
         action = tournament.round_selection(tournament_number)
         menu = FrontController()
 
-        if action[0] == "menu":
-
+        if action[0] is not None:
             menu.start()
         else:
             tournament.call_final_score()
@@ -196,6 +193,7 @@ class TournamentController:
         Ask for rank change through view function
         Save rounds results through model function
         """
+
         self.tournament = tournamentmodel.TournamentModel()
         self.rank_change = view.RankChange()
         players_and_score = []
@@ -243,10 +241,10 @@ class TournamentController:
                     sorted_new_ranks = sorted(players_and_score, key=lambda x: x[2], reverse=False)
                     new_rank_players = self.tournament.get_players(tournament_number)
 
-                    p = 0
+                    index = 0
                     for player in new_rank_players:
-                        player["Rank"] = sorted_new_ranks[p][1]
-                        p += 1
+                        player["Rank"] = sorted_new_ranks[index][1]
+                        index += 1
 
                     self.tournament.save_new_ranks(new_rank_players)
 
@@ -292,10 +290,10 @@ class TournamentController:
                     sorted_new_ranks = sorted(self.score_other_round, key=lambda x: x[2], reverse=False)
                     new_rank_players = self.tournament.get_players(tournament_number)
 
-                    p = 0
+                    index = 0
                     for player in new_rank_players:
-                        player["Rank"] = sorted_new_ranks[p][1]
-                        p += 1
+                        player["Rank"] = sorted_new_ranks[index][1]
+                        index += 1
 
                     self.tournament.save_new_ranks(new_rank_players)
 
@@ -356,10 +354,10 @@ class TournamentController:
         sorted_new_ranks = sorted(players_and_score, key=lambda x: x[2], reverse=False)
         new_rank_players = self.tournament.get_players(tournament_number)
 
-        p = 0
+        index = 0
         for player in new_rank_players:
-            player["Rank"] = sorted_new_ranks[p][1]
-            p += 1
+            player["Rank"] = sorted_new_ranks[index][1]
+            index += 1
 
         self.tournament.save_new_ranks(new_rank_players)
 

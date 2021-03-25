@@ -1533,7 +1533,7 @@
             "Tournament's adress": "Chassieu",
             "Tournament's Date": "Janvier",
             "Total number of rounds": 4,
-            "Round number": 3,
+            "Round number": 4,
             "Time control": "300",
             "Number of player": 8,
             "Comments": "Dictionnaire temporaire",
@@ -1723,6 +1723,68 @@
                             ]
                         ]
                     ]
+                ],
+                "Round number 4": [
+                    "Thursday, 25-Mar-2021 11:07:15 CET",
+                    "Thursday, 25-Mar-2021 11:07:15 CET",
+                    [
+                        [
+                            [
+                                "Bepas Marion (Rank, Pairing number, Score): ",
+                                44,
+                                4,
+                                2.5
+                            ],
+                            [
+                                "Gagnieu Arnaud (Rank, Pairing number, Score): ",
+                                1000,
+                                8,
+                                2.5
+                            ]
+                        ],
+                        [
+                            [
+                                "Durand Aurelie (Rank, Pairing number, Score): ",
+                                350,
+                                2,
+                                3.5
+                            ],
+                            [
+                                "Menant laureen (Rank, Pairing number, Score): ",
+                                53,
+                                5,
+                                2.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Roux Cedric (Rank, Pairing number, Score): ",
+                                150,
+                                7,
+                                2.0
+                            ],
+                            [
+                                "Liotard David (Rank, Pairing number, Score): ",
+                                400,
+                                6,
+                                1.5
+                            ]
+                        ],
+                        [
+                            [
+                                "Dupuis Monique (Rank, Pairing number, Score): ",
+                                650,
+                                3,
+                                1.5
+                            ],
+                            [
+                                "Dupont Alexandre (Rank, Pairing number, Score): ",
+                                42,
+                                1,
+                                0.5
+                            ]
+                        ]
+                    ]
                 ]
             },
             "players": [
@@ -1733,10 +1795,11 @@
                     "Gender": "M",
                     "Rank": 42,
                     "Pairing number": 1,
-                    "Score": 0.0,
+                    "Score": 0.5,
                     "Opponents": [
                         7,
                         5,
+                        3,
                         3
                     ]
                 },
@@ -1747,11 +1810,12 @@
                     "Gender": "F",
                     "Rank": 350,
                     "Pairing number": 2,
-                    "Score": 2.5,
+                    "Score": 3.5,
                     "Opponents": [
                         8,
                         6,
-                        4
+                        4,
+                        5
                     ]
                 },
                 {
@@ -1761,10 +1825,11 @@
                     "Gender": "F",
                     "Rank": 650,
                     "Pairing number": 3,
-                    "Score": 1.0,
+                    "Score": 1.5,
                     "Opponents": [
                         6,
                         8,
+                        1,
                         1
                     ]
                 },
@@ -1779,7 +1844,8 @@
                     "Opponents": [
                         5,
                         7,
-                        2
+                        2,
+                        8
                     ]
                 },
                 {
@@ -1793,7 +1859,8 @@
                     "Opponents": [
                         4,
                         1,
-                        6
+                        6,
+                        2
                     ]
                 },
                 {
@@ -1803,11 +1870,12 @@
                     "Gender": "X",
                     "Rank": 400,
                     "Pairing number": 6,
-                    "Score": 1.0,
+                    "Score": 1.5,
                     "Opponents": [
                         3,
                         2,
-                        5
+                        5,
+                        7
                     ]
                 },
                 {
@@ -1817,11 +1885,12 @@
                     "Gender": "M",
                     "Rank": 150,
                     "Pairing number": 7,
-                    "Score": 1.5,
+                    "Score": 2.0,
                     "Opponents": [
                         1,
                         4,
-                        8
+                        8,
+                        6
                     ]
                 },
                 {
@@ -1831,11 +1900,12 @@
                     "Gender": "M",
                     "Rank": 1000,
                     "Pairing number": 8,
-                    "Score": 1.5,
+                    "Score": 2.5,
                     "Opponents": [
                         2,
                         3,
-                        7
+                        7,
+                        4
                     ]
                 }
             ]
@@ -2227,7 +2297,7 @@
             "Tournament's adress": "Chassieu",
             "Tournament's Date": "Janvier",
             "Total number of rounds": 4,
-            "Round number": 3,
+            "Round number": 4,
             "Time control": "300",
             "Number of player": 8,
             "Comments": "Dictionnaire temporaire",
@@ -2355,6 +2425,68 @@
                             ]
                         ]
                     ]
+                ],
+                "Round number 4": [
+                    "Thursday, 25-Mar-2021 11:04:12 CET",
+                    "Thursday, 25-Mar-2021 11:04:12 CET",
+                    [
+                        [
+                            [
+                                "Dupuis Monique (Rank, Pairing number, Score): ",
+                                650,
+                                3,
+                                2.0
+                            ],
+                            [
+                                "Dupont Alexandre (Rank, Pairing number, Score): ",
+                                42,
+                                1,
+                                2.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Bepas Marion (Rank, Pairing number, Score): ",
+                                44,
+                                4,
+                                2.0
+                            ],
+                            [
+                                "Roux Cedric (Rank, Pairing number, Score): ",
+                                150,
+                                7,
+                                1.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Durand Aurelie (Rank, Pairing number, Score): ",
+                                350,
+                                2,
+                                1.0
+                            ],
+                            [
+                                "Liotard David (Rank, Pairing number, Score): ",
+                                400,
+                                6,
+                                2.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Gagnieu Arnaud (Rank, Pairing number, Score): ",
+                                1000,
+                                8,
+                                2.0
+                            ],
+                            [
+                                "Menant laureen (Rank, Pairing number, Score): ",
+                                53,
+                                5,
+                                0.0
+                            ]
+                        ]
+                    ]
                 ]
             },
             "players": [
@@ -2469,7 +2601,7 @@
             "Tournament's adress": "Chassieu",
             "Tournament's Date": "Janvier",
             "Total number of rounds": 4,
-            "Round number": 2,
+            "Round number": 4,
             "Time control": "300",
             "Number of player": 8,
             "Comments": "Dictionnaire temporaire",
@@ -2597,6 +2729,130 @@
                             ]
                         ]
                     ]
+                ],
+                "Round number 3": [
+                    "Thursday, 25-Mar-2021 10:33:34 CET",
+                    "Thursday, 25-Mar-2021 10:33:35 CET",
+                    [
+                        [
+                            [
+                                "Bepas Marion (Rank, Pairing number, Score): ",
+                                44,
+                                4,
+                                2.0
+                            ],
+                            [
+                                "Dupont Alexandre (Rank, Pairing number, Score): ",
+                                42,
+                                1,
+                                2.5
+                            ]
+                        ],
+                        [
+                            [
+                                "Roux Cedric (Rank, Pairing number, Score): ",
+                                150,
+                                7,
+                                1.5
+                            ],
+                            [
+                                "Durand Aurelie (Rank, Pairing number, Score): ",
+                                350,
+                                2,
+                                1.5
+                            ]
+                        ],
+                        [
+                            [
+                                "Dupuis Monique (Rank, Pairing number, Score): ",
+                                650,
+                                3,
+                                1.5
+                            ],
+                            [
+                                "Gagnieu Arnaud (Rank, Pairing number, Score): ",
+                                1000,
+                                8,
+                                1.5
+                            ]
+                        ],
+                        [
+                            [
+                                "Liotard David (Rank, Pairing number, Score): ",
+                                400,
+                                6,
+                                0.5
+                            ],
+                            [
+                                "Menant laureen (Rank, Pairing number, Score): ",
+                                53,
+                                5,
+                                1.0
+                            ]
+                        ]
+                    ]
+                ],
+                "Round number 4": [
+                    "Thursday, 25-Mar-2021 10:59:13 CET",
+                    "Thursday, 25-Mar-2021 10:59:13 CET",
+                    [
+                        [
+                            [
+                                "Dupont Alexandre (Rank, Pairing number, Score): ",
+                                42,
+                                1,
+                                2.5
+                            ],
+                            [
+                                "Durand Aurelie (Rank, Pairing number, Score): ",
+                                350,
+                                2,
+                                2.5
+                            ]
+                        ],
+                        [
+                            [
+                                "Bepas Marion (Rank, Pairing number, Score): ",
+                                44,
+                                4,
+                                2.5
+                            ],
+                            [
+                                "Roux Cedric (Rank, Pairing number, Score): ",
+                                150,
+                                7,
+                                2.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Dupuis Monique (Rank, Pairing number, Score): ",
+                                650,
+                                3,
+                                1.5
+                            ],
+                            [
+                                "Menant laureen (Rank, Pairing number, Score): ",
+                                53,
+                                5,
+                                2.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Gagnieu Arnaud (Rank, Pairing number, Score): ",
+                                1000,
+                                8,
+                                1.5
+                            ],
+                            [
+                                "Liotard David (Rank, Pairing number, Score): ",
+                                400,
+                                6,
+                                1.5
+                            ]
+                        ]
+                    ]
                 ]
             },
             "players": [
@@ -2607,10 +2863,12 @@
                     "Gender": "M",
                     "Rank": 42,
                     "Pairing number": 1,
-                    "Score": 1.5,
+                    "Score": 2.5,
                     "Opponents": [
                         7,
-                        8
+                        8,
+                        4,
+                        2
                     ]
                 },
                 {
@@ -2620,10 +2878,12 @@
                     "Gender": "F",
                     "Rank": 350,
                     "Pairing number": 2,
-                    "Score": 1.0,
+                    "Score": 2.5,
                     "Opponents": [
                         8,
-                        5
+                        5,
+                        7,
+                        1
                     ]
                 },
                 {
@@ -2633,10 +2893,12 @@
                     "Gender": "F",
                     "Rank": 650,
                     "Pairing number": 3,
-                    "Score": 1.0,
+                    "Score": 1.5,
                     "Opponents": [
                         6,
-                        4
+                        4,
+                        8,
+                        5
                     ]
                 },
                 {
@@ -2646,10 +2908,12 @@
                     "Gender": "F",
                     "Rank": 44,
                     "Pairing number": 4,
-                    "Score": 2.0,
+                    "Score": 2.5,
                     "Opponents": [
                         5,
-                        3
+                        3,
+                        1,
+                        7
                     ]
                 },
                 {
@@ -2659,10 +2923,12 @@
                     "Gender": "F",
                     "Rank": 53,
                     "Pairing number": 5,
-                    "Score": 0.0,
+                    "Score": 2.0,
                     "Opponents": [
                         4,
-                        2
+                        2,
+                        6,
+                        3
                     ]
                 },
                 {
@@ -2672,10 +2938,12 @@
                     "Gender": "X",
                     "Rank": 400,
                     "Pairing number": 6,
-                    "Score": 0.5,
+                    "Score": 1.5,
                     "Opponents": [
                         3,
-                        7
+                        7,
+                        5,
+                        8
                     ]
                 },
                 {
@@ -2685,10 +2953,12 @@
                     "Gender": "M",
                     "Rank": 150,
                     "Pairing number": 7,
-                    "Score": 1.0,
+                    "Score": 2.0,
                     "Opponents": [
                         1,
-                        6
+                        6,
+                        2,
+                        4
                     ]
                 },
                 {
@@ -2698,10 +2968,12 @@
                     "Gender": "M",
                     "Rank": 1000,
                     "Pairing number": 8,
-                    "Score": 1.0,
+                    "Score": 1.5,
                     "Opponents": [
                         2,
-                        1
+                        1,
+                        3,
+                        6
                     ]
                 }
             ]
@@ -2711,7 +2983,7 @@
             "Tournament's adress": "Chassieu",
             "Tournament's Date": "Janvier",
             "Total number of rounds": 4,
-            "Round number": 3,
+            "Round number": 4,
             "Time control": "300",
             "Number of player": 8,
             "Comments": "Dictionnaire temporaire",
@@ -2901,6 +3173,68 @@
                             ]
                         ]
                     ]
+                ],
+                "Round number 4": [
+                    "Thursday, 25-Mar-2021 10:04:06 CET",
+                    "Thursday, 25-Mar-2021 10:04:08 CET",
+                    [
+                        [
+                            [
+                                "Menant laureen (Rank, Pairing number, Score): ",
+                                53,
+                                5,
+                                2.5
+                            ],
+                            [
+                                "Dupont Alexandre (Rank, Pairing number, Score): ",
+                                42,
+                                1,
+                                2.5
+                            ]
+                        ],
+                        [
+                            [
+                                "Roux Cedric (Rank, Pairing number, Score): ",
+                                150,
+                                7,
+                                2.5
+                            ],
+                            [
+                                "Dupuis Monique (Rank, Pairing number, Score): ",
+                                650,
+                                3,
+                                2.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Liotard David (Rank, Pairing number, Score): ",
+                                400,
+                                6,
+                                2.0
+                            ],
+                            [
+                                "Bepas Marion (Rank, Pairing number, Score): ",
+                                44,
+                                4,
+                                1.5
+                            ]
+                        ],
+                        [
+                            [
+                                "Durand Aurelie (Rank, Pairing number, Score): ",
+                                350,
+                                2,
+                                1.0
+                            ],
+                            [
+                                "Gagnieu Arnaud (Rank, Pairing number, Score): ",
+                                1000,
+                                8,
+                                2.0
+                            ]
+                        ]
+                    ]
                 ]
             },
             "players": [
@@ -2911,11 +3245,12 @@
                     "Gender": "M",
                     "Rank": 42,
                     "Pairing number": 1,
-                    "Score": 1.5,
+                    "Score": 2.5,
                     "Opponents": [
                         7,
                         4,
-                        6
+                        6,
+                        5
                     ]
                 },
                 {
@@ -2929,7 +3264,8 @@
                     "Opponents": [
                         8,
                         3,
-                        4
+                        4,
+                        8
                     ]
                 },
                 {
@@ -2939,11 +3275,12 @@
                     "Gender": "F",
                     "Rank": 650,
                     "Pairing number": 3,
-                    "Score": 1.5,
+                    "Score": 2.0,
                     "Opponents": [
                         6,
                         2,
-                        8
+                        8,
+                        7
                     ]
                 },
                 {
@@ -2953,11 +3290,12 @@
                     "Gender": "F",
                     "Rank": 44,
                     "Pairing number": 4,
-                    "Score": 1.0,
+                    "Score": 1.5,
                     "Opponents": [
                         5,
                         1,
-                        2
+                        2,
+                        6
                     ]
                 },
                 {
@@ -2971,7 +3309,8 @@
                     "Opponents": [
                         4,
                         8,
-                        7
+                        7,
+                        1
                     ]
                 },
                 {
@@ -2981,11 +3320,12 @@
                     "Gender": "X",
                     "Rank": 400,
                     "Pairing number": 6,
-                    "Score": 1.5,
+                    "Score": 2.0,
                     "Opponents": [
                         3,
                         7,
-                        1
+                        1,
+                        4
                     ]
                 },
                 {
@@ -2995,11 +3335,12 @@
                     "Gender": "M",
                     "Rank": 150,
                     "Pairing number": 7,
-                    "Score": 2.0,
+                    "Score": 2.5,
                     "Opponents": [
                         1,
                         6,
-                        5
+                        5,
+                        3
                     ]
                 },
                 {
@@ -3009,11 +3350,12 @@
                     "Gender": "M",
                     "Rank": 1000,
                     "Pairing number": 8,
-                    "Score": 1.0,
+                    "Score": 2.0,
                     "Opponents": [
                         2,
                         5,
-                        3
+                        3,
+                        2
                     ]
                 }
             ]
@@ -3023,11 +3365,260 @@
             "Tournament's adress": "toujours",
             "Tournament's Date": "encore",
             "Total number of rounds": 4,
-            "Round number": 0,
+            "Round number": 4,
             "Time control": "blitz",
             "Number of player": 8,
             "Comments": "essai encore et encore",
-            "Rounds": {},
+            "Rounds": {
+                "Round number 1": [
+                    "Thursday, 25-Mar-2021 11:08:57 CET",
+                    "Thursday, 25-Mar-2021 11:08:59 CET",
+                    [
+                        [
+                            [
+                                "vyrtccrtse ersgrfxcfng (Rank, Pairing number, Score): ",
+                                5,
+                                7,
+                                0.0
+                            ],
+                            [
+                                "dupont alice (Rank, Pairing number, Score): ",
+                                35,
+                                1,
+                                1.0
+                            ]
+                        ],
+                        [
+                            [
+                                "ertgxze buikbgyj (Rank, Pairing number, Score): ",
+                                11,
+                                6,
+                                0.0
+                            ],
+                            [
+                                "dupuis alexa (Rank, Pairing number, Score): ",
+                                35,
+                                3,
+                                1.0
+                            ]
+                        ],
+                        [
+                            [
+                                "Durant Alex (Rank, Pairing number, Score): ",
+                                12,
+                                2,
+                                0.5
+                            ],
+                            [
+                                "ezf eÃ©rf (Rank, Pairing number, Score): ",
+                                56,
+                                4,
+                                0.5
+                            ]
+                        ],
+                        [
+                            [
+                                "rzv zctry (Rank, Pairing number, Score): ",
+                                22,
+                                5,
+                                0.0
+                            ],
+                            [
+                                "erfe ryutyjrht (Rank, Pairing number, Score): ",
+                                99,
+                                8,
+                                1.0
+                            ]
+                        ]
+                    ]
+                ],
+                "Round number 2": [
+                    "Thursday, 25-Mar-2021 11:09:26 CET",
+                    "Thursday, 25-Mar-2021 11:09:26 CET",
+                    [
+                        [
+                            [
+                                "dupont alice (Rank, Pairing number, Score): ",
+                                35,
+                                1,
+                                1.0
+                            ],
+                            [
+                                "dupuis alexa (Rank, Pairing number, Score): ",
+                                35,
+                                3,
+                                2.0
+                            ]
+                        ],
+                        [
+                            [
+                                "erfe ryutyjrht (Rank, Pairing number, Score): ",
+                                99,
+                                8,
+                                2.0
+                            ],
+                            [
+                                "Durant Alex (Rank, Pairing number, Score): ",
+                                12,
+                                2,
+                                0.5
+                            ]
+                        ],
+                        [
+                            [
+                                "ezf eÃ©rf (Rank, Pairing number, Score): ",
+                                56,
+                                4,
+                                0.5
+                            ],
+                            [
+                                "vyrtccrtse ersgrfxcfng (Rank, Pairing number, Score): ",
+                                5,
+                                7,
+                                1.0
+                            ]
+                        ],
+                        [
+                            [
+                                "ertgxze buikbgyj (Rank, Pairing number, Score): ",
+                                11,
+                                6,
+                                1.0
+                            ],
+                            [
+                                "rzv zctry (Rank, Pairing number, Score): ",
+                                22,
+                                5,
+                                0.0
+                            ]
+                        ]
+                    ]
+                ],
+                "Round number 3": [
+                    "Thursday, 25-Mar-2021 11:09:54 CET",
+                    "Thursday, 25-Mar-2021 11:09:54 CET",
+                    [
+                        [
+                            [
+                                "dupuis alexa (Rank, Pairing number, Score): ",
+                                35,
+                                3,
+                                2.0
+                            ],
+                            [
+                                "erfe ryutyjrht (Rank, Pairing number, Score): ",
+                                99,
+                                8,
+                                3.0
+                            ]
+                        ],
+                        [
+                            [
+                                "vyrtccrtse ersgrfxcfng (Rank, Pairing number, Score): ",
+                                5,
+                                7,
+                                2.0
+                            ],
+                            [
+                                "ertgxze buikbgyj (Rank, Pairing number, Score): ",
+                                11,
+                                6,
+                                1.0
+                            ]
+                        ],
+                        [
+                            [
+                                "dupont alice (Rank, Pairing number, Score): ",
+                                35,
+                                1,
+                                1.5
+                            ],
+                            [
+                                "Durant Alex (Rank, Pairing number, Score): ",
+                                12,
+                                2,
+                                1.0
+                            ]
+                        ],
+                        [
+                            [
+                                "ezf eÃ©rf (Rank, Pairing number, Score): ",
+                                56,
+                                4,
+                                0.5
+                            ],
+                            [
+                                "rzv zctry (Rank, Pairing number, Score): ",
+                                22,
+                                5,
+                                1.0
+                            ]
+                        ]
+                    ]
+                ],
+                "Round number 4": [
+                    "Thursday, 25-Mar-2021 11:10:22 CET",
+                    "Thursday, 25-Mar-2021 11:10:22 CET",
+                    [
+                        [
+                            [
+                                "erfe ryutyjrht (Rank, Pairing number, Score): ",
+                                99,
+                                8,
+                                3.0
+                            ],
+                            [
+                                "vyrtccrtse ersgrfxcfng (Rank, Pairing number, Score): ",
+                                5,
+                                7,
+                                3.0
+                            ]
+                        ],
+                        [
+                            [
+                                "dupuis alexa (Rank, Pairing number, Score): ",
+                                35,
+                                3,
+                                2.0
+                            ],
+                            [
+                                "Durant Alex (Rank, Pairing number, Score): ",
+                                12,
+                                2,
+                                2.0
+                            ]
+                        ],
+                        [
+                            [
+                                "dupont alice (Rank, Pairing number, Score): ",
+                                35,
+                                1,
+                                1.5
+                            ],
+                            [
+                                "ertgxze buikbgyj (Rank, Pairing number, Score): ",
+                                11,
+                                6,
+                                2.0
+                            ]
+                        ],
+                        [
+                            [
+                                "rzv zctry (Rank, Pairing number, Score): ",
+                                22,
+                                5,
+                                1.0
+                            ],
+                            [
+                                "ezf eÃ©rf (Rank, Pairing number, Score): ",
+                                56,
+                                4,
+                                1.5
+                            ]
+                        ]
+                    ]
+                ]
+            },
             "players": [
                 {
                     "Family name": "dupont",
@@ -3036,8 +3627,13 @@
                     "Gender": "F",
                     "Rank": 35,
                     "Pairing number": 1,
-                    "Score": 0,
-                    "Opponents": []
+                    "Score": 1.5,
+                    "Opponents": [
+                        7,
+                        3,
+                        2,
+                        6
+                    ]
                 },
                 {
                     "Family name": "Durant",
@@ -3046,8 +3642,13 @@
                     "Gender": "M",
                     "Rank": 12,
                     "Pairing number": 2,
-                    "Score": 0,
-                    "Opponents": []
+                    "Score": 2.0,
+                    "Opponents": [
+                        4,
+                        8,
+                        1,
+                        3
+                    ]
                 },
                 {
                     "Family name": "dupuis",
@@ -3056,8 +3657,13 @@
                     "Gender": "X",
                     "Rank": 35,
                     "Pairing number": 3,
-                    "Score": 0,
-                    "Opponents": []
+                    "Score": 2.0,
+                    "Opponents": [
+                        6,
+                        1,
+                        8,
+                        2
+                    ]
                 },
                 {
                     "Family name": "ezf",
@@ -3066,8 +3672,13 @@
                     "Gender": "evr",
                     "Rank": 56,
                     "Pairing number": 4,
-                    "Score": 0,
-                    "Opponents": []
+                    "Score": 1.5,
+                    "Opponents": [
+                        2,
+                        7,
+                        5,
+                        5
+                    ]
                 },
                 {
                     "Family name": "rzv",
@@ -3076,8 +3687,13 @@
                     "Gender": "zevez",
                     "Rank": 22,
                     "Pairing number": 5,
-                    "Score": 0,
-                    "Opponents": []
+                    "Score": 1.0,
+                    "Opponents": [
+                        8,
+                        6,
+                        4,
+                        4
+                    ]
                 },
                 {
                     "Family name": "ertgxze",
@@ -3086,8 +3702,13 @@
                     "Gender": "F",
                     "Rank": 11,
                     "Pairing number": 6,
-                    "Score": 0,
-                    "Opponents": []
+                    "Score": 2.0,
+                    "Opponents": [
+                        3,
+                        5,
+                        7,
+                        1
+                    ]
                 },
                 {
                     "Family name": "vyrtccrtse",
@@ -3096,8 +3717,13 @@
                     "Gender": "F",
                     "Rank": 5,
                     "Pairing number": 7,
-                    "Score": 0,
-                    "Opponents": []
+                    "Score": 3.0,
+                    "Opponents": [
+                        1,
+                        4,
+                        6,
+                        8
+                    ]
                 },
                 {
                     "Family name": "erfe",
@@ -3106,8 +3732,13 @@
                     "Gender": "M",
                     "Rank": 99,
                     "Pairing number": 8,
-                    "Score": 0,
-                    "Opponents": []
+                    "Score": 3.0,
+                    "Opponents": [
+                        5,
+                        2,
+                        3,
+                        7
+                    ]
                 }
             ]
         },
@@ -3209,11 +3840,260 @@
             "Tournament's adress": "erxtbfewv",
             "Tournament's Date": "sxrtgbrg",
             "Total number of rounds": 4,
-            "Round number": 0,
+            "Round number": 4,
             "Time control": "xtrbgr",
             "Number of player": 8,
             "Comments": "xrtbgrt",
-            "Rounds": {},
+            "Rounds": {
+                "Round number 1": [
+                    "Thursday, 25-Mar-2021 09:51:28 CET",
+                    "Thursday, 25-Mar-2021 09:51:28 CET",
+                    [
+                        [
+                            [
+                                "xrtbrt rxtbgrt (Rank, Pairing number, Score): ",
+                                11,
+                                1,
+                                0.0
+                            ],
+                            [
+                                "ihjyvgf g,jgynh (Rank, Pairing number, Score): ",
+                                55,
+                                5,
+                                1.0
+                            ]
+                        ],
+                        [
+                            [
+                                "rtbxgrv rxtb (Rank, Pairing number, Score): ",
+                                22,
+                                2,
+                                0.0
+                            ],
+                            [
+                                "ghjgvhnfb tyvnfg (Rank, Pairing number, Score): ",
+                                66,
+                                6,
+                                1.0
+                            ]
+                        ],
+                        [
+                            [
+                                "rtrtg rtxbrtb (Rank, Pairing number, Score): ",
+                                33,
+                                3,
+                                0.5
+                            ],
+                            [
+                                "rthtrgt tytuj (Rank, Pairing number, Score): ",
+                                77,
+                                7,
+                                0.5
+                            ]
+                        ],
+                        [
+                            [
+                                "yrthcrtb yutijvf (Rank, Pairing number, Score): ",
+                                44,
+                                4,
+                                0.0
+                            ],
+                            [
+                                "hcdg tytcdb (Rank, Pairing number, Score): ",
+                                88,
+                                8,
+                                1.0
+                            ]
+                        ]
+                    ]
+                ],
+                "Round number 2": [
+                    "Thursday, 25-Mar-2021 09:52:00 CET",
+                    "Thursday, 25-Mar-2021 09:52:00 CET",
+                    [
+                        [
+                            [
+                                "ihjyvgf g,jgynh (Rank, Pairing number, Score): ",
+                                55,
+                                5,
+                                1.0
+                            ],
+                            [
+                                "ghjgvhnfb tyvnfg (Rank, Pairing number, Score): ",
+                                "666",
+                                6,
+                                2.0
+                            ]
+                        ],
+                        [
+                            [
+                                "hcdg tytcdb (Rank, Pairing number, Score): ",
+                                88,
+                                8,
+                                2.0
+                            ],
+                            [
+                                "rtrtg rtxbrtb (Rank, Pairing number, Score): ",
+                                33,
+                                3,
+                                0.5
+                            ]
+                        ],
+                        [
+                            [
+                                "rthtrgt tytuj (Rank, Pairing number, Score): ",
+                                77,
+                                7,
+                                1.0
+                            ],
+                            [
+                                "xrtbrt rxtbgrt (Rank, Pairing number, Score): ",
+                                11,
+                                1,
+                                0.5
+                            ]
+                        ],
+                        [
+                            [
+                                "rtbxgrv rxtb (Rank, Pairing number, Score): ",
+                                "222",
+                                2,
+                                0.5
+                            ],
+                            [
+                                "yrthcrtb yutijvf (Rank, Pairing number, Score): ",
+                                44,
+                                4,
+                                0.5
+                            ]
+                        ]
+                    ]
+                ],
+                "Round number 3": [
+                    "Thursday, 25-Mar-2021 09:52:57 CET",
+                    "Thursday, 25-Mar-2021 09:52:58 CET",
+                    [
+                        [
+                            [
+                                "hcdg tytcdb (Rank, Pairing number, Score): ",
+                                88,
+                                8,
+                                2.0
+                            ],
+                            [
+                                "ghjgvhnfb tyvnfg (Rank, Pairing number, Score): ",
+                                666,
+                                6,
+                                3.0
+                            ]
+                        ],
+                        [
+                            [
+                                "ihjyvgf g,jgynh (Rank, Pairing number, Score): ",
+                                "555",
+                                5,
+                                1.5
+                            ],
+                            [
+                                "rthtrgt tytuj (Rank, Pairing number, Score): ",
+                                77,
+                                7,
+                                1.5
+                            ]
+                        ],
+                        [
+                            [
+                                "xrtbrt rxtbgrt (Rank, Pairing number, Score): ",
+                                11,
+                                1,
+                                1.5
+                            ],
+                            [
+                                "rtrtg rtxbrtb (Rank, Pairing number, Score): ",
+                                33,
+                                3,
+                                0.5
+                            ]
+                        ],
+                        [
+                            [
+                                "yrthcrtb yutijvf (Rank, Pairing number, Score): ",
+                                44,
+                                4,
+                                0.5
+                            ],
+                            [
+                                "rtbxgrv rxtb (Rank, Pairing number, Score): ",
+                                222,
+                                2,
+                                1.5
+                            ]
+                        ]
+                    ]
+                ],
+                "Round number 4": [
+                    "Thursday, 25-Mar-2021 09:53:38 CET",
+                    "Thursday, 25-Mar-2021 09:53:38 CET",
+                    [
+                        [
+                            [
+                                "ghjgvhnfb tyvnfg (Rank, Pairing number, Score): ",
+                                666,
+                                6,
+                                3.0
+                            ],
+                            [
+                                "xrtbrt rxtbgrt (Rank, Pairing number, Score): ",
+                                11,
+                                1,
+                                2.5
+                            ]
+                        ],
+                        [
+                            [
+                                "hcdg tytcdb (Rank, Pairing number, Score): ",
+                                88,
+                                8,
+                                2.0
+                            ],
+                            [
+                                "rthtrgt tytuj (Rank, Pairing number, Score): ",
+                                77,
+                                7,
+                                2.5
+                            ]
+                        ],
+                        [
+                            [
+                                "rtbxgrv rxtb (Rank, Pairing number, Score): ",
+                                222,
+                                2,
+                                1.5
+                            ],
+                            [
+                                "ihjyvgf g,jgynh (Rank, Pairing number, Score): ",
+                                555,
+                                5,
+                                2.5
+                            ]
+                        ],
+                        [
+                            [
+                                "rtrtg rtxbrtb (Rank, Pairing number, Score): ",
+                                33,
+                                3,
+                                0.5
+                            ],
+                            [
+                                "yrthcrtb yutijvf (Rank, Pairing number, Score): ",
+                                44,
+                                4,
+                                1.5
+                            ]
+                        ]
+                    ]
+                ]
+            },
             "players": [
                 {
                     "Family name": "xrtbrt",
@@ -3222,18 +4102,28 @@
                     "Gender": "rxtytg",
                     "Rank": 11,
                     "Pairing number": 1,
-                    "Score": 0,
-                    "Opponents": []
+                    "Score": 2.5,
+                    "Opponents": [
+                        5,
+                        7,
+                        3,
+                        6
+                    ]
                 },
                 {
                     "Family name": "rtbxgrv",
                     "First name": "rxtb",
                     "Birthdate": "revrxb",
                     "Gender": "rxteb",
-                    "Rank": 22,
+                    "Rank": 222,
                     "Pairing number": 2,
-                    "Score": 0,
-                    "Opponents": []
+                    "Score": 1.5,
+                    "Opponents": [
+                        6,
+                        4,
+                        4,
+                        5
+                    ]
                 },
                 {
                     "Family name": "rtrtg",
@@ -3242,8 +4132,13 @@
                     "Gender": "rxtgxbrtd",
                     "Rank": 33,
                     "Pairing number": 3,
-                    "Score": 0,
-                    "Opponents": []
+                    "Score": 0.5,
+                    "Opponents": [
+                        7,
+                        8,
+                        1,
+                        4
+                    ]
                 },
                 {
                     "Family name": "yrthcrtb",
@@ -3252,28 +4147,43 @@
                     "Gender": "rtnrbd",
                     "Rank": 44,
                     "Pairing number": 4,
-                    "Score": 0,
-                    "Opponents": []
+                    "Score": 1.5,
+                    "Opponents": [
+                        8,
+                        2,
+                        2,
+                        3
+                    ]
                 },
                 {
                     "Family name": "ihjyvgf",
                     "First name": "g,jgynh",
                     "Birthdate": "tyvhfg",
                     "Gender": "yvjvfgh",
-                    "Rank": 55,
+                    "Rank": 555,
                     "Pairing number": 5,
-                    "Score": 0,
-                    "Opponents": []
+                    "Score": 2.5,
+                    "Opponents": [
+                        1,
+                        6,
+                        7,
+                        2
+                    ]
                 },
                 {
                     "Family name": "ghjgvhnfb",
                     "First name": "tyvnfg",
                     "Birthdate": "hkuuhkij",
                     "Gender": "fthgd",
-                    "Rank": 66,
+                    "Rank": 666,
                     "Pairing number": 6,
-                    "Score": 0,
-                    "Opponents": []
+                    "Score": 3.0,
+                    "Opponents": [
+                        2,
+                        5,
+                        8,
+                        1
+                    ]
                 },
                 {
                     "Family name": "rthtrgt",
@@ -3282,8 +4192,13 @@
                     "Gender": "rttcr",
                     "Rank": 77,
                     "Pairing number": 7,
-                    "Score": 0,
-                    "Opponents": []
+                    "Score": 2.5,
+                    "Opponents": [
+                        3,
+                        1,
+                        5,
+                        8
+                    ]
                 },
                 {
                     "Family name": "hcdg",
@@ -3292,8 +4207,13 @@
                     "Gender": "ycntndf",
                     "Rank": 88,
                     "Pairing number": 8,
-                    "Score": 0,
-                    "Opponents": []
+                    "Score": 2.0,
+                    "Opponents": [
+                        4,
+                        3,
+                        6,
+                        7
+                    ]
                 }
             ]
         }

@@ -252,6 +252,8 @@ class HomeMenuView:
         elif ask_action == "clear":
             self.action = "clear"
         elif ask_action == "exit":
+            print("")
+            print("Merci d'avoir utilisé ce programme")
             self.action = "exit"
         else:
             print("")
@@ -283,8 +285,6 @@ class CallTournamentNumber:
         try:
             ask_number = int(input("Numero du tournoi: "))
             self.number = ask_number
-            pass
-
         except ValueError:
             print("Merci d'entrer un nombre entier")
             print("")
@@ -325,7 +325,7 @@ class AskContinue:
             f"{Style.BRIGHT}{Fore.RED}yes:              ",
             f"{Style.NORMAL}{Fore.WHITE}Permet de passer au round suivant")
         print(
-            f"{Style.BRIGHT}{Fore.RED}menu:               ",
+            f"{Style.BRIGHT}{Fore.RED}menu:             ",
             f"{Style.NORMAL}{Fore.WHITE}Permet de revenir au menu principal, les actions précédentes sont enregistrées"
         )
         ask_action = input("Action choisie: ")

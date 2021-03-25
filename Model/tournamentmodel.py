@@ -266,15 +266,15 @@ class TournamentModel:
 
         self.sorted_opponent = sorted(opponents_ids.items(), reverse=False)
 
-        j = 0
+        index = 0
         for i in sorted_players:
-            self.players[j]["Score"] = i[3]
-            j += 1
+            self.players[index]["Score"] = i[3]
+            index += 1
 
-        k = 0
+        index = 0
         for i in self.sorted_opponent:
-            self.players[k]["Opponents"].append(i[1])
-            k += 1
+            self.players[index]["Opponents"].append(i[1])
+            index += 1
 
         dict_player = {"players": self.players}
         tournament_table.update(dict_player, doc_ids=[tournament_id])
