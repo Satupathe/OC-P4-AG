@@ -105,20 +105,9 @@ class TournamentModel:
         tournament_table = jtournament.table("tournaments")
         tid = int(tournament_id)
         players_table = tournament_table.get(doc_id=tid)["players"]
-        sorted_list = []
+        sorted_players = self.players_rank_name_sorting(players_table)
 
-        score = 4.0
-        while len(sorted_list) < 8:
-            by_score = []
-            for player in players_table:
-                if player["Score"] == score:
-                    by_score.append(player)
-            by_score.sort(key=itemgetter("Rank"), reverse=False)
-            for item in by_score:
-                sorted_list.append(item)
-            score -= 0.5
-
-        return sorted_list
+        return sorted_players
 
     def sorted_name_1T(self, tournament_id):
         """Get players sorted by name for one tournament"""
@@ -227,8 +216,6 @@ class TournamentModel:
 
                     if identification_1 == identification_2:
                         list_player["Rank"] = int(player["Rank"])
-                    else:
-                        pass
 
                 tournament_table.update(total_table[table_id], doc_ids=[tournament_id])
 
@@ -279,6 +266,22 @@ class TournamentModel:
         dict_player = {"players": self.players}
         tournament_table.update(dict_player, doc_ids=[tournament_id])
 
+    def players_rank_name_sorting(self, sorted_table):
+        sorted_list = []
+
+        score = 4.0
+        while len(sorted_list) < 8:
+            by_score = []
+            for player in sorted_table:
+                if player["Score"] == score:
+                    by_score.append(player)
+            by_score.sort(key=itemgetter("Rank"), reverse=False)
+            for item in by_score:
+                sorted_list.append(item)
+            score -= 0.5
+
+        return sorted_list
+
     def get_previous_round_list(self, tournament_number):
         """
         Get previous opponent and score informations
@@ -292,26 +295,16 @@ class TournamentModel:
         else:
             tournament_id = tournament_number
 
-        players = tournament_table.get(doc_id=tournament_id)["players"]
-        sorted_players = sorted(players, key=itemgetter("Score"), reverse=True)
+        players_table = tournament_table.get(doc_id=tournament_id)["players"]
+        sorted_table = sorted(players_table, key=itemgetter("Score"), reverse=True)
 
-        sorted_list = []
         round_matchs_list = []
         round_match_players = []
-        score = 4.0
-        while len(sorted_list) < 8:
-            by_score = []
-            for player in sorted_players:
-                if player["Score"] == score:
-                    by_score.append(player)
-            by_score.sort(key=itemgetter("Rank"), reverse=False)
-            for item in by_score:
-                sorted_list.append(item)
-            score -= 0.5
+        sorted_players = self.players_rank_name_sorting(sorted_table)
 
         already_took_players = [0]
 
-        for player in sorted_list:
+        for player in sorted_players:
             pairing_number = int(player["Pairing number"])
             opponent = None
             if len(already_took_players) != 9:
@@ -320,7 +313,7 @@ class TournamentModel:
                     already_took_players.append(int(pairing_number))
                     round_match_players.append(pairing_number)
 
-                    for other_player in sorted_list:
+                    for other_player in sorted_players:
                         if int(other_player["Pairing number"]) not in already_took_players:
                             if pairing_number not in other_player["Opponents"]:
                                 opponent = other_player["Pairing number"]
@@ -328,21 +321,13 @@ class TournamentModel:
                                 round_match_players.append(int(opponent))
                                 round_matchs_list.append((pairing_number, int(opponent)))
                                 break
-                            else:
-                                pass
-                        else:
-                            pass
-                else:
-                    pass
             else:
                 break
 
         results = []
         for j in range(8):
-            for player in sorted_players:
+            for player in sorted_table:
                 if int(player["Pairing number"]) == round_match_players[j]:
                     results.append(player)
-                else:
-                    pass
 
         return results

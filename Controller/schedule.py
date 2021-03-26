@@ -101,8 +101,6 @@ class ContinueTournamentController:
                 if change_ranks == "yes":
                     new_ranks = tournament.ask_rank_modification(action[1])
                     tournament.final_rank_modification(new_ranks, tournament_number, action[1])
-                else:
-                    pass
 
         menu.start()
 
@@ -136,8 +134,6 @@ class LaunchTournamentController:
             if change_ranks == "yes":
                 new_ranks = tournament.ask_rank_modification(action[1])
                 tournament.final_rank_modification(new_ranks, tournament_number, action[1])
-            else:
-                pass
 
         menu.start()
 
@@ -231,25 +227,7 @@ class TournamentController:
                 ask_rank_change = self.rank_change.ask_ongoing_tournament()
                 if ask_rank_change == "yes":
                     pairing_and_rank = self.ask_rank_modification(players_and_score)
-                    for i in range(8):
-                        for element in pairing_and_rank:
-                            if element[0] == players_and_score[i][2]:
-                                players_and_score[i][1] = element[1]
-
-                            else:
-                                pass
-                    sorted_new_ranks = sorted(players_and_score, key=lambda x: x[2], reverse=False)
-                    new_rank_players = self.tournament.get_players(tournament_number)
-
-                    index = 0
-                    for player in new_rank_players:
-                        player["Rank"] = sorted_new_ranks[index][1]
-                        index += 1
-
-                    self.tournament.save_new_ranks(new_rank_players)
-
-                else:
-                    pass
+                    self.final_rank_modification(pairing_and_rank, tournament_number, players_and_score)
 
             else:
                 actual_round = self.tournament.get_previous_round_list(tournament_number)
@@ -279,23 +257,7 @@ class TournamentController:
                 ask_rank_change = self.rank_change.ask_ongoing_tournament()
                 if ask_rank_change == "yes":
                     to_change = self.ask_rank_modification(self.score_other_round)
-
-                    for i in range(8):
-                        for element in to_change:
-                            if element[0] == self.score_other_round[i][2]:
-                                self.score_other_round[i][1] = element[1]
-
-                            else:
-                                pass
-                    sorted_new_ranks = sorted(self.score_other_round, key=lambda x: x[2], reverse=False)
-                    new_rank_players = self.tournament.get_players(tournament_number)
-
-                    index = 0
-                    for player in new_rank_players:
-                        player["Rank"] = sorted_new_ranks[index][1]
-                        index += 1
-
-                    self.tournament.save_new_ranks(new_rank_players)
+                    self.final_rank_modification(to_change, tournament_number, self.score_other_round)
 
                 players_and_score_other_round = self.score_other_round
                 self.tournament.json_score_opponent_player(
@@ -307,17 +269,15 @@ class TournamentController:
 
     def call_final_score(self):
         """Show final ranking and scores to the user"""
-        sorted_list = sorted(self.score_other_round, key=lambda x: x[3], reverse=True)
-
+        sorted_score = sorted(self.score_other_round, key=lambda x: x[3], reverse=True)
         final_sorted_list = []
 
         score = 4.0
         while len(final_sorted_list) < 8:
             by_score = []
-            for player in sorted_list:
+            for player in sorted_score:
                 if player[3] == score:
                     by_score.append(player)
-
             by_score.sort(key=lambda x: x[1], reverse=False)
             for item in by_score:
                 final_sorted_list.append(item)
@@ -336,8 +296,6 @@ class TournamentController:
                 new_rank = self.rank_change.ask_new_rank()
                 pairing_and_rank = (player[2], new_rank)
                 players_rank_modification.append(pairing_and_rank)
-            else:
-                pass
 
         return players_rank_modification
 
@@ -347,9 +305,6 @@ class TournamentController:
             for element in new_ranks:
                 if element[0] == players_and_score[i][2]:
                     players_and_score[i][1] = element[1]
-
-                else:
-                    pass
 
         sorted_new_ranks = sorted(players_and_score, key=lambda x: x[2], reverse=False)
         new_rank_players = self.tournament.get_players(tournament_number)

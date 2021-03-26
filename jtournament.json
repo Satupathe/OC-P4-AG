@@ -3747,21 +3747,275 @@
             "Tournament's adress": "Lyon",
             "Tournament's Date": "Aujourd'hui",
             "Total number of rounds": 4,
-            "Round number": 0,
+            "Round number": 4,
             "Time control": "blitz",
             "Number of player": 8,
             "Comments": "encore une fois",
-            "Rounds": {},
+            "Rounds": {
+                "Round number 1": [
+                    "Friday, 26-Mar-2021 11:25:14 CET",
+                    "Friday, 26-Mar-2021 11:25:15 CET",
+                    [
+                        [
+                            [
+                                "rer rttry (Rank, Pairing number, Score): ",
+                                22,
+                                1,
+                                0.0
+                            ],
+                            [
+                                "rertherseg rtyhtedrtgrse (Rank, Pairing number, Score): ",
+                                66,
+                                5,
+                                1.0
+                            ]
+                        ],
+                        [
+                            [
+                                "gferserf erthexrsrge (Rank, Pairing number, Score): ",
+                                33,
+                                2,
+                                0.5
+                            ],
+                            [
+                                "rcthnxrsg rtexrstef (Rank, Pairing number, Score): ",
+                                77,
+                                6,
+                                0.5
+                            ]
+                        ],
+                        [
+                            [
+                                "effze rrvvzevez (Rank, Pairing number, Score): ",
+                                44,
+                                3,
+                                0.0
+                            ],
+                            [
+                                "ecfcrtrtgxe rhtxersegre (Rank, Pairing number, Score): ",
+                                88,
+                                7,
+                                1.0
+                            ]
+                        ],
+                        [
+                            [
+                                "zgerthg rctexrtgxr (Rank, Pairing number, Score): ",
+                                55,
+                                4,
+                                1.0
+                            ],
+                            [
+                                "rtyfhgrdrg rtyhregt (Rank, Pairing number, Score): ",
+                                99,
+                                8,
+                                0.0
+                            ]
+                        ]
+                    ]
+                ],
+                "Round number 2": [
+                    "Friday, 26-Mar-2021 11:27:47 CET",
+                    "Friday, 26-Mar-2021 11:27:47 CET",
+                    [
+                        [
+                            [
+                                "zgerthg rctexrtgxr (Rank, Pairing number, Score): ",
+                                "3500",
+                                4,
+                                1.0
+                            ],
+                            [
+                                "ecfcrtrtgxe rhtxersegre (Rank, Pairing number, Score): ",
+                                "4800",
+                                7,
+                                2.0
+                            ]
+                        ],
+                        [
+                            [
+                                "rertherseg rtyhtedrtgrse (Rank, Pairing number, Score): ",
+                                666,
+                                5,
+                                1.5
+                            ],
+                            [
+                                "gferserf erthexrsrge (Rank, Pairing number, Score): ",
+                                33,
+                                2,
+                                1.0
+                            ]
+                        ],
+                        [
+                            [
+                                "rcthnxrsg rtexrstef (Rank, Pairing number, Score): ",
+                                77,
+                                6,
+                                1.0
+                            ],
+                            [
+                                "effze rrvvzevez (Rank, Pairing number, Score): ",
+                                44,
+                                3,
+                                0.5
+                            ]
+                        ],
+                        [
+                            [
+                                "rtyfhgrdrg rtyhregt (Rank, Pairing number, Score): ",
+                                99,
+                                8,
+                                0.0
+                            ],
+                            [
+                                "rer rttry (Rank, Pairing number, Score): ",
+                                222,
+                                1,
+                                1.0
+                            ]
+                        ]
+                    ]
+                ],
+                "Round number 3": [
+                    "Friday, 26-Mar-2021 11:32:06 CET",
+                    "Friday, 26-Mar-2021 11:32:06 CET",
+                    [
+                        [
+                            [
+                                "ecfcrtrtgxe rhtxersegre (Rank, Pairing number, Score): ",
+                                "6700",
+                                7,
+                                2.0
+                            ],
+                            [
+                                "rertherseg rtyhtedrtgrse (Rank, Pairing number, Score): ",
+                                666,
+                                5,
+                                2.5
+                            ]
+                        ],
+                        [
+                            [
+                                "gferserf erthexrsrge (Rank, Pairing number, Score): ",
+                                33,
+                                2,
+                                1.5
+                            ],
+                            [
+                                "rer rttry (Rank, Pairing number, Score): ",
+                                222,
+                                1,
+                                1.5
+                            ]
+                        ],
+                        [
+                            [
+                                "rcthnxrsg rtexrstef (Rank, Pairing number, Score): ",
+                                77,
+                                6,
+                                1.5
+                            ],
+                            [
+                                "zgerthg rctexrtgxr (Rank, Pairing number, Score): ",
+                                3500,
+                                4,
+                                1.5
+                            ]
+                        ],
+                        [
+                            [
+                                "effze rrvvzevez (Rank, Pairing number, Score): ",
+                                44,
+                                3,
+                                0.5
+                            ],
+                            [
+                                "rtyfhgrdrg rtyhregt (Rank, Pairing number, Score): ",
+                                99,
+                                8,
+                                1.0
+                            ]
+                        ]
+                    ]
+                ],
+                "Round number 4": [
+                    "Friday, 26-Mar-2021 14:56:54 CET",
+                    "Friday, 26-Mar-2021 14:56:56 CET",
+                    [
+                        [
+                            [
+                                "rertherseg rtyhtedrtgrse (Rank, Pairing number, Score): ",
+                                666,
+                                5,
+                                2.5
+                            ],
+                            [
+                                "rcthnxrsg rtexrstef (Rank, Pairing number, Score): ",
+                                77,
+                                6,
+                                2.5
+                            ]
+                        ],
+                        [
+                            [
+                                "ecfcrtrtgxe rhtxersegre (Rank, Pairing number, Score): ",
+                                6700,
+                                7,
+                                2.0
+                            ],
+                            [
+                                "gferserf erthexrsrge (Rank, Pairing number, Score): ",
+                                33,
+                                2,
+                                2.5
+                            ]
+                        ],
+                        [
+                            [
+                                "rer rttry (Rank, Pairing number, Score): ",
+                                222,
+                                1,
+                                1.5
+                            ],
+                            [
+                                "zgerthg rctexrtgxr (Rank, Pairing number, Score): ",
+                                3500,
+                                4,
+                                2.5
+                            ]
+                        ],
+                        [
+                            [
+                                "rtyfhgrdrg rtyhregt (Rank, Pairing number, Score): ",
+                                99,
+                                8,
+                                1.5
+                            ],
+                            [
+                                "effze rrvvzevez (Rank, Pairing number, Score): ",
+                                44,
+                                3,
+                                1.0
+                            ]
+                        ]
+                    ]
+                ]
+            },
             "players": [
                 {
                     "Family name": "rer",
                     "First name": "rttry",
                     "Birthdate": "1989",
                     "Gender": "M",
-                    "Rank": 22,
+                    "Rank": 222,
                     "Pairing number": 1,
-                    "Score": 0,
-                    "Opponents": []
+                    "Score": 1.5,
+                    "Opponents": [
+                        5,
+                        8,
+                        2,
+                        4
+                    ]
                 },
                 {
                     "Family name": "gferserf",
@@ -3770,8 +4024,13 @@
                     "Gender": "M",
                     "Rank": 33,
                     "Pairing number": 2,
-                    "Score": 0,
-                    "Opponents": []
+                    "Score": 2.5,
+                    "Opponents": [
+                        6,
+                        5,
+                        1,
+                        7
+                    ]
                 },
                 {
                     "Family name": "effze",
@@ -3780,28 +4039,43 @@
                     "Gender": "F",
                     "Rank": 44,
                     "Pairing number": 3,
-                    "Score": 0,
-                    "Opponents": []
+                    "Score": 1.0,
+                    "Opponents": [
+                        7,
+                        6,
+                        8,
+                        8
+                    ]
                 },
                 {
                     "Family name": "zgerthg",
                     "First name": "rctexrtgxr",
                     "Birthdate": "1990",
                     "Gender": "M",
-                    "Rank": 55,
+                    "Rank": 3500,
                     "Pairing number": 4,
-                    "Score": 0,
-                    "Opponents": []
+                    "Score": 2.5,
+                    "Opponents": [
+                        8,
+                        7,
+                        6,
+                        1
+                    ]
                 },
                 {
                     "Family name": "rertherseg",
                     "First name": "rtyhtedrtgrse",
                     "Birthdate": "1973",
                     "Gender": "F",
-                    "Rank": 66,
+                    "Rank": 666,
                     "Pairing number": 5,
-                    "Score": 0,
-                    "Opponents": []
+                    "Score": 2.5,
+                    "Opponents": [
+                        1,
+                        2,
+                        7,
+                        6
+                    ]
                 },
                 {
                     "Family name": "rcthnxrsg",
@@ -3810,18 +4084,28 @@
                     "Gender": "F",
                     "Rank": 77,
                     "Pairing number": 6,
-                    "Score": 0,
-                    "Opponents": []
+                    "Score": 2.5,
+                    "Opponents": [
+                        2,
+                        3,
+                        4,
+                        5
+                    ]
                 },
                 {
                     "Family name": "ecfcrtrtgxe",
                     "First name": "rhtxersegre",
                     "Birthdate": "1976",
                     "Gender": "F",
-                    "Rank": 88,
+                    "Rank": 6700,
                     "Pairing number": 7,
-                    "Score": 0,
-                    "Opponents": []
+                    "Score": 2.0,
+                    "Opponents": [
+                        3,
+                        4,
+                        5,
+                        2
+                    ]
                 },
                 {
                     "Family name": "rtyfhgrdrg",
@@ -3830,8 +4114,13 @@
                     "Gender": "X",
                     "Rank": 99,
                     "Pairing number": 8,
-                    "Score": 0,
-                    "Opponents": []
+                    "Score": 1.5,
+                    "Opponents": [
+                        4,
+                        1,
+                        3,
+                        3
+                    ]
                 }
             ]
         },
@@ -4213,6 +4502,388 @@
                         3,
                         6,
                         7
+                    ]
+                }
+            ]
+        },
+        "13": {
+            "Tournament's name": "bonjour",
+            "Tournament's adress": "encore",
+            "Tournament's Date": "toujours",
+            "Total number of rounds": 4,
+            "Round number": 4,
+            "Time control": "blitz",
+            "Number of player": 8,
+            "Comments": "encore et toujours",
+            "Rounds": {
+                "Round number 1": [
+                    "Friday, 26-Mar-2021 12:05:06 CET",
+                    "Friday, 26-Mar-2021 12:05:09 CET",
+                    [
+                        [
+                            [
+                                "A a (Rank, Pairing number, Score): ",
+                                11,
+                                1,
+                                0.0
+                            ],
+                            [
+                                "E e (Rank, Pairing number, Score): ",
+                                55,
+                                5,
+                                1.0
+                            ]
+                        ],
+                        [
+                            [
+                                "B b (Rank, Pairing number, Score): ",
+                                22,
+                                2,
+                                0.5
+                            ],
+                            [
+                                "F f (Rank, Pairing number, Score): ",
+                                66,
+                                6,
+                                0.5
+                            ]
+                        ],
+                        [
+                            [
+                                "C c (Rank, Pairing number, Score): ",
+                                33,
+                                3,
+                                0.0
+                            ],
+                            [
+                                "G g (Rank, Pairing number, Score): ",
+                                77,
+                                7,
+                                1.0
+                            ]
+                        ],
+                        [
+                            [
+                                "D d (Rank, Pairing number, Score): ",
+                                44,
+                                4,
+                                0.0
+                            ],
+                            [
+                                "H h (Rank, Pairing number, Score): ",
+                                88,
+                                8,
+                                1.0
+                            ]
+                        ]
+                    ]
+                ],
+                "Round number 2": [
+                    "Friday, 26-Mar-2021 12:05:37 CET",
+                    "Friday, 26-Mar-2021 12:05:37 CET",
+                    [
+                        [
+                            [
+                                "E e (Rank, Pairing number, Score): ",
+                                55,
+                                5,
+                                1.0
+                            ],
+                            [
+                                "G g (Rank, Pairing number, Score): ",
+                                77,
+                                7,
+                                2.0
+                            ]
+                        ],
+                        [
+                            [
+                                "H h (Rank, Pairing number, Score): ",
+                                88,
+                                8,
+                                1.5
+                            ],
+                            [
+                                "B b (Rank, Pairing number, Score): ",
+                                22,
+                                2,
+                                1.0
+                            ]
+                        ],
+                        [
+                            [
+                                "F f (Rank, Pairing number, Score): ",
+                                66,
+                                6,
+                                0.5
+                            ],
+                            [
+                                "A a (Rank, Pairing number, Score): ",
+                                11,
+                                1,
+                                1.0
+                            ]
+                        ],
+                        [
+                            [
+                                "C c (Rank, Pairing number, Score): ",
+                                33,
+                                3,
+                                0.0
+                            ],
+                            [
+                                "D d (Rank, Pairing number, Score): ",
+                                44,
+                                4,
+                                1.0
+                            ]
+                        ]
+                    ]
+                ],
+                "Round number 3": [
+                    "Friday, 26-Mar-2021 12:08:37 CET",
+                    "Friday, 26-Mar-2021 12:08:39 CET",
+                    [
+                        [
+                            [
+                                "G g (Rank, Pairing number, Score): ",
+                                77,
+                                7,
+                                2.0
+                            ],
+                            [
+                                "H h (Rank, Pairing number, Score): ",
+                                88,
+                                8,
+                                2.5
+                            ]
+                        ],
+                        [
+                            [
+                                "A a (Rank, Pairing number, Score): ",
+                                11,
+                                1,
+                                2.0
+                            ],
+                            [
+                                "B b (Rank, Pairing number, Score): ",
+                                22,
+                                2,
+                                1.0
+                            ]
+                        ],
+                        [
+                            [
+                                "D d (Rank, Pairing number, Score): ",
+                                44,
+                                4,
+                                1.0
+                            ],
+                            [
+                                "E e (Rank, Pairing number, Score): ",
+                                55,
+                                5,
+                                2.0
+                            ]
+                        ],
+                        [
+                            [
+                                "F f (Rank, Pairing number, Score): ",
+                                66,
+                                6,
+                                0.5
+                            ],
+                            [
+                                "C c (Rank, Pairing number, Score): ",
+                                33,
+                                3,
+                                1.0
+                            ]
+                        ]
+                    ]
+                ],
+                "Round number 4": [
+                    "Friday, 26-Mar-2021 12:17:49 CET",
+                    "Friday, 26-Mar-2021 12:17:49 CET",
+                    [
+                        [
+                            [
+                                "H h (Rank, Pairing number, Score): ",
+                                "8888",
+                                8,
+                                2.5
+                            ],
+                            [
+                                "A a (Rank, Pairing number, Score): ",
+                                "1111",
+                                1,
+                                3.0
+                            ]
+                        ],
+                        [
+                            [
+                                "E e (Rank, Pairing number, Score): ",
+                                55,
+                                5,
+                                2.5
+                            ],
+                            [
+                                "B b (Rank, Pairing number, Score): ",
+                                22,
+                                2,
+                                1.5
+                            ]
+                        ],
+                        [
+                            [
+                                "G g (Rank, Pairing number, Score): ",
+                                77,
+                                7,
+                                2.0
+                            ],
+                            [
+                                "D d (Rank, Pairing number, Score): ",
+                                44,
+                                4,
+                                2.0
+                            ]
+                        ],
+                        [
+                            [
+                                "C c (Rank, Pairing number, Score): ",
+                                33,
+                                3,
+                                1.0
+                            ],
+                            [
+                                "F f (Rank, Pairing number, Score): ",
+                                66,
+                                6,
+                                1.5
+                            ]
+                        ]
+                    ]
+                ]
+            },
+            "players": [
+                {
+                    "Family name": "A",
+                    "First name": "a",
+                    "Birthdate": "1990",
+                    "Gender": "M",
+                    "Rank": 1111,
+                    "Pairing number": 1,
+                    "Score": 3.0,
+                    "Opponents": [
+                        5,
+                        6,
+                        2,
+                        8
+                    ]
+                },
+                {
+                    "Family name": "B",
+                    "First name": "b",
+                    "Birthdate": "1991",
+                    "Gender": "M",
+                    "Rank": 22,
+                    "Pairing number": 2,
+                    "Score": 1.5,
+                    "Opponents": [
+                        6,
+                        8,
+                        1,
+                        5
+                    ]
+                },
+                {
+                    "Family name": "C",
+                    "First name": "c",
+                    "Birthdate": "1992",
+                    "Gender": "F",
+                    "Rank": 33,
+                    "Pairing number": 3,
+                    "Score": 1.0,
+                    "Opponents": [
+                        7,
+                        4,
+                        6,
+                        6
+                    ]
+                },
+                {
+                    "Family name": "D",
+                    "First name": "d",
+                    "Birthdate": "1993",
+                    "Gender": "F",
+                    "Rank": 44,
+                    "Pairing number": 4,
+                    "Score": 2.0,
+                    "Opponents": [
+                        8,
+                        3,
+                        5,
+                        7
+                    ]
+                },
+                {
+                    "Family name": "E",
+                    "First name": "e",
+                    "Birthdate": "1994",
+                    "Gender": "F",
+                    "Rank": 55,
+                    "Pairing number": 5,
+                    "Score": 2.5,
+                    "Opponents": [
+                        1,
+                        7,
+                        4,
+                        2
+                    ]
+                },
+                {
+                    "Family name": "F",
+                    "First name": "f",
+                    "Birthdate": "1995",
+                    "Gender": "M",
+                    "Rank": 66,
+                    "Pairing number": 6,
+                    "Score": 1.5,
+                    "Opponents": [
+                        2,
+                        1,
+                        3,
+                        3
+                    ]
+                },
+                {
+                    "Family name": "G",
+                    "First name": "g",
+                    "Birthdate": "1996",
+                    "Gender": "F",
+                    "Rank": 77,
+                    "Pairing number": 7,
+                    "Score": 2.0,
+                    "Opponents": [
+                        3,
+                        5,
+                        8,
+                        4
+                    ]
+                },
+                {
+                    "Family name": "H",
+                    "First name": "h",
+                    "Birthdate": "1997",
+                    "Gender": "M",
+                    "Rank": 8888,
+                    "Pairing number": 8,
+                    "Score": 2.5,
+                    "Opponents": [
+                        4,
+                        2,
+                        7,
+                        1
                     ]
                 }
             ]

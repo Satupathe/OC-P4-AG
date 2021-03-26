@@ -92,7 +92,7 @@ class RoundView:
 
     def ask_result(self, player):
         """Ask for matches results to the user"""
-        ask_result = input("Resultat: " + player[0] + " : ")
+        ask_result = input(f"Resultat:  {player} :  ")
 
         if ask_result == "victory" or ask_result == "defeat" or ask_result == "draw":
             if ask_result == "victory":
