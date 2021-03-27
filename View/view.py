@@ -13,12 +13,20 @@ class TournamentView:
         return a dictionary of those informations
         """
         colorama.init(autoreset=True)
-        print(f"{Style.BRIGHT}{Fore.BLUE}Entrée des informations sur le nouveau tournoi{Fore.RESET}")
+        print(
+            f"{Style.BRIGHT}{Fore.BLUE}Entrée des informations sur le nouveau tournoi{Fore.RESET}"
+        )
         print("")
         loop_infos = {}
         tour_infos = {}
 
-        questions = ["Tournament's name", "Tournament's adress", "Tournament's Date", "Time control", "Comments"]
+        questions = [
+            "Tournament's name",
+            "Tournament's adress",
+            "Tournament's Date",
+            "Time control",
+            "Comments",
+        ]
 
         for i in questions:
             loop_infos[i] = input(f"{i}:  ")
@@ -46,7 +54,9 @@ class PlayersView:
         return a dictionary of those informations
         """
         colorama.init(autoreset=True)
-        print(f"{Style.BRIGHT}{Fore.BLUE}Entrée des informations sur les joueurs{Fore.RESET}")
+        print(
+            f"{Style.BRIGHT}{Fore.BLUE}Entrée des informations sur les joueurs{Fore.RESET}"
+        )
 
         players_infos = []
 
@@ -102,7 +112,9 @@ class RoundView:
             elif ask_result == "draw":
                 self.score = 0.5
         else:
-            print("Merci d'entrer: victory, defeat ou draw dans la console")
+            print(
+                f"{Style.BRIGHT}{Fore.RED}Merci d'entrer: victory, defeat ou draw dans la console"
+            )
             self.ask_result(player)
 
         return self.score
@@ -132,18 +144,22 @@ class RankChange:
         self.ended_action = None
         self.ongoing_action = None
         colorama.init(autoreset=True)
+        self.new_rank = None
 
     def ask_ended_tournament(self):
         """Ask for players rank changes at the end of the tournament"""
-        print(f"{Style.BRIGHT}Voulez-vous modifier les ranks des joueurs du tournoi venant de se terminer?")
+        print(
+            f"{Style.BRIGHT}Voulez-vous modifier les ranks des joueurs du tournoi venant de se terminer?"
+        )
         print("")
         print(
-            f"{Style.BRIGHT}{Fore.RED}yes:              ",
-            f"{Style.NORMAL}{Fore.WHITE}Permet de modifier le rank des joueurs du tournoi venant de se terminer"
+            f"{Style.BRIGHT}{Fore.GREEN}yes:              ",
+            f"{Style.NORMAL}{Fore.WHITE}Permet de modifier le rank des joueurs du tournoi venant de se terminer",
         )
         print(
-            f"{Style.BRIGHT}{Fore.RED}menu:             ",
-            f"{Style.NORMAL}{Fore.WHITE}Permet de revenir au menu principal, les actions précédentes sont enregistrées"
+            f"{Style.BRIGHT}{Fore.GREEN}menu:             ",
+            f"{Style.NORMAL}{Fore.WHITE}Permet de revenir au menu principal",
+            f"{Style.NORMAL}{Fore.WHITE}les actions précédentes sont enregistrées",
         )
         ask_action = input("Action choisie: ")
         print("")
@@ -153,7 +169,10 @@ class RankChange:
         elif ask_action == "menu":
             self.ended_action = "menu"
         else:
-            print("Merci de rentrer la bonne commande comme indiqué dans les propositions ci-dessus")
+            print(
+                f"{Style.BRIGHT}{Fore.RED}Merci de rentrer la bonne commande comme indiqué",
+                f"{Style.BRIGHT}{Fore.RED}dans les propositions ci-dessus"
+            )
             self.ask_ended_tournament()
 
         return self.ended_action
@@ -161,14 +180,16 @@ class RankChange:
     def ask_ongoing_tournament(self):
         """Ask for players rank changes between each round"""
         print("")
-        print(f"{Style.BRIGHT}Voulez-vous modifier les ranks des joueurs du tournoi en cours?")
         print(
-            f"{Style.BRIGHT}{Fore.RED}yes:              ",
-            f"{Style.NORMAL}{Fore.WHITE}Permet de modifier le rank des joueurs du tournoi actuel"
+            f"{Style.BRIGHT}Voulez-vous modifier les ranks des joueurs du tournoi en cours?"
         )
         print(
-            f"{Style.BRIGHT}{Fore.RED}no:               ",
-            f"{Style.NORMAL}{Fore.WHITE}Permet de continuer sans modifications"
+            f"{Style.BRIGHT}{Fore.GREEN}yes:              ",
+            f"{Style.NORMAL}{Fore.WHITE}Permet de modifier le rank des joueurs du tournoi actuel",
+        )
+        print(
+            f"{Style.BRIGHT}{Fore.GREEN}no:               ",
+            f"{Style.NORMAL}{Fore.WHITE}Permet de continuer sans modifications",
         )
         ask_action = input("Action choisie: ")
         print("")
@@ -178,14 +199,19 @@ class RankChange:
         elif ask_action == "no":
             self.ongoing_action = "no"
         else:
-            print("Merci de rentrer la bonne commande comme indiqué dans les propositions ci-dessus")
+            print(
+                f"{Style.BRIGHT}{Fore.RED}Merci de rentrer la bonne commande comme indiqué",
+                f"{Style.BRIGHT}{Fore.RED}dans les propositions ci-dessus"
+            )
             self.ask_ongoing_tournament()
 
         return self.ongoing_action
 
     def ask_all_player(self, player):
         """Ask for one player rank change"""
-        print(f"{Style.BRIGHT}Voulez-vous changer le rank du joueur suivant? Merci d'entrer 'yes' ou 'no'")
+        print(
+            f"{Style.BRIGHT}Voulez-vous changer le rank du joueur suivant? Merci d'entrer 'yes' ou 'no'"
+        )
         print(player)
         ask_action = input("Action choisie: ")
 
@@ -194,17 +220,22 @@ class RankChange:
         elif ask_action == "no":
             self.action_modif = "no"
         else:
-            print("Merci de rentrer 'yes' ou 'no'")
+            print(f"{Style.BRIGHT}{Fore.RED}Merci de rentrer 'yes' ou 'no'")
             self.ask_all_player(player)
 
         return self.action_modif
 
     def ask_new_rank(self):
         """Ask for the new player's rank"""
-        new_rank = input("Nouveau rank du joueur: ")
-        print("")
+        try:
+            self.new_rank = int(input("Nouveau rank du joueur: "))
 
-        return new_rank
+        except ValueError:
+            print(f"{Style.BRIGHT}{Fore.RED}Merci d'entrer un nombre entier")
+            self.ask_new_rank()
+
+        print("")
+        return self.new_rank
 
 
 class HomeMenuView:
@@ -213,28 +244,30 @@ class HomeMenuView:
     def __init__(self):
         """Display main menu possibilities to the user"""
         colorama.init(autoreset=True)
-        print(f"{Style.BRIGHT}{Fore.BLUE}Menu de selection des options du logiciel{Fore.RESET}")
+        print(
+            f"{Style.BRIGHT}{Fore.BLUE}Menu de selection des options du logiciel{Fore.RESET}"
+        )
         print("")
         print("Merci d'entrer un des mots suivant: ")
         print(
-            f"{Style.BRIGHT}{Fore.RED}start:            ",
-            f"{Style.NORMAL}{Fore.WHITE}Permet de commencer un nouveau tournoi"
+            f"{Style.BRIGHT}{Fore.GREEN}start:            ",
+            f"{Style.NORMAL}{Fore.WHITE}Permet de commencer un nouveau tournoi",
         )
         print(
-            f"{Style.BRIGHT}{Fore.RED}continuation:     ",
-            f"{Style.NORMAL}{Fore.WHITE}Permet de reprendre un ancien tournoi"
+            f"{Style.BRIGHT}{Fore.GREEN}continuation:     ",
+            f"{Style.NORMAL}{Fore.WHITE}Permet de reprendre un ancien tournoi",
         )
         print(
-            f"{Style.BRIGHT}{Fore.RED}show:             ",
-            f"{Style.NORMAL}{Fore.WHITE}Permet d'afficher les informations d'anciens tournois"
+            f"{Style.BRIGHT}{Fore.GREEN}show:             ",
+            f"{Style.NORMAL}{Fore.WHITE}Permet d'afficher les informations d'anciens tournois",
         )
         print(
-            f"{Style.BRIGHT}{Fore.RED}clear:            ",
-            f"{Style.NORMAL}{Fore.WHITE}Permet d'effacer les informations précédentes présentes sur la console"
+            f"{Style.BRIGHT}{Fore.GREEN}clear:            ",
+            f"{Style.NORMAL}{Fore.WHITE}Permet d'effacer les informations précédentes présentes sur la console",
         )
         print(
-            f"{Style.BRIGHT}{Fore.RED}exit:             ",
-            f"{Style.NORMAL}{Fore.WHITE}Permet de quitter le programme et fermer la console de commande"
+            f"{Style.BRIGHT}{Fore.GREEN}exit:             ",
+            f"{Style.NORMAL}{Fore.WHITE}Permet de quitter le programme et fermer la console de commande",
         )
         print("")
         self.action = None
@@ -254,10 +287,14 @@ class HomeMenuView:
         elif ask_action == "exit":
             print("")
             print("Merci d'avoir utilisé ce programme")
+            print("")
             self.action = "exit"
         else:
             print("")
-            print("Merci de rentrer la bonne commande comme indiqué dans les propositions ci-dessous")
+            print(
+                f"{Style.BRIGHT}{Fore.RED}Merci de rentrer la bonne commande comme indiqué",
+                f"{Style.BRIGHT}{Fore.RED}dans les propositions ci-dessous"
+            )
             self.call_first_action()
 
         return self.action
@@ -274,7 +311,9 @@ class CallTournamentNumber:
         """Display tournament selection menu"""
         colorama.init(autoreset=True)
         print("")
-        print(f"{Style.BRIGHT}{Fore.BLUE}Ecran de selection d'un tournoi a continuer{Fore.RESET}")
+        print(
+            f"{Style.BRIGHT}{Fore.BLUE}Ecran de selection d'un tournoi a continuer{Fore.RESET}"
+        )
         print("")
         print("Merci d'enter le numero du tournoi a poursuivre ou 'exit'")
         print("Vous pouvez le rechercher via la fonction show du menu principal")
@@ -286,7 +325,7 @@ class CallTournamentNumber:
             ask_number = int(input("Numero du tournoi: "))
             self.number = ask_number
         except ValueError:
-            print("Merci d'entrer un nombre entier")
+            print(f"{Style.BRIGHT}{Fore.RED}Merci d'entrer un nombre entier")
             print("")
             self.ask_number()
 
@@ -294,7 +333,7 @@ class CallTournamentNumber:
 
     def ask_again(self):
         """Display sentence to ask again tournament's number with the right format"""
-        print("Merci d'entrer le numero valide d'un tournoi")
+        print(f"{Style.BRIGHT}{Fore.RED}Merci d'entrer le numero valide d'un tournoi")
 
 
 class AskContinue:
@@ -319,14 +358,16 @@ class AskContinue:
     def ask_go_next_round(self):
         """Ask user to start the new round"""
         print("")
-        print(f"{Style.BRIGHT}{Fore.RED}Voulez-vous passer au round suivant ?")
+        print(f"{Style.BRIGHT}Voulez-vous passer au round suivant ?")
         print("")
         print(
-            f"{Style.BRIGHT}{Fore.RED}yes:              ",
-            f"{Style.NORMAL}{Fore.WHITE}Permet de passer au round suivant")
+            f"{Style.BRIGHT}{Fore.GREEN}yes:              ",
+            f"{Style.NORMAL}{Fore.WHITE}Permet de passer au round suivant",
+        )
         print(
-            f"{Style.BRIGHT}{Fore.RED}menu:             ",
-            f"{Style.NORMAL}{Fore.WHITE}Permet de revenir au menu principal, les actions précédentes sont enregistrées"
+            f"{Style.BRIGHT}{Fore.GREEN}menu:             ",
+            f"{Style.NORMAL}{Fore.WHITE}Permet de revenir au menu principal",
+            f"{Style.NORMAL}{Fore.WHITE}les actions précédentes sont enregistrées",
         )
         ask_action = input("Action choisie: ")
         print("")
@@ -337,7 +378,10 @@ class AskContinue:
             self.go_next_round = "menu"
         else:
             print("")
-            print("Merci de rentrer la bonne commande comme indiqué dans les propositions ci-dessous")
+            print(
+                f"{Style.BRIGHT}{Fore.RED}Merci de rentrer la bonne commande comme indiqué",
+                f"{Style.BRIGHT}{Fore.RED}dans les propositions ci-dessous"
+            )
             self.ask_go_next_round()
 
         return self.go_next_round
@@ -353,20 +397,22 @@ class CallShowAction:
 
     def ask_show_action(self):
         """Display show menu possibilities to the user"""
-        print(f"{Style.BRIGHT}{Fore.BLUE}Menu d'affichage des rapports de données{Fore.RESET}")
+        print(
+            f"{Style.BRIGHT}{Fore.BLUE}Menu d'affichage des rapports de données{Fore.RESET}"
+        )
         print("")
         print("Merci d'entrer un des mots suivant: ")
         print(
-            f"{Style.BRIGHT}{Fore.RED}tournaments:      ",
-            f"{Style.NORMAL}{Fore.WHITE}Permet de sélectionner un tournoi spécifique"
+            f"{Style.BRIGHT}{Fore.GREEN}tournaments:      ",
+            f"{Style.NORMAL}{Fore.WHITE}Permet de sélectionner un tournoi spécifique",
         )
         print(
-            f"{Style.BRIGHT}{Fore.RED}total players:    ",
-            f"{Style.NORMAL}{Fore.WHITE}Permet d'afficher l'ensemble des joueurs"
+            f"{Style.BRIGHT}{Fore.GREEN}total players:    ",
+            f"{Style.NORMAL}{Fore.WHITE}Permet d'afficher l'ensemble des joueurs",
         )
         print(
-            f"{Style.BRIGHT}{Fore.RED}menu:             ",
-            f"{Style.NORMAL}{Fore.WHITE}Permet de retourner au menu principal"
+            f"{Style.BRIGHT}{Fore.GREEN}menu:             ",
+            f"{Style.NORMAL}{Fore.WHITE}Permet de retourner au menu principal",
         )
         print("")
         ask_action = input("Action choisie: ")
@@ -377,20 +423,22 @@ class CallShowAction:
 
     def ask_type_tournament(self):
         """Ask the user for the wanted type of tournament (finished or not)"""
-        print(f"{Style.BRIGHT}Voulez-vous afficher les tournois en cours ou l'ensemble des tournois?")
+        print(
+            f"{Style.BRIGHT}Voulez-vous afficher les tournois en cours ou l'ensemble des tournois?"
+        )
         print("")
         print(f"{Style.NORMAL}Merci d'entrer un des mots suivant: ")
         print(
-            f"{Style.BRIGHT}{Fore.RED}total:            ",
-            f"{Style.NORMAL}{Fore.WHITE}Permet d'afficher la liste de tous les tournois enregistrés"
+            f"{Style.BRIGHT}{Fore.GREEN}total:            ",
+            f"{Style.NORMAL}{Fore.WHITE}Permet d'afficher la liste de tous les tournois enregistrés",
         )
         print(
-            f"{Style.BRIGHT}{Fore.RED}unfinished:       ",
-            f"{Style.NORMAL}{Fore.WHITE}Permet d'afficher seulement les tournoi en cours"
+            f"{Style.BRIGHT}{Fore.GREEN}unfinished:       ",
+            f"{Style.NORMAL}{Fore.WHITE}Permet d'afficher seulement les tournoi en cours",
         )
         print(
-            f"{Style.BRIGHT}{Fore.RED}back:             ",
-            f"{Style.NORMAL}{Fore.WHITE}Permet de retourner au menu précédent"
+            f"{Style.BRIGHT}{Fore.GREEN}back:             ",
+            f"{Style.NORMAL}{Fore.WHITE}Permet de retourner au menu précédent",
         )
         print("")
         ask_action = input("Action choisie: ")
@@ -401,20 +449,22 @@ class CallShowAction:
 
     def ask_players_sorting(self):
         """Ask user to choose between all players sorted by name or rank"""
-        print(f"{Style.BRIGHT}Voulez-vous afficher la liste des joueurs par rank ou ordre alphabétique?")
+        print(
+            f"{Style.BRIGHT}Voulez-vous afficher la liste des joueurs par rank ou ordre alphabétique?"
+        )
         print("")
         print("Merci d'entrer un des mots suivant: ")
         print(
-            f"{Style.BRIGHT}{Fore.RED}rank:             ",
-            f"{Style.NORMAL}{Fore.WHITE}Permet d'afficher la liste des joueurs par rank"
+            f"{Style.BRIGHT}{Fore.GREEN}rank:             ",
+            f"{Style.NORMAL}{Fore.WHITE}Permet d'afficher la liste des joueurs par rank",
         )
         print(
-            f"{Style.BRIGHT}{Fore.RED}name:             ",
-            f"{Style.NORMAL}{Fore.WHITE}Permet d'afficher la liste des joueurs par ordre alphabétique"
+            f"{Style.BRIGHT}{Fore.GREEN}name:             ",
+            f"{Style.NORMAL}{Fore.WHITE}Permet d'afficher la liste des joueurs par ordre alphabétique",
         )
         print(
-            f"{Style.BRIGHT}{Fore.RED}back:             ",
-            f"{Style.NORMAL}{Fore.WHITE}Permet de retourner au menu précédent"
+            f"{Style.BRIGHT}{Fore.GREEN}back:             ",
+            f"{Style.NORMAL}{Fore.WHITE}Permet de retourner au menu précédent",
         )
         print("")
         ask_action = input("Action choisie: ")
@@ -461,28 +511,28 @@ class CallShowAction:
         print("")
         print("Merci d'entrer un des mots suivant: ")
         print(
-            f"{Style.BRIGHT}{Fore.RED}score:            ",
-            f"{Style.NORMAL}{Fore.WHITE}Permet d'afficher la liste des joueurs du tournoi par score"
+            f"{Style.BRIGHT}{Fore.GREEN}score:            ",
+            f"{Style.NORMAL}{Fore.WHITE}Permet d'afficher la liste des joueurs du tournoi par score",
         )
         print(
-            f"{Style.BRIGHT}{Fore.RED}name:             ",
-            f"{Style.NORMAL}{Fore.WHITE}Permet d'afficher la liste des joueurs du tournoi par ordre alphabétique"
+            f"{Style.BRIGHT}{Fore.GREEN}name:             ",
+            f"{Style.NORMAL}{Fore.WHITE}Permet d'afficher la liste des joueurs du tournoi par ordre alphabétique",
         )
         print(
-            f"{Style.BRIGHT}{Fore.RED}rounds:           ",
-            f"{Style.NORMAL}{Fore.WHITE}Permet d'afficher les rounds du tournoi"
+            f"{Style.BRIGHT}{Fore.GREEN}rounds:           ",
+            f"{Style.NORMAL}{Fore.WHITE}Permet d'afficher les rounds du tournoi",
         )
         print(
-            f"{Style.BRIGHT}{Fore.RED}matchs:           ",
-            f"{Style.NORMAL}{Fore.WHITE}Permet d'afficher la liste des matchs du tournoi"
+            f"{Style.BRIGHT}{Fore.GREEN}matchs:           ",
+            f"{Style.NORMAL}{Fore.WHITE}Permet d'afficher la liste des matchs du tournoi",
         )
         print(
-            f"{Style.BRIGHT}{Fore.RED}back:             ",
-            f"{Style.NORMAL}{Fore.WHITE}Permet de changer le numéro du tournoi sélectionné"
+            f"{Style.BRIGHT}{Fore.GREEN}back:             ",
+            f"{Style.NORMAL}{Fore.WHITE}Permet de changer le numéro du tournoi sélectionné",
         )
         print(
-            f"{Style.BRIGHT}{Fore.RED}menu:             ",
-            f"{Style.NORMAL}{Fore.WHITE}Permet de retourner à la racine du menu show"
+            f"{Style.BRIGHT}{Fore.GREEN}menu:             ",
+            f"{Style.NORMAL}{Fore.WHITE}Permet de retourner à la racine du menu show",
         )
         print("")
         ask_action = input("Action choisie: ")
